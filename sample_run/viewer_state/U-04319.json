@@ -1,0 +1,182 @@
+{
+  "user_id": "U-04319",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-08-21T14:18:59.887Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-08-21T14:18:59.887Z",
+      "freshness_s": 3518907.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:3e724e5c-a07a-441e-92a3-6c30fa913bd7:purchase_completed",
+      "timestamp": "2026-09-28T18:10:23.256Z",
+      "freshness_s": 221823.7
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:50:59.086Z",
+      "freshness_s": 215787.9
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:50:59.086Z",
+      "freshness_s": 215787.9
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:50:59.086Z",
+      "freshness_s": 215787.9
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T18:10:23.256Z",
+      "freshness_s": 221823.7
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-28T18:03:35.915Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-28T18:03:35.915Z",
+      "freshness_s": 222231.1
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Family"
+  ],
+  "sessions_count": 10,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-08",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-28"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_full_episode_3d",
+    "goal_id": "G02",
+    "window_hours": 72,
+    "deadline": "2026-10-04T07:47:26.999Z",
+    "success_event": "episode_completed",
+    "success_condition": "any episode",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04319",
+      "decision_id": "D-U-04319-001",
+      "goal_id": "first_full_episode_3d",
+      "goal_started_at": "2026-10-01T07:47:26.999Z",
+      "deadline": "2026-10-04T07:47:26.999Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_full_episode_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04319-001",
+      "viewer_id": "U-04319",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T07:47:26.999Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-04T07:47:26.999Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1",
+          "campaign:d1"
+        ]
+      },
+      "content": [
+        "title:T0523",
+        "title:T0536",
+        "title:T0538",
+        "title:T0548",
+        "title:T0551",
+        "title:T0555",
+        "title:T0521",
+        "title:T0524",
+        "title:T0525",
+        "title:T0526",
+        "title:T0528",
+        "title:T0530",
+        "title:T0535",
+        "title:T0545",
+        "title:T0552",
+        "title:T0564",
+        "title:T0529",
+        "title:T0531",
+        "title:T0533",
+        "title:T0534",
+        "title:T0537"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d2 matching user history",
+      "evidence": [
+        "trigger:ce61e7f4-298b-43f5-a5ab-bb8c6bce2be5:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T07:47:26.999000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

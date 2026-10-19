@@ -1,0 +1,315 @@
+{
+  "user_id": "U-01711",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-07-19T02:53:38.946Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-07-19T02:53:38.946Z",
+      "freshness_s": 37967082.6
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:53:49.940Z",
+      "freshness_s": 239071.7
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d6",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:53:49.940Z",
+      "freshness_s": 239071.7
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:53:49.940Z",
+      "freshness_s": 239071.7
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:53:49.940Z",
+      "freshness_s": 239071.7
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-21T14:20:10.533Z",
+      "freshness_s": 860291.1
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-05T13:46:13.138Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-05T13:46:13.138Z",
+      "freshness_s": 2244728.5
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-05T13:48:03.496Z",
+      "freshness_s": 2244618.1
+    }
+  },
+  "watch_progress": {
+    "radi-d4": "radi-d4-s1e1"
+  },
+  "top_genres": [
+    "Romance"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-05",
+    "2026-09-08",
+    "2026-09-18",
+    "2026-09-21"
+  ],
+  "ist_play_days": [
+    "2026-09-05"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T13:18:21.591Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:radi-d4",
+    "content_slug": "radi-d4",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 3,
+  "actions_count": 2,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01711",
+      "decision_id": "D-U-01711-003",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T13:18:21.591Z",
+      "deadline": "2026-10-04T13:18:21.591Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01711-001",
+      "viewer_id": "U-01711",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:46:09.293Z",
+        "event_age_s": 83064
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:46:09.293Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d6"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:81ef6c0f-b6cc-41e4-8f80-351bab240388:event_age=83064s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=radi-d4",
+        "state:days_since_play=25.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T04:46:09.293000+00:00",
+        "Viewer left series radi-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-01711-002",
+      "viewer_id": "U-01711",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T10:55:43.845Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T10:55:43.845Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d6"
+        ]
+      },
+      "content": [
+        "title:T0916",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0925",
+        "title:T0915",
+        "title:T0917",
+        "title:T0921",
+        "title:T0924",
+        "title:T0926",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0927",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:a1303961-3501-4062-8062-235981155227:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=radi-d4",
+        "state:days_since_play=25.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T10:55:43.845000+00:00",
+        "Viewer left series radi-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01711-003",
+      "viewer_id": "U-01711",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T13:18:21.591Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T13:18:21.591Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d6"
+        ]
+      },
+      "content": [
+        "title:T0916",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0925",
+        "title:T0915",
+        "title:T0917",
+        "title:T0921",
+        "title:T0924",
+        "title:T0926",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0927",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:612ddd34-1b44-478f-8ec0-414b09f159bc:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=radi-d4",
+        "state:days_since_play=26.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T13:18:21.591000+00:00",
+        "Viewer left series radi-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

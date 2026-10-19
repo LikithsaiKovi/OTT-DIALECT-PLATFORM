@@ -1,0 +1,62 @@
+{
+  "user_id": "U-01546",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-04-02T08:36:16.764Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-04-02T08:36:16.764Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:15:50.824Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:15:50.824Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:15:50.824Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:15:50.824Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [],
+  "sessions_count": 3,
+  "play_sessions_count": 0,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-22",
+    "2026-09-24"
+  ],
+  "ist_play_days": [],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

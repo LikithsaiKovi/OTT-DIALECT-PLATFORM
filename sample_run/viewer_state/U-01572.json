@@ -1,0 +1,228 @@
+{
+  "user_id": "U-01572",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-12-26T17:27:24.296Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-12-26T17:27:24.296Z",
+      "freshness_s": 24102772.4
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:ef7426db-258e-4d44-a042-5f1446b93da7:subscription_renewed",
+      "timestamp": "2026-09-19T22:47:40.314Z",
+      "freshness_s": 1014756.4
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:09:04.359Z",
+      "freshness_s": 235872.3
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:09:04.359Z",
+      "freshness_s": 235872.3
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:09:04.359Z",
+      "freshness_s": 235872.3
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T17:22:41.326Z",
+      "freshness_s": 256655.4
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-28T15:26:30.514Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-28T15:26:30.514Z",
+      "freshness_s": 263626.2
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-25T03:29:02.649Z",
+      "freshness_s": 565874.1
+    }
+  },
+  "watch_progress": {
+    "gibha-bhalomo-d2": "gibha-bhalomo-d2-s1e1",
+    "molo-d2": "molo-d2-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Romance",
+    "Devotional"
+  ],
+  "sessions_count": 16,
+  "play_sessions_count": 8,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-17",
+    "2026-09-21",
+    "2026-09-23",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-17",
+    "2026-09-21",
+    "2026-09-25",
+    "2026-09-28"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T16:40:16.704Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:gibha-bhalomo-d2",
+    "content_slug": "gibha-bhalomo-d2",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01572",
+      "decision_id": "D-U-01572-002",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T16:40:16.704Z",
+      "deadline": "2026-10-04T16:40:16.704Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01572-001",
+      "viewer_id": "U-01572",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:54:43.896Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "try_new_release_7d",
+        "deadline": "2026-10-08T14:54:43.896Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:dc91c8de-8178-4d7d-b8e7-c04bb00ef729:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:subscription_status=active",
+        "state:plays_in_last_14d=4"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T14:54:43.896000+00:00",
+        "Frequent subscriber will appreciate fresh content drops"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01572-002",
+      "viewer_id": "U-01572",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:40:16.704Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T16:40:16.704Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:96c7b751-4c75-4c42-89c9-c2c0239ee143:event_age=0s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:watch_progress=gibha-bhalomo-d2",
+        "state:days_since_play=3.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T16:40:16.704000+00:00",
+        "Viewer left series gibha-bhalomo-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

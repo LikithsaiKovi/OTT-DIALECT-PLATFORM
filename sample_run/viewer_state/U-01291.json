@@ -1,0 +1,200 @@
+{
+  "user_id": "U-01291",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-06-11T07:18:07.007Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-06-11T07:18:07.007Z",
+      "freshness_s": 41234689.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "events:37386c45-0b80-488b-9d80-b0403eeee6e4:subscription_lapsed",
+      "timestamp": "2026-09-17T22:49:04.536Z",
+      "freshness_s": 1175632.3
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d6",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:05:32.162Z",
+      "freshness_s": 184644.6
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:05:32.162Z",
+      "freshness_s": 184644.6
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:05:32.162Z",
+      "freshness_s": 184644.6
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T05:28:01.569Z",
+      "freshness_s": 114895.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-29T14:50:41.657Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-29T14:50:41.657Z",
+      "freshness_s": 167535.1
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 11,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-27T10:28:37.113Z",
+      "freshness_s": 356059.7
+    }
+  },
+  "watch_progress": {
+    "paba-d5": "paba-d5-s1e2",
+    "gubava-gihaya-d5": "gubava-gihaya-d5-s1e8",
+    "yaka-naka-d5": "yaka-naka-d5-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Drama",
+    "Action"
+  ],
+  "sessions_count": 36,
+  "play_sessions_count": 24,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-10",
+    "2026-09-12",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-28",
+    "2026-09-29",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-03",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-10",
+    "2026-09-12",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-28",
+    "2026-09-29"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "reactivate_lapsed_14d",
+    "goal_id": "G06",
+    "window_hours": 336,
+    "deadline": "2026-10-15T13:22:56.789Z",
+    "success_event": "purchase_completed",
+    "success_condition": "any paid plan",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01291",
+      "decision_id": "D-U-01291-001",
+      "goal_id": "reactivate_lapsed_14d",
+      "goal_started_at": "2026-10-01T13:22:56.789Z",
+      "deadline": "2026-10-15T13:22:56.789Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal reactivate_lapsed_14d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01291-001",
+      "viewer_id": "U-01291",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T13:22:56.789Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "reactivate_lapsed_14d",
+        "deadline": "2026-10-15T13:22:56.789Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d6"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:0a56c410-99e4-4a95-b728-6293197aa2b2:event_age=1s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:subscription_status=lapsed",
+        "goal_rule:G06"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T13:22:56.789000+00:00",
+        "Viewer subscription lapsed recently (<30d) and responds to reactivation value"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

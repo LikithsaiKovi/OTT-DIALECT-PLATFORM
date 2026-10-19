@@ -1,0 +1,169 @@
+{
+  "user_id": "U-02312",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-08-01T04:03:55.548Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-08-01T04:03:55.548Z",
+      "freshness_s": 36821639.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:04:41.076Z",
+      "freshness_s": 195194.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:04:41.076Z",
+      "freshness_s": 195194.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:04:41.076Z",
+      "freshness_s": 195194.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:04:41.076Z",
+      "freshness_s": 195194.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T23:07:29.595Z",
+      "freshness_s": 292225.7
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-08T13:53:28.947Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-08T13:53:28.947Z",
+      "freshness_s": 1967066.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-08T13:57:09.474Z",
+      "freshness_s": 1966845.8
+    }
+  },
+  "watch_progress": {
+    "diti-kochu-d5": "diti-kochu-d5-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Crime"
+  ],
+  "sessions_count": 8,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-08",
+    "2026-09-15",
+    "2026-09-17",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-08"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T08:17:55.299Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:diti-kochu-d5",
+    "content_slug": "diti-kochu-d5",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-02312",
+      "decision_id": "D-U-02312-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T08:17:55.299Z",
+      "deadline": "2026-10-04T08:17:55.299Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-02312-001",
+      "viewer_id": "U-02312",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T08:17:55.299Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T08:17:55.299Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d5"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:33e77605-3622-4a09-9217-2b4899024bfe:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=diti-kochu-d5",
+        "state:days_since_play=22.8"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T08:17:55.299000+00:00",
+        "Viewer left series diti-kochu-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

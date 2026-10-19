@@ -1,0 +1,178 @@
+{
+  "user_id": "U-04466",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-10-05T01:57:46.062Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-10-05T01:57:46.062Z",
+      "freshness_s": 31243977.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:3fc831c9-20de-44c4-89b5-2bfb85eed6f7:subscription_renewed",
+      "timestamp": "2026-09-27T14:24:52.225Z",
+      "freshness_s": 354350.9
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:42:51.962Z",
+      "freshness_s": 202071.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:42:51.962Z",
+      "freshness_s": 202071.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:42:51.962Z",
+      "freshness_s": 202071.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T17:16:35.539Z",
+      "freshness_s": 344047.6
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-18T12:19:20.236Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-18T12:19:20.236Z",
+      "freshness_s": 1139482.9
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 4,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-18T13:00:43.200Z",
+      "freshness_s": 1136999.9
+    }
+  },
+  "watch_progress": {
+    "tero-koja-d2": "tero-koja-d2-s1e4"
+  },
+  "top_genres": [
+    "Crime",
+    "Family",
+    "Action"
+  ],
+  "sessions_count": 10,
+  "play_sessions_count": 6,
+  "ist_app_open_days": [
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-10",
+    "2026-09-16",
+    "2026-09-18",
+    "2026-09-24",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-16",
+    "2026-09-18"
+  ],
+  "opt_outs": [
+    "push"
+  ],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T16:50:43.122Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:tero-koja-d2",
+    "content_slug": "tero-koja-d2",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04466",
+      "decision_id": "D-U-04466-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T16:50:43.122Z",
+      "deadline": "2026-10-04T16:50:43.122Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-028057",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-02T14:47:39.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04466-001",
+      "viewer_id": "U-04466",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:50:43.122Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T16:50:43.122Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d5"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:39a5b337-6c3f-427c-8928-bf777a2aadd7:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:watch_progress=tero-koja-d2",
+        "state:days_since_play=13.2"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T16:50:43.122000+00:00",
+        "Viewer left series tero-koja-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

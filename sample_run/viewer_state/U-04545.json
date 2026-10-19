@@ -1,0 +1,82 @@
+{
+  "user_id": "U-04545",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-08-27T18:32:48.334Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-08-27T18:32:48.334Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:35ebdadf-1e33-491a-b06b-b63527e96eab:purchase_completed",
+      "timestamp": "2026-09-02T19:07:41.338Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:37:13.644Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:37:13.644Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:37:13.644Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T16:08:08.344Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-05T06:34:02.407Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-05T06:34:02.407Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Romance"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-05",
+    "2026-09-16",
+    "2026-09-27",
+    "2026-09-28",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-05"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

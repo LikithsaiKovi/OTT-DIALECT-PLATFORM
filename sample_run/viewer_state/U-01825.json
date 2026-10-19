@@ -1,0 +1,327 @@
+{
+  "user_id": "U-01825",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-07-09T10:50:41.641Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-07-09T10:50:41.641Z",
+      "freshness_s": 38808204.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:d783f9fc-1d13-42df-ba51-69309e16603f:subscription_renewed",
+      "timestamp": "2026-09-25T15:19:59.460Z",
+      "freshness_s": 516847.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:19:46.256Z",
+      "freshness_s": 246860.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:19:46.256Z",
+      "freshness_s": 246860.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:19:46.256Z",
+      "freshness_s": 246860.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T04:27:26.474Z",
+      "freshness_s": 124000.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-26T07:34:27.307Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-26T07:34:27.307Z",
+      "freshness_s": 458379.2
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 3,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-23T14:25:51.841Z",
+      "freshness_s": 692894.6
+    }
+  },
+  "watch_progress": {
+    "salosa-valo-d1": "salosa-valo-d1-s1e1",
+    "raloja-d1": "raloja-d1-s1e1",
+    "dapa-pini-d1": "dapa-pini-d1-s1e1"
+  },
+  "top_genres": [
+    "Comedy",
+    "Thriller",
+    "Crime"
+  ],
+  "sessions_count": 14,
+  "play_sessions_count": 9,
+  "ist_app_open_days": [
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-17",
+    "2026-09-23",
+    "2026-09-26"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T14:54:06.470Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:salosa-valo-d1",
+    "content_slug": "salosa-valo-d1",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 4,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01825",
+      "decision_id": "D-U-01825-004",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T14:54:06.470Z",
+      "deadline": "2026-10-04T14:54:06.470Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-012320",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-04T03:54:38.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01825-001",
+      "viewer_id": "U-01825",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T05:44:18.563Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T05:44:18.563Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:15ab3fe0-8e4c-46c1-8f83-ed3059653efc:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:watch_progress=salosa-valo-d1",
+        "state:days_since_play=4.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T05:44:18.563000+00:00",
+        "Viewer left series salosa-valo-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-01825-002",
+      "viewer_id": "U-01825",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T09:49:38.254Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T09:49:38.254Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:b62773ea-052d-476f-934f-ab6763b251cc:event_age=0s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:watch_progress=salosa-valo-d1",
+        "state:days_since_play=5.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T09:49:38.254000+00:00",
+        "Viewer left series salosa-valo-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01825-003",
+      "viewer_id": "U-01825",
+      "trigger": {
+        "event": "login_success",
+        "received_at": "2026-10-01T14:54:02.472Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T14:54:02.472Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:f32d0448-c763-423f-8c1e-6c21e7b0913d:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:watch_progress=salosa-valo-d1",
+        "state:days_since_play=5.3"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T14:54:02.472000+00:00",
+        "Viewer left series salosa-valo-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01825-004",
+      "viewer_id": "U-01825",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:54:06.470Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T14:54:06.470Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:7a6d32e6-ffd2-4ed3-95f4-284efc94a6e5:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:watch_progress=salosa-valo-d1",
+        "state:days_since_play=5.3"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T14:54:06.470000+00:00",
+        "Viewer left series salosa-valo-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

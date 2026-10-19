@@ -1,0 +1,185 @@
+{
+  "user_id": "U-03961",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-06-29T03:20:17.566Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-06-29T03:20:17.566Z",
+      "freshness_s": 8148532.3
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:34741b68-8c2e-4209-9720-36676ef331a5:subscription_renewed",
+      "timestamp": "2026-09-14T16:00:31.126Z",
+      "freshness_s": 1450118.7
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d6",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:39:20.149Z",
+      "freshness_s": 227389.7
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:39:20.149Z",
+      "freshness_s": 227389.7
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:39:20.149Z",
+      "freshness_s": 227389.7
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d6",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T06:45:09.311Z",
+      "freshness_s": 101040.6
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-26T05:15:38.000Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-26T05:15:38.000Z",
+      "freshness_s": 452011.9
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 4,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-26T05:19:17.012Z",
+      "freshness_s": 451792.9
+    }
+  },
+  "watch_progress": {
+    "chupi-gugi-d6": "chupi-gugi-d6-s1e4"
+  },
+  "top_genres": [
+    "Action",
+    "Crime",
+    "Thriller"
+  ],
+  "sessions_count": 23,
+  "play_sessions_count": 11,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-05",
+    "2026-09-09",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-17",
+    "2026-09-19",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-29",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-09",
+    "2026-09-13",
+    "2026-09-19",
+    "2026-09-22",
+    "2026-09-25",
+    "2026-09-26"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T10:49:09.868Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:chupi-gugi-d6",
+    "content_slug": "chupi-gugi-d6",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03961",
+      "decision_id": "D-U-03961-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T10:49:09.868Z",
+      "deadline": "2026-10-04T10:49:09.868Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-025286",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-02T03:41:12.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03961-001",
+      "viewer_id": "U-03961",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T10:49:09.868Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T10:49:09.868Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d6",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:8c1368f9-7c4b-44d2-9b71-1ceeb92bbc93:event_age=0s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d6:app_setting",
+        "state:watch_progress=chupi-gugi-d6",
+        "state:days_since_play=5.2"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d6",
+        "Subscription status 'active' is reliable as of 2026-10-01T10:49:09.868000+00:00",
+        "Viewer left series chupi-gugi-d6 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "user_id": "U-04778",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T10:42:13.698Z",
+      "freshness_s": 104794.7
+    },
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-30T10:41:01.618Z",
+      "source": "events:signup_completed",
+      "timestamp": "2026-09-30T10:41:01.618Z",
+      "freshness_s": 104866.7
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [],
+  "sessions_count": 1,
+  "play_sessions_count": 0,
+  "ist_app_open_days": [
+    "2026-09-30"
+  ],
+  "ist_play_days": [],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_play_24h",
+    "goal_id": "G01",
+    "window_hours": 24,
+    "deadline": "2026-10-02T15:48:48.351Z",
+    "success_event": "play_started",
+    "success_condition": "any title",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 3,
+  "actions_count": 3,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04778",
+      "decision_id": "D-U-04778-003",
+      "goal_id": "first_play_24h",
+      "goal_started_at": "2026-10-01T15:48:48.351Z",
+      "deadline": "2026-10-02T15:48:48.351Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_play_24h -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04778-001",
+      "viewer_id": "U-04778",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T01:43:23.360Z",
+        "event_age_s": 65
+      },
+      "goal": {
+        "id": "first_play_24h",
+        "deadline": "2026-10-02T01:43:23.360Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0915",
+        "title:T0916",
+        "title:T0917",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0921",
+        "title:T0923",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:25ff79af-b938-42ae-990c-882a5e7079bb:event_age=65s",
+        "subscription_status:never:profile_snapshot:none",
+        "dialect:d4:app_setting",
+        "profile:signup_at=2026-09-30T10:41:01.618Z",
+        "state:total_plays=0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T01:43:23.360000+00:00",
+        "Viewer is interested in catalog discovery upon sign-up"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-04778-002",
+      "viewer_id": "U-04778",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:40:00.536Z",
+        "event_age_s": 110
+      },
+      "goal": {
+        "id": "first_play_24h",
+        "deadline": "2026-10-02T14:40:00.536Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0915",
+        "title:T0916",
+        "title:T0917",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0921",
+        "title:T0923",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:6c62175c-742e-409a-8b25-75a0784e238b:event_age=110s",
+        "subscription_status:never:profile_snapshot:none",
+        "dialect:d4:app_setting",
+        "profile:signup_at=2026-09-30T10:41:01.618Z",
+        "state:total_plays=0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T14:40:00.536000+00:00",
+        "Viewer is interested in catalog discovery upon sign-up"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-04778-003",
+      "viewer_id": "U-04778",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:48:48.351Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "first_play_24h",
+        "deadline": "2026-10-02T15:48:48.351Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0915",
+        "title:T0916",
+        "title:T0917",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0921",
+        "title:T0923",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:08dc75b8-34f6-44b1-a403-e9f223c4979e:event_age=0s",
+        "subscription_status:never:profile_snapshot:none",
+        "dialect:d4:app_setting",
+        "profile:signup_at=2026-09-30T10:41:01.618Z",
+        "state:total_plays=0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:48:48.351000+00:00",
+        "Viewer is interested in catalog discovery upon sign-up"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

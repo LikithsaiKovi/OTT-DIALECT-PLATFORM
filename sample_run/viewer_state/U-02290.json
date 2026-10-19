@@ -1,0 +1,228 @@
+{
+  "user_id": "U-02290",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-17T15:45:24.008Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-17T15:45:24.008Z",
+      "freshness_s": 1205638.6
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "events:3d0e0caa-c661-4002-b0dc-489f78089c9c:subscription_lapsed",
+      "timestamp": "2026-09-20T15:45:24.593Z",
+      "freshness_s": 946438.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:26:15.263Z",
+      "freshness_s": 187987.4
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:26:15.263Z",
+      "freshness_s": 187987.4
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:26:15.263Z",
+      "freshness_s": 187987.4
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T06:42:15.469Z",
+      "freshness_s": 287827.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-28T06:41:30.615Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-28T06:41:30.615Z",
+      "freshness_s": 287872.0
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Drama",
+    "Thriller"
+  ],
+  "sessions_count": 6,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-17",
+    "2026-09-28"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_full_episode_3d",
+    "goal_id": "G02",
+    "window_hours": 72,
+    "deadline": "2026-10-04T14:39:22.627Z",
+    "success_event": "episode_completed",
+    "success_condition": "any episode",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-02290",
+      "decision_id": "D-U-02290-002",
+      "goal_id": "first_full_episode_3d",
+      "goal_started_at": "2026-10-01T14:39:22.627Z",
+      "deadline": "2026-10-04T14:39:22.627Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_full_episode_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-02290-001",
+      "viewer_id": "U-02290",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T12:21:56.972Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-04T12:21:56.972Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0004",
+        "title:T0009",
+        "title:T0010",
+        "title:T0045",
+        "title:T0046",
+        "title:T0047",
+        "title:T0003",
+        "title:T0005",
+        "title:T0006",
+        "title:T0007",
+        "title:T0008",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0051",
+        "title:T0060",
+        "title:T0011",
+        "title:T0012",
+        "title:T0013",
+        "title:T0014",
+        "title:T0015"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:2a77fc58-0df4-417d-8a75-09d400f9bfd1:event_age=2s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T12:21:56.972000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-02290-002",
+      "viewer_id": "U-02290",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:39:22.627Z",
+        "event_age_s": 586198
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-04T14:39:22.627Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:577b9923-e4a7-4a54-b191-fcaec7159c9c:event_age=586198s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T14:39:22.627000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

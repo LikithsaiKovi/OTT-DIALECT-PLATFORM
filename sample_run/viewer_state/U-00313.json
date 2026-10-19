@@ -1,0 +1,144 @@
+{
+  "user_id": "U-00313",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-01-15T23:41:38.499Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-01-15T23:41:38.499Z",
+      "freshness_s": 53871143.9
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:00:50.575Z",
+      "freshness_s": 161591.8
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:00:50.575Z",
+      "freshness_s": 161591.8
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:00:50.575Z",
+      "freshness_s": 161591.8
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:00:50.575Z",
+      "freshness_s": 161591.8
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-07T16:23:02.549Z",
+      "freshness_s": 2057459.8
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [],
+  "sessions_count": 2,
+  "play_sessions_count": 0,
+  "ist_app_open_days": [
+    "2026-09-04",
+    "2026-09-07"
+  ],
+  "ist_play_days": [],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_full_episode_3d",
+    "goal_id": "G02",
+    "window_hours": 72,
+    "deadline": "2026-10-04T11:54:02.360Z",
+    "success_event": "episode_completed",
+    "success_condition": "any episode",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00313",
+      "decision_id": "D-U-00313-001",
+      "goal_id": "first_full_episode_3d",
+      "goal_started_at": "2026-10-01T11:54:02.360Z",
+      "deadline": "2026-10-04T11:54:02.360Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-002196",
+      "attributed_event": "episode_completed",
+      "attributed_at": "2026-10-03T15:17:52.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_full_episode_3d -> SUCCEEDED (attributed to episode_completed)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00313-001",
+      "viewer_id": "U-00313",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T11:54:02.360Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-04T11:54:02.360Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d5",
+          "campaign:d1"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:50f85a4e-ca86-41bd-ad0b-d4f125c631f7:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T11:54:02.360000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

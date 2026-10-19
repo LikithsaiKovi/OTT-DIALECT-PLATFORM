@@ -1,0 +1,72 @@
+{
+  "user_id": "U-03996",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-11-26T13:01:51.109Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-11-26T13:01:51.109Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:2a179dd7-da4a-42ae-addb-b86d20733048:purchase_completed",
+      "timestamp": "2026-09-13T12:21:17.328Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:37:08.066Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:37:08.066Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:37:08.066Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T09:56:37.312Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [],
+  "sessions_count": 8,
+  "play_sessions_count": 0,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-08",
+    "2026-09-13",
+    "2026-09-17",
+    "2026-09-25",
+    "2026-09-27"
+  ],
+  "ist_play_days": [],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

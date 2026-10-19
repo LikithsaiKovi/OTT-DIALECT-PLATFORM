@@ -1,0 +1,197 @@
+{
+  "user_id": "U-01362",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-12-29T14:06:47.681Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-12-29T14:06:47.681Z",
+      "freshness_s": 23854827.3
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:e7efaba7-12e9-43bd-939b-b4f3ff68e81d:subscription_renewed",
+      "timestamp": "2026-09-14T07:28:16.355Z",
+      "freshness_s": 1501138.6
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:01:52.338Z",
+      "freshness_s": 181522.6
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:01:52.338Z",
+      "freshness_s": 181522.6
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:01:52.338Z",
+      "freshness_s": 181522.6
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T10:46:27.376Z",
+      "freshness_s": 106847.6
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T15:57:04.600Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T15:57:04.600Z",
+      "freshness_s": 347410.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 17,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-27T14:23:10.536Z",
+      "freshness_s": 353044.4
+    }
+  },
+  "watch_progress": {
+    "jamo-hasa-d5": "jamo-hasa-d5-s1e12",
+    "gubava-gihaya-d5": "gubava-gihaya-d5-s1e5"
+  },
+  "top_genres": [
+    "Romance",
+    "Crime",
+    "Devotional"
+  ],
+  "sessions_count": 31,
+  "play_sessions_count": 21,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T16:27:14.965Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:jamo-hasa-d5",
+    "content_slug": "jamo-hasa-d5",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01362",
+      "decision_id": "D-U-01362-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T16:27:14.965Z",
+      "deadline": "2026-10-04T16:27:14.965Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-009174",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T16:31:03.965Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01362-001",
+      "viewer_id": "U-01362",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:27:14.965Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T16:27:14.965Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:041d10de-9229-4e19-8e2b-5d4d49cd44e4:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=jamo-hasa-d5",
+        "state:days_since_play=4.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-10-01T16:27:14.965000+00:00",
+        "Viewer left series jamo-hasa-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 16,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

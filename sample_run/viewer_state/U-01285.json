@@ -1,0 +1,141 @@
+{
+  "user_id": "U-01285",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-28T15:09:28.565Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T15:09:28.565Z",
+      "freshness_s": 267533.4
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "event:6b163fd4-f502-4159-bc7b-967288443d98:purchase_completed",
+      "timestamp": "2026-10-01T17:30:17.843Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:08:03.325Z",
+      "freshness_s": 213618.6
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:08:03.325Z",
+      "freshness_s": 213618.6
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:08:03.325Z",
+      "freshness_s": 213618.6
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T19:51:07.238Z",
+      "freshness_s": 250634.7
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [],
+  "sessions_count": 2,
+  "play_sessions_count": 0,
+  "ist_app_open_days": [
+    "2026-09-28",
+    "2026-09-29"
+  ],
+  "ist_play_days": [],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_play_24h",
+    "goal_id": "G01",
+    "window_hours": 24,
+    "deadline": "2026-10-02T17:28:21.958Z",
+    "success_event": "play_started",
+    "success_condition": "any title",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01285",
+      "decision_id": "D-U-01285-001",
+      "goal_id": "first_play_24h",
+      "goal_started_at": "2026-10-01T17:28:21.958Z",
+      "deadline": "2026-10-02T17:28:21.958Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_play_24h -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01285-001",
+      "viewer_id": "U-01285",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T17:28:21.958Z",
+        "event_age_s": 105
+      },
+      "goal": {
+        "id": "first_play_24h",
+        "deadline": "2026-10-02T17:28:21.958Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:0de66f8c-29e5-4a66-87e7-d44ee3d7925f:event_age=105s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "profile:signup_at=2026-09-28T15:09:28.565Z",
+        "state:total_plays=0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T17:28:21.958000+00:00",
+        "Viewer is interested in catalog discovery upon sign-up"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

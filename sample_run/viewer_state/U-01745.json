@@ -1,0 +1,165 @@
+{
+  "user_id": "U-01745",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-07-28T12:48:03.138Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-07-28T12:48:03.138Z",
+      "freshness_s": 5628470.5
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:13:36.533Z",
+      "freshness_s": 187337.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d3",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:13:36.533Z",
+      "freshness_s": 187337.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:13:36.533Z",
+      "freshness_s": 187337.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:13:36.533Z",
+      "freshness_s": 187337.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-26T04:29:00.755Z",
+      "freshness_s": 474412.9
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-19T09:02:27.836Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-19T09:02:27.836Z",
+      "freshness_s": 1062805.8
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-19T10:43:38.260Z",
+      "freshness_s": 1056735.4
+    }
+  },
+  "watch_progress": {
+    "rate-java-d3": "rate-java-d3-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Comedy"
+  ],
+  "sessions_count": 4,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-10",
+    "2026-09-19",
+    "2026-09-21",
+    "2026-09-26"
+  ],
+  "ist_play_days": [
+    "2026-09-19"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T16:15:53.614Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:rate-java-d3",
+    "content_slug": "rate-java-d3",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01745",
+      "decision_id": "D-U-01745-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T16:15:53.614Z",
+      "deadline": "2026-10-04T16:15:53.614Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01745-001",
+      "viewer_id": "U-01745",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:15:53.614Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T16:15:53.614Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:a802f586-51c7-4c53-ac1e-34f23d75ee32:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d3:app_setting",
+        "state:watch_progress=rate-java-d3",
+        "state:days_since_play=12.3"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'never' is reliable as of 2026-10-01T16:15:53.614000+00:00",
+        "Viewer left series rate-java-d3 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

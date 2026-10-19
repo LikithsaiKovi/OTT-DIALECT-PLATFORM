@@ -1,0 +1,364 @@
+{
+  "user_id": "U-00300",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-12-17T10:57:36.452Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-12-17T10:57:36.452Z",
+      "freshness_s": 56441649.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:51:09.663Z",
+      "freshness_s": 224435.9
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:51:09.663Z",
+      "freshness_s": 224435.9
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:51:09.663Z",
+      "freshness_s": 224435.9
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:51:09.663Z",
+      "freshness_s": 224435.9
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-20T16:28:49.820Z",
+      "freshness_s": 952975.8
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-18T15:31:31.146Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-18T15:31:31.146Z",
+      "freshness_s": 1129214.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-18T15:34:15.218Z",
+      "freshness_s": 1129050.4
+    }
+  },
+  "watch_progress": {
+    "gubava-gihaya-d5": "gubava-gihaya-d5-s1e2"
+  },
+  "top_genres": [
+    "Devotional"
+  ],
+  "sessions_count": 7,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-08",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-20"
+  ],
+  "ist_play_days": [
+    "2026-09-03",
+    "2026-09-18"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T17:11:45.592Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:gubava-gihaya-d5",
+    "content_slug": "gubava-gihaya-d5",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 5,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00300",
+      "decision_id": "D-U-00300-005",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T17:11:45.592Z",
+      "deadline": "2026-10-04T17:11:45.592Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00300-001",
+      "viewer_id": "U-00300",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T07:26:19.494Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T07:26:19.494Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:6d3c52a5-6853-48d4-aea1-a35fe78ddba3:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=gubava-gihaya-d5",
+        "state:days_since_play=12.7"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T07:26:19.494000+00:00",
+        "Viewer left series gubava-gihaya-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-00300-002",
+      "viewer_id": "U-00300",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T12:35:34.961Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T12:35:34.961Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:bf27da13-49bf-4cda-aa8d-3ae5b0dd9757:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=gubava-gihaya-d5",
+        "state:days_since_play=12.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T12:35:34.961000+00:00",
+        "Viewer left series gubava-gihaya-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-00300-003",
+      "viewer_id": "U-00300",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:53:00.767Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:53:00.767Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:21d6fd4c-ed62-43b4-bdeb-60274f699629:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=gubava-gihaya-d5",
+        "state:days_since_play=13.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:53:00.767000+00:00",
+        "Viewer left series gubava-gihaya-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-00300-004",
+      "viewer_id": "U-00300",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T17:07:17.015Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T17:07:17.015Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:ef263e44-940e-4a5c-9ad0-a57331b83ea4:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=gubava-gihaya-d5",
+        "state:days_since_play=13.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T17:07:17.015000+00:00",
+        "Viewer left series gubava-gihaya-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-00300-005",
+      "viewer_id": "U-00300",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T17:11:45.592Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T17:11:45.592Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:cba9efca-5412-40dd-bccd-b8db70816dd3:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=gubava-gihaya-d5",
+        "state:days_since_play=13.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T17:11:45.592000+00:00",
+        "Viewer left series gubava-gihaya-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

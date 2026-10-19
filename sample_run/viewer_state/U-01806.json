@@ -1,0 +1,263 @@
+{
+  "user_id": "U-01806",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-08-14T16:09:52.673Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-08-14T16:09:52.673Z",
+      "freshness_s": 4145038.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:f715e82d-c7c7-4494-810a-255081937ed2:subscription_renewed",
+      "timestamp": "2026-09-23T21:36:43.539Z",
+      "freshness_s": 669427.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:59:33.298Z",
+      "freshness_s": 236057.4
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:59:33.298Z",
+      "freshness_s": 236057.4
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:59:33.298Z",
+      "freshness_s": 236057.4
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T15:21:47.193Z",
+      "freshness_s": 346323.5
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T15:20:48.678Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T15:20:48.678Z",
+      "freshness_s": 346382.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 4,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-17T07:46:55.369Z",
+      "freshness_s": 1237615.3
+    }
+  },
+  "watch_progress": {
+    "tiko-subava-d4": "tiko-subava-d4-s1e3",
+    "kasu-piva-d4": "kasu-piva-d4-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Crime",
+    "Romance"
+  ],
+  "sessions_count": 23,
+  "play_sessions_count": 16,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-26",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-02",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-13",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T15:33:50.687Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:tiko-subava-d4",
+    "content_slug": "tiko-subava-d4",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01806",
+      "decision_id": "D-U-01806-002",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T15:33:50.687Z",
+      "deadline": "2026-10-04T15:33:50.687Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01806-001",
+      "viewer_id": "U-01806",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T11:11:40.519Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T11:11:40.519Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0921",
+        "title:T0932",
+        "title:T0933",
+        "title:T0946",
+        "title:T0955",
+        "title:T0961",
+        "title:T0964",
+        "title:T0966",
+        "title:T0915",
+        "title:T0916",
+        "title:T0917",
+        "title:T0918",
+        "title:T0919",
+        "title:T0922",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0920",
+        "title:T0923",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:126c9d00-f07f-4c0f-8808-a05dc0998393:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=tiko-subava-d4",
+        "state:days_since_play=3.8"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T11:11:40.519000+00:00",
+        "Viewer left series tiko-subava-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01806-002",
+      "viewer_id": "U-01806",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:33:50.687Z",
+        "event_age_s": 21278
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:33:50.687Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:2f18071d-fac3-45b7-b164-70fd726a6508:event_age=21278s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=tiko-subava-d4",
+        "state:days_since_play=4.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T15:33:50.687000+00:00",
+        "Viewer left series tiko-subava-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

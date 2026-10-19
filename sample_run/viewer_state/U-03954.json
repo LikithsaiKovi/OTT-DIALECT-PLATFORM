@@ -1,0 +1,225 @@
+{
+  "user_id": "U-03954",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-05-17T15:49:39.541Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-05-17T15:49:39.541Z",
+      "freshness_s": 11821739.3
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:a90dbb47-e9d2-4617-b7bf-00ab300a8122:subscription_renewed",
+      "timestamp": "2026-09-06T07:06:50.023Z",
+      "freshness_s": 2176308.9
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:47:02.976Z",
+      "freshness_s": 168695.9
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:47:02.976Z",
+      "freshness_s": 168695.9
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:47:02.976Z",
+      "freshness_s": 168695.9
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T03:34:40.656Z",
+      "freshness_s": 201838.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-24T12:43:19.980Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-24T12:43:19.980Z",
+      "freshness_s": 600918.9
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 3,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-24T10:12:38.124Z",
+      "freshness_s": 609960.8
+    }
+  },
+  "watch_progress": {
+    "kova-sako-d5": "kova-sako-d5-s1e2",
+    "haya-kani-d5": "haya-kani-d5-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Family",
+    "Romance"
+  ],
+  "sessions_count": 12,
+  "play_sessions_count": 7,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-05",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-20",
+    "2026-09-24"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T11:38:38.885Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:kova-sako-d5",
+    "content_slug": "kova-sako-d5",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03954",
+      "decision_id": "D-U-03954-002",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T11:38:38.885Z",
+      "deadline": "2026-10-04T11:38:38.885Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03954-001",
+      "viewer_id": "U-03954",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-09-30T23:31:46.382Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-03T23:31:46.382Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:9a9c29ca-f05a-4f88-b7f3-6ff2555f757c:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=kova-sako-d5",
+        "state:days_since_play=6.5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-09-30T23:31:46.382000+00:00",
+        "Viewer left series kova-sako-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-03954-002",
+      "viewer_id": "U-03954",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T11:38:38.885Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T11:38:38.885Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:9a0b781f-fabf-45ee-9a2a-34191bea4806:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=kova-sako-d5",
+        "state:days_since_play=7.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-10-01T11:38:38.885000+00:00",
+        "Viewer left series kova-sako-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

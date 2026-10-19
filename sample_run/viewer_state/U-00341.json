@@ -1,0 +1,91 @@
+{
+  "user_id": "U-00341",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-03-12T23:49:43.972Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-03-12T23:49:43.972Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:2840e7b4-f25a-48b4-b338-39cd3809bcfa:purchase_completed",
+      "timestamp": "2026-09-29T10:34:36.845Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:56:45.163Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:56:45.163Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:56:45.163Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T15:00:11.130Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T15:00:11.130Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-27T15:02:56.856Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "dhapipa-gini-d2": "dhapipa-gini-d2-s1e1",
+    "guka-kosusa-d2": "guka-kosusa-d2-s1e1"
+  },
+  "top_genres": [
+    "Family",
+    "Romance",
+    "Devotional"
+  ],
+  "sessions_count": 12,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-05",
+    "2026-09-19",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-28",
+    "2026-09-29",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-05",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

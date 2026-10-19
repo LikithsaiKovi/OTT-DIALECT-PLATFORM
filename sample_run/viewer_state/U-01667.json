@@ -1,0 +1,163 @@
+{
+  "user_id": "U-01667",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-03-30T21:29:27.405Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-03-30T21:29:27.405Z",
+      "freshness_s": 47459746.3
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:16:59.781Z",
+      "freshness_s": 156494.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:16:59.781Z",
+      "freshness_s": 156494.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:16:59.781Z",
+      "freshness_s": 156494.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:16:59.781Z",
+      "freshness_s": 156494.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T09:39:53.362Z",
+      "freshness_s": 68720.4
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T09:37:08.740Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T09:37:08.740Z",
+      "freshness_s": 68885.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-30T09:39:53.362Z",
+      "freshness_s": 68720.4
+    }
+  },
+  "watch_progress": {
+    "dhapipa-gini-d2": "dhapipa-gini-d2-s1e1"
+  },
+  "top_genres": [
+    "Family"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-16",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_paid_7d",
+    "goal_id": "G05",
+    "window_hours": 168,
+    "deadline": "2026-10-08T04:45:13.739Z",
+    "success_event": "purchase_completed",
+    "success_condition": "is_trial = false",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01667",
+      "decision_id": "D-U-01667-001",
+      "goal_id": "first_paid_7d",
+      "goal_started_at": "2026-10-01T04:45:13.739Z",
+      "deadline": "2026-10-08T04:45:13.739Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_paid_7d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01667-001",
+      "viewer_id": "U-01667",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:45:13.739Z",
+        "event_age_s": 666388
+      },
+      "goal": {
+        "id": "first_paid_7d",
+        "deadline": "2026-10-08T04:45:13.739Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:eb7a4aa8-049b-44d0-acda-75ab068701da:event_age=666388s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d2:app_setting",
+        "state:subscription_status=never",
+        "goal_rule:G05"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'never' is reliable as of 2026-10-01T04:45:13.739000+00:00",
+        "Viewer has not yet committed to premium catalog"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

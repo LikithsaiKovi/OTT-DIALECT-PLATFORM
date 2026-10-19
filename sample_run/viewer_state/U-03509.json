@@ -1,0 +1,191 @@
+{
+  "user_id": "U-03509",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-05-28T12:32:01.696Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-05-28T12:32:01.696Z",
+      "freshness_s": 10873993.3
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:f757b4ea-52b2-4f29-a756-096da1a8f6af:subscription_renewed",
+      "timestamp": "2026-09-07T15:34:58.058Z",
+      "freshness_s": 2050217.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:26:31.783Z",
+      "freshness_s": 203923.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:26:31.783Z",
+      "freshness_s": 203923.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:26:31.783Z",
+      "freshness_s": 203923.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T15:50:02.017Z",
+      "freshness_s": 321313.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T15:47:16.210Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T15:47:16.210Z",
+      "freshness_s": 321478.8
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-27T15:50:02.017Z",
+      "freshness_s": 321313.0
+    }
+  },
+  "watch_progress": {
+    "yaka-naka-d5": "yaka-naka-d5-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Thriller"
+  ],
+  "sessions_count": 8,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-06",
+    "2026-09-10",
+    "2026-09-17",
+    "2026-09-23",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-10",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T09:05:15.031Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:yaka-naka-d5",
+    "content_slug": "yaka-naka-d5",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03509",
+      "decision_id": "D-U-03509-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T09:05:15.031Z",
+      "deadline": "2026-10-04T09:05:15.031Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-022198",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T09:06:39.031Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03509-001",
+      "viewer_id": "U-03509",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T09:05:15.031Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T09:05:15.031Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1185",
+        "title:T1189",
+        "title:T1199",
+        "title:T1204",
+        "title:T1211",
+        "title:T1214",
+        "title:T1177",
+        "title:T1178",
+        "title:T1179",
+        "title:T1180",
+        "title:T1181",
+        "title:T1183",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1215",
+        "title:T1182",
+        "title:T1184",
+        "title:T1186",
+        "title:T1187",
+        "title:T1188"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:3aa04842-579f-45ba-afb8-061dcaf423bd:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=yaka-naka-d5",
+        "state:days_since_play=3.7"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-10-01T09:05:15.031000+00:00",
+        "Viewer left series yaka-naka-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

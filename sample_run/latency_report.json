@@ -1,0 +1,11 @@
+{
+  "total_decisions": 2769,
+  "actions_published": 1101,
+  "sla_seconds": 60.0,
+  "sla_violations": 0,
+  "p50_ms": 15,
+  "p90_ms": 15,
+  "p95_ms": 15,
+  "p99_ms": 31,
+  "max_ms": 61
+}

@@ -1,0 +1,173 @@
+{
+  "user_id": "U-03766",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-04-14T15:02:38.548Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-04-14T15:02:38.548Z",
+      "freshness_s": 14676241.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "events:c613abec-8c78-4591-9d39-4c44d49b39b6:subscription_lapsed",
+      "timestamp": "2026-09-02T21:31:34.510Z",
+      "freshness_s": 2470505.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:15:09.298Z",
+      "freshness_s": 156690.4
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:15:09.298Z",
+      "freshness_s": 156690.4
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:15:09.298Z",
+      "freshness_s": 156690.4
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T14:46:21.598Z",
+      "freshness_s": 75618.1
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-25T13:18:58.704Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-25T13:18:58.704Z",
+      "freshness_s": 512861.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-25T13:21:44.957Z",
+      "freshness_s": 512694.7
+    }
+  },
+  "watch_progress": {
+    "gubava-gihaya-d5": "gubava-gihaya-d5-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Comedy",
+    "Drama"
+  ],
+  "sessions_count": 15,
+  "play_sessions_count": 4,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-09",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-17",
+    "2026-09-25"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T11:46:39.660Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:gubava-gihaya-d5",
+    "content_slug": "gubava-gihaya-d5",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03766",
+      "decision_id": "D-U-03766-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T11:46:39.660Z",
+      "deadline": "2026-10-04T11:46:39.660Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-024146",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-03T16:34:07.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03766-001",
+      "viewer_id": "U-03766",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T11:46:39.660Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T11:46:39.660Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d4"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:63ec6a10-a951-4d4b-91c0-1ff138a9e178:event_age=2s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=gubava-gihaya-d5",
+        "state:days_since_play=5.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T11:46:39.660000+00:00",
+        "Viewer left series gubava-gihaya-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "user_id": "U-04906",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-10T13:28:51.087Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-10T13:28:51.087Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:70e5641f-f6fe-42eb-aaff-a7df8b49fa6c:purchase_completed",
+      "timestamp": "2026-09-10T13:33:01.726Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:33:53.817Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:33:53.817Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:33:53.817Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-18T14:06:46.168Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-17T09:28:41.429Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-17T09:28:41.429Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Romance",
+    "Comedy"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-10",
+    "2026-09-17",
+    "2026-09-18"
+  ],
+  "ist_play_days": [
+    "2026-09-17"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

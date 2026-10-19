@@ -1,0 +1,79 @@
+{
+  "user_id": "U-03474",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-25T18:28:49.298Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-25T18:28:49.298Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:7a9df992-d0a7-4884-9af3-4c4294a86a13:subscription_renewed",
+      "timestamp": "2026-09-21T22:33:56.048Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d3",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:27:46.530Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:27:46.530Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:27:46.530Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-26T12:10:11.780Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-26T11:15:12.892Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-26T11:15:12.892Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Drama",
+    "Comedy"
+  ],
+  "sessions_count": 2,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-26"
+  ],
+  "ist_play_days": [
+    "2026-09-26"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

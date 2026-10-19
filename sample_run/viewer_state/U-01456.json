@@ -1,0 +1,162 @@
+{
+  "user_id": "U-01456",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-03T23:03:31.541Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-03T23:03:31.541Z",
+      "freshness_s": 2354740.5
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:16:20.768Z",
+      "freshness_s": 201171.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:16:20.768Z",
+      "freshness_s": 201171.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:16:20.768Z",
+      "freshness_s": 201171.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:16:20.768Z",
+      "freshness_s": 201171.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T12:31:41.938Z",
+      "freshness_s": 319050.1
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-15T07:44:00.975Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-15T07:44:00.975Z",
+      "freshness_s": 1373111.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-15T07:47:40.474Z",
+      "freshness_s": 1372891.5
+    }
+  },
+  "watch_progress": {
+    "yatite-roloda-d3": "yatite-roloda-d3-s1e1"
+  },
+  "top_genres": [
+    "Romance"
+  ],
+  "sessions_count": 4,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-04",
+    "2026-09-15",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-15"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T05:09:12.011Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:yatite-roloda-d3",
+    "content_slug": "yatite-roloda-d3",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01456",
+      "decision_id": "D-U-01456-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T05:09:12.011Z",
+      "deadline": "2026-10-04T05:09:12.011Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-010007",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-02T15:34:09.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01456-001",
+      "viewer_id": "U-01456",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T05:09:12.011Z",
+        "event_age_s": 42575
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T05:09:12.011Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:34a94497-c8f9-451c-b6f1-53b168ec3d80:event_age=42575s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d3:app_setting",
+        "state:watch_progress=yatite-roloda-d3",
+        "state:days_since_play=15.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'never' is reliable as of 2026-10-01T05:09:12.011000+00:00",
+        "Viewer left series yatite-roloda-d3 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

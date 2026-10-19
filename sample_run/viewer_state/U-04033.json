@@ -1,0 +1,297 @@
+{
+  "user_id": "U-04033",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-12-02T20:59:47.582Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-12-02T20:59:47.582Z",
+      "freshness_s": 57694682.6
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:01:59.124Z",
+      "freshness_s": 177351.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:01:59.124Z",
+      "freshness_s": 177351.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:01:59.124Z",
+      "freshness_s": 177351.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:01:59.124Z",
+      "freshness_s": 177351.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T18:35:55.969Z",
+      "freshness_s": 333714.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-14T17:15:19.391Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-14T17:15:19.391Z",
+      "freshness_s": 1461750.8
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Romance",
+    "Devotional",
+    "Thriller"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-09",
+    "2026-09-14",
+    "2026-09-20",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-03",
+    "2026-09-14"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_full_episode_3d",
+    "goal_id": "G02",
+    "window_hours": 72,
+    "deadline": "2026-10-04T15:17:50.207Z",
+    "success_event": "episode_completed",
+    "success_condition": "any episode",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 4,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04033",
+      "decision_id": "D-U-04033-003",
+      "goal_id": "first_full_episode_3d",
+      "goal_started_at": "2026-10-01T15:17:50.207Z",
+      "deadline": "2026-10-04T15:17:50.207Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_full_episode_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04033-001",
+      "viewer_id": "U-04033",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T07:28:11.662Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-04T07:28:11.662Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:91da0b6b-7c54-49f3-8931-aaa1614f1320:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d2:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'never' is reliable as of 2026-10-01T07:28:11.662000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-04033-002",
+      "viewer_id": "U-04033",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T11:31:32.483Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-04T11:31:32.483Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:72eee050-f206-42ad-b7e4-a7ec405b8cc6:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d2:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'never' is reliable as of 2026-10-01T11:31:32.483000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-04033-003",
+      "viewer_id": "U-04033",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:17:50.207Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-04T15:17:50.207Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:d83aaffc-6f40-4ce6-9c06-e4aa3fb38af7:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d2:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:17:50.207000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-04033-004",
+      "viewer_id": "U-04033",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:24:19.640Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "none",
+        "deadline": null
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "none",
+        "source": "idempotency_cache",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 1.0,
+      "confidence_reason": "Trigger event already processed; strictly idempotent",
+      "evidence": [
+        "trigger_seen:d83aaffc-6f40-4ce6-9c06-e4aa3fb38af7"
+      ],
+      "assumptions": [
+        "Duplicate delivery over network"
+      ],
+      "checks": {
+        "passed": [
+          "idempotency"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "duplicate_trigger_idempotency",
+      "fallback_used": false,
+      "model_calls": 0,
+      "tool_calls": 0,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

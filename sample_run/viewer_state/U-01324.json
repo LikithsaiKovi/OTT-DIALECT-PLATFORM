@@ -1,0 +1,177 @@
+{
+  "user_id": "U-01324",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-07-24T06:46:49.012Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-07-24T06:46:49.012Z",
+      "freshness_s": 37519240.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:5f891929-3c67-4646-8069-f2137cee070e:subscription_renewed",
+      "timestamp": "2026-09-23T23:07:19.891Z",
+      "freshness_s": 654009.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:29:12.871Z",
+      "freshness_s": 166696.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:29:12.871Z",
+      "freshness_s": 166696.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:29:12.871Z",
+      "freshness_s": 166696.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T17:01:42.033Z",
+      "freshness_s": 71147.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-25T05:11:11.322Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-25T05:11:11.322Z",
+      "freshness_s": 545777.7
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-25T07:11:43.963Z",
+      "freshness_s": 538545.1
+    }
+  },
+  "watch_progress": {
+    "rigu-d5": "rigu-d5-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Thriller",
+    "Drama"
+  ],
+  "sessions_count": 14,
+  "play_sessions_count": 5,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-14",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-23",
+    "2026-09-25",
+    "2026-09-28",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-21",
+    "2026-09-23",
+    "2026-09-25"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T12:47:29.039Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:rigu-d5",
+    "content_slug": "rigu-d5",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01324",
+      "decision_id": "D-U-01324-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T12:47:29.039Z",
+      "deadline": "2026-10-04T12:47:29.039Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01324-001",
+      "viewer_id": "U-01324",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T12:47:29.039Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T12:47:29.039Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:81013c3f-38fa-4c72-b84e-096fb81a23e6:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=rigu-d5",
+        "state:days_since_play=6.3"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-10-01T12:47:29.039000+00:00",
+        "Viewer left series rigu-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "user_id": "U-03021",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-03-16T21:11:06.884Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-03-16T21:11:06.884Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:112f9084-51c5-4ef8-9671-50412db201bd:subscription_renewed",
+      "timestamp": "2026-09-21T22:16:13.593Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:25:32.649Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:25:32.649Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:25:32.649Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-24T15:22:51.407Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-22T03:02:25.130Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-22T03:02:25.130Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Devotional",
+    "Comedy",
+    "Family"
+  ],
+  "sessions_count": 15,
+  "play_sessions_count": 3,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-24"
+  ],
+  "ist_play_days": [
+    "2026-09-10",
+    "2026-09-21",
+    "2026-09-22"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

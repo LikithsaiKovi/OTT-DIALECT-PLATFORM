@@ -1,0 +1,316 @@
+{
+  "user_id": "U-03908",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-06-01T09:45:21.134Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-06-01T09:45:21.134Z",
+      "freshness_s": 10565852.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:40:09.462Z",
+      "freshness_s": 194563.8
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:40:09.462Z",
+      "freshness_s": 194563.8
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:40:09.462Z",
+      "freshness_s": 194563.8
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:40:09.462Z",
+      "freshness_s": 194563.8
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T15:37:03.472Z",
+      "freshness_s": 349549.8
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-20T10:31:19.647Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-20T10:31:19.647Z",
+      "freshness_s": 972693.6
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-20T12:21:44.549Z",
+      "freshness_s": 966068.7
+    }
+  },
+  "watch_progress": {
+    "rava-baya-d1": "rava-baya-d1-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Thriller"
+  ],
+  "sessions_count": 10,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-16",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-20"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T16:42:53.242Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:rava-baya-d1",
+    "content_slug": "rava-baya-d1",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 4,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03908",
+      "decision_id": "D-U-03908-004",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T16:42:53.242Z",
+      "deadline": "2026-10-04T16:42:53.242Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-024899",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-04T16:25:53.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03908-001",
+      "viewer_id": "U-03908",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T02:53:55.778Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T02:53:55.778Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:921e064e-cb2d-46a6-8159-e262d6524557:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=rava-baya-d1",
+        "state:days_since_play=10.7"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T02:53:55.778000+00:00",
+        "Viewer left series rava-baya-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-03908-002",
+      "viewer_id": "U-03908",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T05:38:12.908Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T05:38:12.908Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:bac1c903-00e0-488c-a265-07097ce5a239:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=rava-baya-d1",
+        "state:days_since_play=10.8"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T05:38:12.908000+00:00",
+        "Viewer left series rava-baya-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-03908-003",
+      "viewer_id": "U-03908",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T07:39:34.549Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T07:39:34.549Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:5b6364cf-990b-4bbb-9f9f-3b42039c7920:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=rava-baya-d1",
+        "state:days_since_play=10.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T07:39:34.549000+00:00",
+        "Viewer left series rava-baya-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-03908-004",
+      "viewer_id": "U-03908",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:42:53.242Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T16:42:53.242Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:8a0f39c2-7ed1-4c29-82cb-6772f84e6798:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=rava-baya-d1",
+        "state:days_since_play=11.3"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T16:42:53.242000+00:00",
+        "Viewer left series rava-baya-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

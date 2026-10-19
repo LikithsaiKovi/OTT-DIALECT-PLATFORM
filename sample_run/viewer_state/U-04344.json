@@ -1,0 +1,326 @@
+{
+  "user_id": "U-04344",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-04-02T09:32:24.089Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-04-02T09:32:24.089Z",
+      "freshness_s": 47283485.3
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:18:05.287Z",
+      "freshness_s": 192744.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:18:05.287Z",
+      "freshness_s": 192744.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:18:05.287Z",
+      "freshness_s": 192744.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:18:05.287Z",
+      "freshness_s": 192744.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T15:47:40.453Z",
+      "freshness_s": 345769.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-25T15:01:51.930Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-25T15:01:51.930Z",
+      "freshness_s": 521317.5
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-25T16:55:00.681Z",
+      "freshness_s": 514528.7
+    }
+  },
+  "watch_progress": {
+    "palava-raroti-d1": "palava-raroti-d1-s1e1"
+  },
+  "top_genres": [
+    "Comedy",
+    "Thriller",
+    "Drama"
+  ],
+  "sessions_count": 9,
+  "play_sessions_count": 4,
+  "ist_app_open_days": [
+    "2026-09-10",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-17",
+    "2026-09-25",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-10",
+    "2026-09-14",
+    "2026-09-17",
+    "2026-09-25"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T15:50:29.428Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:palava-raroti-d1",
+    "content_slug": "palava-raroti-d1",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 4,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04344",
+      "decision_id": "D-U-04344-004",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T15:50:29.428Z",
+      "deadline": "2026-10-04T15:50:29.428Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-027365",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T15:51:02.931Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04344-001",
+      "viewer_id": "U-04344",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-09-30T20:32:29.042Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-03T20:32:29.042Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d5"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:025a4030-195b-4450-bad8-038f38fc88f9:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=palava-raroti-d1",
+        "state:days_since_play=5.2"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-09-30T20:32:29.042000+00:00",
+        "Viewer left series palava-raroti-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-04344-002",
+      "viewer_id": "U-04344",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T11:37:24.882Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T11:37:24.882Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d5"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:51ef5884-f3b2-45fa-a5c8-775efe097e04:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=palava-raroti-d1",
+        "state:days_since_play=5.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T11:37:24.882000+00:00",
+        "Viewer left series palava-raroti-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-04344-003",
+      "viewer_id": "U-04344",
+      "trigger": {
+        "event": "login_success",
+        "received_at": "2026-10-01T15:50:26.931Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:50:26.931Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d5"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:f57b1e9d-124b-456e-8c20-0eab46c46bdc:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=palava-raroti-d1",
+        "state:days_since_play=6.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:50:26.931000+00:00",
+        "Viewer left series palava-raroti-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-04344-004",
+      "viewer_id": "U-04344",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:50:29.428Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:50:29.428Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d5"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:6ba10a3c-f878-4370-bc81-c4aebd62c6e7:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=palava-raroti-d1",
+        "state:days_since_play=6.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:50:29.428000+00:00",
+        "Viewer left series palava-raroti-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

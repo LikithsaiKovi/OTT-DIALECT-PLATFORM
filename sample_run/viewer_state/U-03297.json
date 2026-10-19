@@ -1,0 +1,228 @@
+{
+  "user_id": "U-03297",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-06-05T09:41:26.540Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-06-05T09:41:26.540Z",
+      "freshness_s": 10178212.2
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "events:f7b24936-8b73-4fbe-ba4e-2b76a1b575e7:subscription_lapsed",
+      "timestamp": "2026-09-27T01:48:46.910Z",
+      "freshness_s": 356971.8
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d3",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:32:34.453Z",
+      "freshness_s": 138344.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:32:34.453Z",
+      "freshness_s": 138344.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T14:32:34.453Z",
+      "freshness_s": 138344.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T11:37:39.539Z",
+      "freshness_s": 62439.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T11:36:41.237Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T11:36:41.237Z",
+      "freshness_s": 62497.5
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-23T15:19:50.124Z",
+      "freshness_s": 653908.6
+    }
+  },
+  "watch_progress": {
+    "yatite-roloda-d3": "yatite-roloda-d3-s1e2"
+  },
+  "top_genres": [
+    "Romance",
+    "Family",
+    "Thriller"
+  ],
+  "sessions_count": 18,
+  "play_sessions_count": 6,
+  "ist_app_open_days": [
+    "2026-09-04",
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-11",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-28",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-06",
+    "2026-09-11",
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "reactivate_lapsed_14d",
+    "goal_id": "G06",
+    "window_hours": 336,
+    "deadline": "2026-10-15T04:58:18.690Z",
+    "success_event": "purchase_completed",
+    "success_condition": "any paid plan",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03297",
+      "decision_id": "D-U-03297-002",
+      "goal_id": "reactivate_lapsed_14d",
+      "goal_started_at": "2026-10-01T04:58:18.690Z",
+      "deadline": "2026-10-15T04:58:18.690Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal reactivate_lapsed_14d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03297-001",
+      "viewer_id": "U-03297",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:47:38.767Z",
+        "event_age_s": 96978
+      },
+      "goal": {
+        "id": "reactivate_lapsed_14d",
+        "deadline": "2026-10-15T04:47:38.767Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:72f30bc5-b2a2-4412-9d14-052fe5408b2e:event_age=96978s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d3:app_setting",
+        "state:subscription_status=lapsed",
+        "goal_rule:G06"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T04:47:38.767000+00:00",
+        "Viewer subscription lapsed recently (<30d) and responds to reactivation value"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 16,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-03297-002",
+      "viewer_id": "U-03297",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:58:18.690Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "reactivate_lapsed_14d",
+        "deadline": "2026-10-15T04:58:18.690Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:b0fb5fcb-bfc3-49d1-9676-bcd1b809b326:event_age=0s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d3:app_setting",
+        "state:subscription_status=lapsed",
+        "goal_rule:G06"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T04:58:18.690000+00:00",
+        "Viewer subscription lapsed recently (<30d) and responds to reactivation value"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

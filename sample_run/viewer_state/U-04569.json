@@ -1,0 +1,74 @@
+{
+  "user_id": "U-04569",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T17:43:00.327Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-29T17:40:59.933Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-29T17:40:59.933Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 4,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-29T08:30:18.072Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:826fd571-83f5-484a-b338-b2756d4727b6:subscription_renewed",
+      "timestamp": "2026-09-08T05:55:46.536Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "bagi-baya-d4": "bagi-baya-d4-s1e3",
+    "loba-d4": "loba-d4-s1e1"
+  },
+  "top_genres": [
+    "Romance",
+    "Action",
+    "Drama"
+  ],
+  "sessions_count": 16,
+  "play_sessions_count": 9,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-08",
+    "2026-09-11",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-19",
+    "2026-09-21",
+    "2026-09-29"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

@@ -1,0 +1,58 @@
+{
+  "user_id": "U-01165",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T14:58:05.371Z",
+      "freshness_s": 0.0
+    },
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-30T01:11:53.747Z",
+      "source": "events:signup_completed",
+      "timestamp": "2026-09-30T01:11:53.747Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T01:14:49.194Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T01:14:49.194Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:54add02d-652b-4eea-adb1-2fdbbb6a8fcc:purchase_completed",
+      "timestamp": "2026-09-30T01:17:51.574Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Drama",
+    "Thriller"
+  ],
+  "sessions_count": 2,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

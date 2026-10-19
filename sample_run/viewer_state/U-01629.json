@@ -1,0 +1,198 @@
+{
+  "user_id": "U-01629",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-06-16T19:27:19.323Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-06-16T19:27:19.323Z",
+      "freshness_s": 40762309.7
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:154adf29-2bb1-4977-a61a-d9347208e08c:subscription_renewed",
+      "timestamp": "2026-09-28T06:40:29.193Z",
+      "freshness_s": 286719.8
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T04:20:22.756Z",
+      "freshness_s": 208726.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T04:20:22.756Z",
+      "freshness_s": 208726.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T04:20:22.756Z",
+      "freshness_s": 208726.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d6",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T06:40:29.193Z",
+      "freshness_s": 286719.8
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T07:54:14.791Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T07:54:14.791Z",
+      "freshness_s": 368694.2
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-04T19:45:34.401Z",
+      "freshness_s": 2313214.6
+    }
+  },
+  "watch_progress": {
+    "rasuya-moni-d6": "rasuya-moni-d6-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Devotional",
+    "Comedy"
+  ],
+  "sessions_count": 9,
+  "play_sessions_count": 5,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-09",
+    "2026-09-16",
+    "2026-09-18",
+    "2026-09-24",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-09",
+    "2026-09-16",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T14:19:08.988Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:rasuya-moni-d6",
+    "content_slug": "rasuya-moni-d6",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01629",
+      "decision_id": "D-U-01629-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T14:19:08.988Z",
+      "deadline": "2026-10-04T14:19:08.988Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-010884",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T14:22:29.988Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01629-001",
+      "viewer_id": "U-01629",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:19:08.988Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T14:19:08.988Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d6",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d2"
+        ]
+      },
+      "content": [
+        "title:T1387",
+        "title:T1395",
+        "title:T1400",
+        "title:T1402",
+        "title:T1413",
+        "title:T1417",
+        "title:T1389",
+        "title:T1390",
+        "title:T1391",
+        "title:T1392",
+        "title:T1393",
+        "title:T1421",
+        "title:T1456",
+        "title:T1461",
+        "title:T1468",
+        "title:T1472",
+        "title:T1394",
+        "title:T1396",
+        "title:T1397",
+        "title:T1398",
+        "title:T1399"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d6 matching user history",
+      "evidence": [
+        "trigger:55472681-9c30-41aa-b8ec-467c315e5fe0:event_age=0s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d6:app_setting",
+        "state:watch_progress=rasuya-moni-d6",
+        "state:days_since_play=4.3"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d6",
+        "Subscription status 'active' is reliable as of 2026-10-01T14:19:08.988000+00:00",
+        "Viewer left series rasuya-moni-d6 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "user_id": "U-01775",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-08-18T14:13:05.795Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-08-18T14:13:05.795Z",
+      "freshness_s": 3800167.9
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "event:9aa7864f-3f2d-4caa-95a6-88ce0e1f203e:purchase_completed",
+      "timestamp": "2026-10-01T10:36:57.707Z",
+      "freshness_s": 11536.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:44:30.895Z",
+      "freshness_s": 187482.8
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:44:30.895Z",
+      "freshness_s": 187482.8
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:44:30.895Z",
+      "freshness_s": 187482.8
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T07:58:21.574Z",
+      "freshness_s": 280252.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-23T12:43:06.207Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-23T12:43:06.207Z",
+      "freshness_s": 695167.5
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 5,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-23T12:46:46.002Z",
+      "freshness_s": 694947.7
+    }
+  },
+  "watch_progress": {
+    "rava-baya-d1": "rava-baya-d1-s1e1",
+    "hama-chudibha-d1": "hama-chudibha-d1-s1e2"
+  },
+  "top_genres": [
+    "Thriller",
+    "Drama",
+    "Comedy"
+  ],
+  "sessions_count": 19,
+  "play_sessions_count": 6,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-12",
+    "2026-09-16",
+    "2026-09-20",
+    "2026-09-23"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T13:49:13.737Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:rava-baya-d1",
+    "content_slug": "rava-baya-d1",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 3,
+  "actions_count": 2,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01775",
+      "decision_id": "D-U-01775-003",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T13:49:13.737Z",
+      "deadline": "2026-10-04T13:49:13.737Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-011810",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-02T03:43:19.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01775-001",
+      "viewer_id": "U-01775",
+      "trigger": {
+        "event": "login_success",
+        "received_at": "2026-10-01T10:34:43.379Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T10:34:43.379Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0004",
+        "title:T0011",
+        "title:T0018",
+        "title:T0023",
+        "title:T0026",
+        "title:T0027",
+        "title:T0003",
+        "title:T0005",
+        "title:T0006",
+        "title:T0007",
+        "title:T0008",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0046",
+        "title:T0047",
+        "title:T0009",
+        "title:T0010",
+        "title:T0012",
+        "title:T0013",
+        "title:T0014"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:99636863-de9a-4a39-a18c-ee50051a4d4d:event_age=0s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:watch_progress=rava-baya-d1",
+        "state:days_since_play=7.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T10:34:43.379000+00:00",
+        "Viewer left series rava-baya-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01775-002",
+      "viewer_id": "U-01775",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T10:34:47.112Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T10:34:47.112Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0004",
+        "title:T0011",
+        "title:T0018",
+        "title:T0023",
+        "title:T0026",
+        "title:T0027",
+        "title:T0003",
+        "title:T0005",
+        "title:T0006",
+        "title:T0007",
+        "title:T0008",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0046",
+        "title:T0047",
+        "title:T0009",
+        "title:T0010",
+        "title:T0012",
+        "title:T0013",
+        "title:T0014"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:d46c2b65-f48e-43ce-be2a-3b3eb93ec6f2:event_age=1s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:watch_progress=rava-baya-d1",
+        "state:days_since_play=7.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T10:34:47.112000+00:00",
+        "Viewer left series rava-baya-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01775-003",
+      "viewer_id": "U-01775",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T13:49:13.737Z",
+        "event_age_s": 742589
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T13:49:13.737Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:d50fc790-950d-45bc-8d8f-7ed7efd5080b:event_age=742589s",
+        "subscription_status:active:event:9aa7864f-3f2d-4caa-95a6-88ce0e1f203e:purchase_completed",
+        "dialect:d1:app_setting",
+        "state:watch_progress=rava-baya-d1",
+        "state:days_since_play=8.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T13:49:13.737000+00:00",
+        "Viewer left series rava-baya-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "user_id": "U-01422",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T06:57:30.749Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-24T17:31:50.680Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-24T17:31:50.680Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-24T17:35:30.842Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "kova-sako-d5": "kova-sako-d5-s1e2"
+  },
+  "top_genres": [
+    "Family",
+    "Devotional"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-13",
+    "2026-09-17",
+    "2026-09-24",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-13",
+    "2026-09-24"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

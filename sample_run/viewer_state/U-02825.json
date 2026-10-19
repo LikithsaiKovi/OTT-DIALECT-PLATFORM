@@ -1,0 +1,161 @@
+{
+  "user_id": "U-02825",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-10-17T06:33:56.556Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-10-17T06:33:56.556Z",
+      "freshness_s": 30112245.2
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:17:03.827Z",
+      "freshness_s": 146857.9
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:17:03.827Z",
+      "freshness_s": 146857.9
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:17:03.827Z",
+      "freshness_s": 146857.9
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:17:03.827Z",
+      "freshness_s": 146857.9
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-22T04:51:56.358Z",
+      "freshness_s": 742365.4
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [],
+  "sessions_count": 4,
+  "play_sessions_count": 0,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-05",
+    "2026-09-10",
+    "2026-09-22"
+  ],
+  "ist_play_days": [],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_full_episode_3d",
+    "goal_id": "G02",
+    "window_hours": 72,
+    "deadline": "2026-10-03T19:04:41.737Z",
+    "success_event": "episode_completed",
+    "success_condition": "any episode",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-02825",
+      "decision_id": "D-U-02825-001",
+      "goal_id": "first_full_episode_3d",
+      "goal_started_at": "2026-09-30T19:04:41.737Z",
+      "deadline": "2026-10-03T19:04:41.737Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-017725",
+      "attributed_event": "episode_completed",
+      "attributed_at": "2026-10-03T16:22:50.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_full_episode_3d -> SUCCEEDED (attributed to episode_completed)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-02825-001",
+      "viewer_id": "U-02825",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-09-30T19:04:41.737Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-03T19:04:41.737Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0001",
+        "title:T0003",
+        "title:T0004",
+        "title:T0005",
+        "title:T0006",
+        "title:T0007",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0046",
+        "title:T0047",
+        "title:T0008",
+        "title:T0009",
+        "title:T0010",
+        "title:T0011",
+        "title:T0012"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:d3336a57-97db-43cb-92eb-5dc1e6690578:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-09-30T19:04:41.737000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

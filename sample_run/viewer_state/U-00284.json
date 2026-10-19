@@ -1,0 +1,496 @@
+{
+  "user_id": "U-00284",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-02-11T18:08:08.074Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-02-11T18:08:08.074Z",
+      "freshness_s": 51575719.9
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:1aaae7b9-e0c8-4258-b5fc-99c3d93187fe:subscription_renewed",
+      "timestamp": "2026-09-25T17:12:07.267Z",
+      "freshness_s": 516680.7
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:42:37.975Z",
+      "freshness_s": 212450.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:42:37.975Z",
+      "freshness_s": 212450.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:42:37.975Z",
+      "freshness_s": 212450.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T00:36:12.090Z",
+      "freshness_s": 317235.9
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-06T17:02:10.555Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-06T17:02:10.555Z",
+      "freshness_s": 2158877.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-06T18:38:47.552Z",
+      "freshness_s": 2153080.4
+    }
+  },
+  "watch_progress": {
+    "tidaka-koni-d4": "tidaka-koni-d4-s1e1"
+  },
+  "top_genres": [
+    "Romance",
+    "Crime",
+    "Action"
+  ],
+  "sessions_count": 11,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-06",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-14",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-25",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-06"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T16:43:27.957Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:tidaka-koni-d4",
+    "content_slug": "tidaka-koni-d4",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 7,
+  "actions_count": 6,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00284",
+      "decision_id": "D-U-00284-007",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T16:43:27.957Z",
+      "deadline": "2026-10-04T16:43:27.957Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-001989",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-04T16:09:53.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00284-003",
+      "viewer_id": "U-00284",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T08:47:26.395Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T08:47:26.395Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0916",
+        "title:T0921",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0915",
+        "title:T0917",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0927",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:2a5e85a3-205d-4567-82dd-7f53337c3687:event_age=0s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=tidaka-koni-d4",
+        "state:days_since_play=24.7"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T08:47:26.395000+00:00",
+        "Viewer left series tidaka-koni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-00284-004",
+      "viewer_id": "U-00284",
+      "trigger": {
+        "event": "login_success",
+        "received_at": "2026-10-01T13:09:50.305Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T13:09:50.305Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0916",
+        "title:T0921",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0915",
+        "title:T0917",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0927",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:63b6ad79-1293-40ea-9412-3ed357fa645a:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=tidaka-koni-d4",
+        "state:days_since_play=24.8"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T13:09:50.305000+00:00",
+        "Viewer left series tidaka-koni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-00284-005",
+      "viewer_id": "U-00284",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T13:09:56.190Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T13:09:56.190Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0916",
+        "title:T0921",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0915",
+        "title:T0917",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0927",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:1b9510c1-61e7-4247-8f27-7010e467d884:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=tidaka-koni-d4",
+        "state:days_since_play=24.8"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T13:09:56.190000+00:00",
+        "Viewer left series tidaka-koni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-00284-006",
+      "viewer_id": "U-00284",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:41:09.217Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:41:09.217Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0916",
+        "title:T0921",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0915",
+        "title:T0917",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0927",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:0c090490-4734-4edc-9364-883cd7397005:event_age=0s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=tidaka-koni-d4",
+        "state:days_since_play=24.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T15:41:09.217000+00:00",
+        "Viewer left series tidaka-koni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 16,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-00284-007",
+      "viewer_id": "U-00284",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:43:27.957Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T16:43:27.957Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0916",
+        "title:T0921",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0915",
+        "title:T0917",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0927",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:54a79a87-1cc0-40bf-9f68-a5a71c398043:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=tidaka-koni-d4",
+        "state:days_since_play=25.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T16:43:27.957000+00:00",
+        "Viewer left series tidaka-koni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

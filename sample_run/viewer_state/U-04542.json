@@ -1,0 +1,410 @@
+{
+  "user_id": "U-04542",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-10-16T01:55:55.043Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-10-16T01:55:55.043Z",
+      "freshness_s": 61829510.2
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:10:46.308Z",
+      "freshness_s": 200218.9
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:10:46.308Z",
+      "freshness_s": 200218.9
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:10:46.308Z",
+      "freshness_s": 200218.9
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:10:46.308Z",
+      "freshness_s": 200218.9
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-21T11:59:32.215Z",
+      "freshness_s": 881293.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-03T03:58:09.900Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-03T03:58:09.900Z",
+      "freshness_s": 2465375.3
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-03T04:26:41.407Z",
+      "freshness_s": 2463663.8
+    }
+  },
+  "watch_progress": {
+    "kavadha-rilo-d5": "kavadha-rilo-d5-s1e1"
+  },
+  "top_genres": [
+    "Family",
+    "Action"
+  ],
+  "sessions_count": 7,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-21"
+  ],
+  "ist_play_days": [
+    "2026-09-03"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T16:47:45.225Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:kavadha-rilo-d5",
+    "content_slug": "kavadha-rilo-d5",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 4,
+  "actions_count": 4,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04542",
+      "decision_id": "D-U-04542-004",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T16:47:45.225Z",
+      "deadline": "2026-10-04T16:47:45.225Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-028440",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-03T06:49:40.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04542-001",
+      "viewer_id": "U-04542",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T03:47:25.777Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T03:47:25.777Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1180",
+        "title:T1206",
+        "title:T1181",
+        "title:T1184",
+        "title:T1186",
+        "title:T1191",
+        "title:T1208",
+        "title:T1177",
+        "title:T1178",
+        "title:T1179",
+        "title:T1182",
+        "title:T1183",
+        "title:T1185",
+        "title:T1189",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1187",
+        "title:T1188",
+        "title:T1190",
+        "title:T1193",
+        "title:T1194"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:86ce2aaa-3c2f-4962-866f-35a2ec22925c:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=kavadha-rilo-d5",
+        "state:days_since_play=28.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T03:47:25.777000+00:00",
+        "Viewer left series kavadha-rilo-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-04542-002",
+      "viewer_id": "U-04542",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T06:38:06.530Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T06:38:06.530Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1180",
+        "title:T1206",
+        "title:T1181",
+        "title:T1184",
+        "title:T1186",
+        "title:T1191",
+        "title:T1208",
+        "title:T1177",
+        "title:T1178",
+        "title:T1179",
+        "title:T1182",
+        "title:T1183",
+        "title:T1185",
+        "title:T1189",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1187",
+        "title:T1188",
+        "title:T1190",
+        "title:T1193",
+        "title:T1194"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:9125a46e-cbdf-47de-91a3-9ec8280581b1:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=kavadha-rilo-d5",
+        "state:days_since_play=28.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T06:38:06.530000+00:00",
+        "Viewer left series kavadha-rilo-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-04542-003",
+      "viewer_id": "U-04542",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T13:59:27.683Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T13:59:27.683Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1180",
+        "title:T1206",
+        "title:T1181",
+        "title:T1184",
+        "title:T1186",
+        "title:T1191",
+        "title:T1208",
+        "title:T1177",
+        "title:T1178",
+        "title:T1179",
+        "title:T1182",
+        "title:T1183",
+        "title:T1185",
+        "title:T1189",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1187",
+        "title:T1188",
+        "title:T1190",
+        "title:T1193",
+        "title:T1194"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:b5c84df7-be32-4472-9573-2fec93fabdce:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=kavadha-rilo-d5",
+        "state:days_since_play=28.4"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T13:59:27.683000+00:00",
+        "Viewer left series kavadha-rilo-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-04542-004",
+      "viewer_id": "U-04542",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:47:45.225Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T16:47:45.225Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1180",
+        "title:T1206",
+        "title:T1181",
+        "title:T1184",
+        "title:T1186",
+        "title:T1191",
+        "title:T1208",
+        "title:T1177",
+        "title:T1178",
+        "title:T1179",
+        "title:T1182",
+        "title:T1183",
+        "title:T1185",
+        "title:T1189",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1187",
+        "title:T1188",
+        "title:T1190",
+        "title:T1193",
+        "title:T1194"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:a29afa0f-f651-46de-90ba-fe7ac33ebf79:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=kavadha-rilo-d5",
+        "state:days_since_play=28.5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T16:47:45.225000+00:00",
+        "Viewer left series kavadha-rilo-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

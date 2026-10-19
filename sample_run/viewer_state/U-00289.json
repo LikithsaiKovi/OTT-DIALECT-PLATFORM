@@ -1,0 +1,194 @@
+{
+  "user_id": "U-00289",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-06-20T13:57:14.372Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-06-20T13:57:14.372Z",
+      "freshness_s": 8874318.3
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:ce02bdf7-3aa1-49aa-8aa4-cf464a098572:subscription_renewed",
+      "timestamp": "2026-09-27T05:16:40.445Z",
+      "freshness_s": 351952.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:14:47.472Z",
+      "freshness_s": 168465.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:14:47.472Z",
+      "freshness_s": 168465.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:14:47.472Z",
+      "freshness_s": 168465.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T07:31:22.870Z",
+      "freshness_s": 257469.8
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-21T12:34:02.225Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-21T12:34:02.225Z",
+      "freshness_s": 844110.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-06T07:36:58.113Z",
+      "freshness_s": 2157934.5
+    }
+  },
+  "watch_progress": {
+    "dhapipa-gini-d2": "dhapipa-gini-d2-s1e1"
+  },
+  "top_genres": [
+    "Family",
+    "Romance",
+    "Devotional"
+  ],
+  "sessions_count": 11,
+  "play_sessions_count": 3,
+  "ist_app_open_days": [
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-21",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-06",
+    "2026-09-21"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T07:02:32.641Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:dhapipa-gini-d2",
+    "content_slug": "dhapipa-gini-d2",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00289",
+      "decision_id": "D-U-00289-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T07:02:32.641Z",
+      "deadline": "2026-10-04T07:02:32.641Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00289-001",
+      "viewer_id": "U-00289",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T07:02:32.641Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T07:02:32.641Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0521",
+        "title:T0523",
+        "title:T0536",
+        "title:T0538",
+        "title:T0548",
+        "title:T0551",
+        "title:T0555",
+        "title:T0524",
+        "title:T0525",
+        "title:T0526",
+        "title:T0528",
+        "title:T0529",
+        "title:T0530",
+        "title:T0535",
+        "title:T0545",
+        "title:T0552",
+        "title:T0564",
+        "title:T0531",
+        "title:T0533",
+        "title:T0534",
+        "title:T0537",
+        "title:T0539"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d2 matching user history",
+      "evidence": [
+        "trigger:a8f1edab-af12-4dd1-bbce-866f709e81ac:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:watch_progress=dhapipa-gini-d2",
+        "state:days_since_play=9.8"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T07:02:32.641000+00:00",
+        "Viewer left series dhapipa-gini-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

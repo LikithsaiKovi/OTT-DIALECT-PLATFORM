@@ -1,0 +1,167 @@
+{
+  "user_id": "U-04460",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-01-04T09:12:01.127Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-01-04T09:12:01.127Z",
+      "freshness_s": 23315351.6
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "event:c9925b9d-0cb0-4093-9585-6109b95b3f10:purchase_completed",
+      "timestamp": "2026-10-01T05:42:54.597Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:47:01.704Z",
+      "freshness_s": 201251.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:47:01.704Z",
+      "freshness_s": 201251.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:47:01.704Z",
+      "freshness_s": 201251.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T06:45:30.482Z",
+      "freshness_s": 168942.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-24T11:40:31.641Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-24T11:40:31.641Z",
+      "freshness_s": 583241.1
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-24T12:06:16.775Z",
+      "freshness_s": 581696.0
+    }
+  },
+  "watch_progress": {
+    "kopibha-niya-d1": "kopibha-niya-d1-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Romance"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-13",
+    "2026-09-24",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-13",
+    "2026-09-24"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T05:41:12.735Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:kopibha-niya-d1",
+    "content_slug": "kopibha-niya-d1",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04460",
+      "decision_id": "D-U-04460-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T05:41:12.735Z",
+      "deadline": "2026-10-04T05:41:12.735Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04460-001",
+      "viewer_id": "U-04460",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T05:41:12.735Z",
+        "event_age_s": 562730
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T05:41:12.735Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d5"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:55e712fa-0e49-47a6-be93-07dccd8075e5:event_age=562730s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=kopibha-niya-d1",
+        "state:days_since_play=6.8"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T05:41:12.735000+00:00",
+        "Viewer left series kopibha-niya-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

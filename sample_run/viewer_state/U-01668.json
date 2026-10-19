@@ -1,0 +1,502 @@
+{
+  "user_id": "U-01668",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-08-07T06:10:00.347Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-08-07T06:10:00.347Z",
+      "freshness_s": 36328671.6
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:349886e6-be37-4b31-80d6-fc22d4a15aca:subscription_renewed",
+      "timestamp": "2026-09-22T04:55:48.147Z",
+      "freshness_s": 822723.8
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:37:44.610Z",
+      "freshness_s": 179407.4
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:37:44.610Z",
+      "freshness_s": 179407.4
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:37:44.610Z",
+      "freshness_s": 179407.4
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T12:09:07.755Z",
+      "freshness_s": 105524.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T11:46:37.601Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T11:46:37.601Z",
+      "freshness_s": 106874.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-07T08:10:19.465Z",
+      "freshness_s": 2107052.5
+    }
+  },
+  "watch_progress": {
+    "pirima-d2": "pirima-d2-s1e2"
+  },
+  "top_genres": [
+    "Romance",
+    "Family"
+  ],
+  "sessions_count": 14,
+  "play_sessions_count": 6,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-06",
+    "2026-09-07",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-15",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-25",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-02",
+    "2026-09-06",
+    "2026-09-07",
+    "2026-09-10",
+    "2026-09-12",
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "weekly_habit_14d",
+    "goal_id": "G09",
+    "window_hours": 336,
+    "deadline": "2026-10-15T17:27:51.983Z",
+    "success_event": "play_started",
+    "success_condition": "on 3 distinct IST days",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 5,
+  "actions_count": 5,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01668",
+      "decision_id": "D-U-01668-005",
+      "goal_id": "weekly_habit_14d",
+      "goal_started_at": "2026-10-01T17:27:51.983Z",
+      "deadline": "2026-10-15T17:27:51.983Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-011090",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-06T04:28:49.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal weekly_habit_14d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01668-001",
+      "viewer_id": "U-01668",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T02:34:13.703Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "weekly_habit_14d",
+        "deadline": "2026-10-15T02:34:13.703Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0521",
+        "title:T0556",
+        "title:T0530",
+        "title:T0533",
+        "title:T0540",
+        "title:T0548",
+        "title:T0550",
+        "title:T0523",
+        "title:T0524",
+        "title:T0525",
+        "title:T0526",
+        "title:T0528",
+        "title:T0535",
+        "title:T0545",
+        "title:T0552",
+        "title:T0564",
+        "title:T0575",
+        "title:T0529",
+        "title:T0531",
+        "title:T0534",
+        "title:T0536",
+        "title:T0537"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d2 matching user history",
+      "evidence": [
+        "trigger:24a8f910-4a8f-487e-a27a-07c94bd6e0a4:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:subscription_status=active",
+        "state:plays_in_last_14d=1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T02:34:13.703000+00:00",
+        "Active paying subscriber is at churn risk due to infrequent usage"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-01668-002",
+      "viewer_id": "U-01668",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:10:55.382Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "weekly_habit_14d",
+        "deadline": "2026-10-15T16:10:55.382Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0521",
+        "title:T0556",
+        "title:T0533",
+        "title:T0540",
+        "title:T0548",
+        "title:T0550",
+        "title:T0566",
+        "title:T0523",
+        "title:T0524",
+        "title:T0525",
+        "title:T0526",
+        "title:T0528",
+        "title:T0535",
+        "title:T0545",
+        "title:T0552",
+        "title:T0564",
+        "title:T0575",
+        "title:T0529",
+        "title:T0531",
+        "title:T0534",
+        "title:T0536",
+        "title:T0537"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d2 matching user history",
+      "evidence": [
+        "trigger:28cc66a3-b447-4379-968a-06461824e08f:event_age=0s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:subscription_status=active",
+        "state:plays_in_last_14d=1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T16:10:55.382000+00:00",
+        "Active paying subscriber is at churn risk due to infrequent usage"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01668-003",
+      "viewer_id": "U-01668",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:14:02.517Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "weekly_habit_14d",
+        "deadline": "2026-10-15T16:14:02.517Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0521",
+        "title:T0556",
+        "title:T0533",
+        "title:T0540",
+        "title:T0548",
+        "title:T0550",
+        "title:T0566",
+        "title:T0523",
+        "title:T0524",
+        "title:T0525",
+        "title:T0526",
+        "title:T0528",
+        "title:T0535",
+        "title:T0545",
+        "title:T0552",
+        "title:T0564",
+        "title:T0575",
+        "title:T0529",
+        "title:T0531",
+        "title:T0534",
+        "title:T0536",
+        "title:T0537"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d2 matching user history",
+      "evidence": [
+        "trigger:7fd682e5-ce55-4b6d-a5db-eec57618cd70:event_age=0s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:subscription_status=active",
+        "state:plays_in_last_14d=1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T16:14:02.517000+00:00",
+        "Active paying subscriber is at churn risk due to infrequent usage"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01668-004",
+      "viewer_id": "U-01668",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:20:26.982Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "weekly_habit_14d",
+        "deadline": "2026-10-15T16:20:26.982Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0521",
+        "title:T0556",
+        "title:T0533",
+        "title:T0540",
+        "title:T0548",
+        "title:T0550",
+        "title:T0566",
+        "title:T0523",
+        "title:T0524",
+        "title:T0525",
+        "title:T0526",
+        "title:T0528",
+        "title:T0535",
+        "title:T0545",
+        "title:T0552",
+        "title:T0564",
+        "title:T0575",
+        "title:T0529",
+        "title:T0531",
+        "title:T0534",
+        "title:T0536",
+        "title:T0537"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d2 matching user history",
+      "evidence": [
+        "trigger:8c6e8d0a-f59a-4bb2-b07b-2930d5336ee4:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:subscription_status=active",
+        "state:plays_in_last_14d=1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T16:20:26.982000+00:00",
+        "Active paying subscriber is at churn risk due to infrequent usage"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01668-005",
+      "viewer_id": "U-01668",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T17:27:51.983Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "weekly_habit_14d",
+        "deadline": "2026-10-15T17:27:51.983Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0521",
+        "title:T0556",
+        "title:T0533",
+        "title:T0540",
+        "title:T0548",
+        "title:T0550",
+        "title:T0566",
+        "title:T0523",
+        "title:T0524",
+        "title:T0525",
+        "title:T0526",
+        "title:T0528",
+        "title:T0535",
+        "title:T0545",
+        "title:T0552",
+        "title:T0564",
+        "title:T0575",
+        "title:T0529",
+        "title:T0531",
+        "title:T0534",
+        "title:T0536",
+        "title:T0537"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d2 matching user history",
+      "evidence": [
+        "trigger:74922985-8ec3-4a55-8f0a-92f748fa619c:event_age=0s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:subscription_status=active",
+        "state:plays_in_last_14d=1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T17:27:51.983000+00:00",
+        "Active paying subscriber is at churn risk due to infrequent usage"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

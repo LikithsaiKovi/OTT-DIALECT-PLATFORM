@@ -1,0 +1,166 @@
+{
+  "user_id": "U-03108",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-01-16T08:27:35.710Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-01-16T08:27:35.710Z",
+      "freshness_s": 53813959.6
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T13:20:51.992Z",
+      "freshness_s": 141963.3
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T13:20:51.992Z",
+      "freshness_s": 141963.3
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T13:20:51.992Z",
+      "freshness_s": 141963.3
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T13:20:51.992Z",
+      "freshness_s": 141963.3
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T05:18:55.918Z",
+      "freshness_s": 343679.4
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-05T07:39:39.270Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-05T07:39:39.270Z",
+      "freshness_s": 2236036.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-05T09:38:21.703Z",
+      "freshness_s": 2228913.6
+    }
+  },
+  "watch_progress": {
+    "raloja-d1": "raloja-d1-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Action"
+  ],
+  "sessions_count": 7,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-11",
+    "2026-09-18",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-05"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:46:55.314Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:raloja-d1",
+    "content_slug": "raloja-d1",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03108",
+      "decision_id": "D-U-03108-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:46:55.314Z",
+      "deadline": "2026-10-04T04:46:55.314Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-019500",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-03T15:50:37.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03108-001",
+      "viewer_id": "U-03108",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:46:55.314Z",
+        "event_age_s": 40781
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:46:55.314Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:30e15d51-ea06-4361-be5c-17d036a3cda2:event_age=40781s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=raloja-d1",
+        "state:days_since_play=25.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T04:46:55.314000+00:00",
+        "Viewer left series raloja-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

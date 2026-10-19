@@ -1,0 +1,152 @@
+{
+  "user_id": "U-00672",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-04-01T21:31:06.604Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-04-01T21:31:06.604Z",
+      "freshness_s": 15750860.3
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:51:42.523Z",
+      "freshness_s": 208424.4
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:51:42.523Z",
+      "freshness_s": 208424.4
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:51:42.523Z",
+      "freshness_s": 208424.4
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:51:42.523Z",
+      "freshness_s": 208424.4
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-22T15:59:46.192Z",
+      "freshness_s": 737140.8
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-22T15:58:45.485Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-22T15:58:45.485Z",
+      "freshness_s": 737201.5
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Thriller"
+  ],
+  "sessions_count": 3,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-22"
+  ],
+  "ist_play_days": [
+    "2026-09-22"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_full_episode_3d",
+    "goal_id": "G02",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:45:26.945Z",
+    "success_event": "episode_completed",
+    "success_condition": "any episode",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00672",
+      "decision_id": "D-U-00672-001",
+      "goal_id": "first_full_episode_3d",
+      "goal_started_at": "2026-10-01T04:45:26.945Z",
+      "deadline": "2026-10-04T04:45:26.945Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_full_episode_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00672-001",
+      "viewer_id": "U-00672",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:45:26.945Z",
+        "event_age_s": 640380
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-04T04:45:26.945Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:f750587f-8437-4582-9586-508b9c633a29:event_age=640380s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d2:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'never' is reliable as of 2026-10-01T04:45:26.945000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

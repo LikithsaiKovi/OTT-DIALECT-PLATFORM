@@ -1,0 +1,285 @@
+{
+  "user_id": "U-00461",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-10-31T13:04:28.598Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-10-31T13:04:28.598Z",
+      "freshness_s": 60467271.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:27bfdeb5-682b-49d1-b57e-85f9526d53ad:subscription_renewed",
+      "timestamp": "2026-09-27T05:54:16.358Z",
+      "freshness_s": 358684.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:40:50.243Z",
+      "freshness_s": 150690.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:40:50.243Z",
+      "freshness_s": 150690.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:40:50.243Z",
+      "freshness_s": 150690.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T19:44:00.839Z",
+      "freshness_s": 308899.5
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-24T11:18:09.488Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-24T11:18:09.488Z",
+      "freshness_s": 598450.9
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-11T02:43:54.669Z",
+      "freshness_s": 1752505.7
+    }
+  },
+  "watch_progress": {
+    "jamo-hasa-d5": "jamo-hasa-d5-s1e2"
+  },
+  "top_genres": [
+    "Romance",
+    "Crime",
+    "Comedy"
+  ],
+  "sessions_count": 19,
+  "play_sessions_count": 8,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-08",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-20",
+    "2026-09-24"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T09:32:20.370Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:jamo-hasa-d5",
+    "content_slug": "jamo-hasa-d5",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 2,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00461",
+      "decision_id": "D-U-00461-002",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T09:32:20.370Z",
+      "deadline": "2026-10-04T09:32:20.370Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-003156",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T09:33:27.370Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00461-001",
+      "viewer_id": "U-00461",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T02:01:49.817Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T02:01:49.817Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T1179",
+        "title:T1181",
+        "title:T1182",
+        "title:T1192",
+        "title:T1198",
+        "title:T1209",
+        "title:T1177",
+        "title:T1178",
+        "title:T1180",
+        "title:T1183",
+        "title:T1184",
+        "title:T1185",
+        "title:T1189",
+        "title:T1202",
+        "title:T1213",
+        "title:T1215",
+        "title:T1186",
+        "title:T1187",
+        "title:T1188",
+        "title:T1190",
+        "title:T1191"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:7052b4b0-8722-44df-ae21-bf7cd5d2d4ba:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=jamo-hasa-d5",
+        "state:days_since_play=6.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-10-01T02:01:49.817000+00:00",
+        "Viewer left series jamo-hasa-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-00461-002",
+      "viewer_id": "U-00461",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T09:32:20.370Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T09:32:20.370Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T1179",
+        "title:T1181",
+        "title:T1182",
+        "title:T1192",
+        "title:T1198",
+        "title:T1209",
+        "title:T1177",
+        "title:T1178",
+        "title:T1180",
+        "title:T1183",
+        "title:T1184",
+        "title:T1185",
+        "title:T1189",
+        "title:T1202",
+        "title:T1213",
+        "title:T1215",
+        "title:T1186",
+        "title:T1187",
+        "title:T1188",
+        "title:T1190",
+        "title:T1191"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:c2c24cef-cf33-42f3-988a-3a3832d98dd3:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=jamo-hasa-d5",
+        "state:days_since_play=6.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-10-01T09:32:20.370000+00:00",
+        "Viewer left series jamo-hasa-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

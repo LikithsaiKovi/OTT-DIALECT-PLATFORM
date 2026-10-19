@@ -1,0 +1,173 @@
+{
+  "user_id": "U-00779",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-11-07T21:04:25.858Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-11-07T21:04:25.858Z",
+      "freshness_s": 28321723.3
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "events:cedc0be6-5f04-4b50-adb9-62e93c545fe7:subscription_lapsed",
+      "timestamp": "2026-09-06T11:09:58.871Z",
+      "freshness_s": 2178190.3
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d7",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:01:48.447Z",
+      "freshness_s": 241880.8
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:01:48.447Z",
+      "freshness_s": 241880.8
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:01:48.447Z",
+      "freshness_s": 241880.8
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d7",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T13:53:26.857Z",
+      "freshness_s": 181182.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-29T13:50:40.207Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-29T13:50:40.207Z",
+      "freshness_s": 181349.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-29T13:53:26.857Z",
+      "freshness_s": 181182.3
+    }
+  },
+  "watch_progress": {
+    "guka-kosusa-d2": "guka-kosusa-d2-s1e2"
+  },
+  "top_genres": [
+    "Romance",
+    "Action",
+    "Devotional"
+  ],
+  "sessions_count": 16,
+  "play_sessions_count": 6,
+  "ist_app_open_days": [
+    "2026-09-04",
+    "2026-09-06",
+    "2026-09-07",
+    "2026-09-12",
+    "2026-09-16",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-06",
+    "2026-09-07",
+    "2026-09-12",
+    "2026-09-23",
+    "2026-09-29"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "reactivate_lapsed_14d",
+    "goal_id": "G06",
+    "window_hours": 336,
+    "deadline": "2026-10-15T16:13:09.202Z",
+    "success_event": "purchase_completed",
+    "success_condition": "any paid plan",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00779",
+      "decision_id": "D-U-00779-001",
+      "goal_id": "reactivate_lapsed_14d",
+      "goal_started_at": "2026-10-01T16:13:09.202Z",
+      "deadline": "2026-10-15T16:13:09.202Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal reactivate_lapsed_14d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00779-001",
+      "viewer_id": "U-00779",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:13:09.202Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "reactivate_lapsed_14d",
+        "deadline": "2026-10-15T16:13:09.202Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d7",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: no_available_content_in_dialect",
+      "evidence": [
+        "trigger:b69d0d16-ce3e-4ea0-827a-7ae5c52d6b33:event_age=1s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d7:app_setting",
+        "state:subscription_status=lapsed",
+        "goal_rule:G06"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d7",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T16:13:09.202000+00:00",
+        "Viewer subscription lapsed recently (<30d) and responds to reactivation value"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "no_available_content_in_dialect",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

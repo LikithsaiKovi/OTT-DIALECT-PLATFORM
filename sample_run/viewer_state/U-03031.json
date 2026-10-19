@@ -1,0 +1,226 @@
+{
+  "user_id": "U-03031",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-07-25T02:50:10.702Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-07-25T02:50:10.702Z",
+      "freshness_s": 37451392.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:666cdfc6-c0d2-49b5-a18d-f924c9ef54e8:subscription_renewed",
+      "timestamp": "2026-09-23T20:26:11.344Z",
+      "freshness_s": 668032.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:08:50.822Z",
+      "freshness_s": 165072.7
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:08:50.822Z",
+      "freshness_s": 165072.7
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:08:50.822Z",
+      "freshness_s": 165072.7
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T08:05:10.964Z",
+      "freshness_s": 107692.5
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T07:41:17.025Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T07:41:17.025Z",
+      "freshness_s": 109126.5
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 3,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-30T08:05:10.964Z",
+      "freshness_s": 107692.5
+    }
+  },
+  "watch_progress": {
+    "tidha-dakachu-d1": "tidha-dakachu-d1-s1e3"
+  },
+  "top_genres": [
+    "Action",
+    "Family",
+    "Comedy"
+  ],
+  "sessions_count": 12,
+  "play_sessions_count": 8,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-06",
+    "2026-09-07",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-19",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-06",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-13",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "try_new_release_7d",
+    "goal_id": "G08",
+    "window_hours": 168,
+    "deadline": "2026-10-08T14:00:03.513Z",
+    "success_event": "play_started",
+    "success_condition": "title released in last 30d",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03031",
+      "decision_id": "D-U-03031-002",
+      "goal_id": "try_new_release_7d",
+      "goal_started_at": "2026-10-01T14:00:03.513Z",
+      "deadline": "2026-10-08T14:00:03.513Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-018925",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-02T16:23:14.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal try_new_release_7d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03031-001",
+      "viewer_id": "U-03031",
+      "trigger": {
+        "event": "login_success",
+        "received_at": "2026-10-01T14:00:00.289Z",
+        "event_age_s": 569904
+      },
+      "goal": {
+        "id": "try_new_release_7d",
+        "deadline": "2026-10-08T14:00:00.289Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:7a2256d7-dc5d-48b7-b973-efd56515bcb2:event_age=569904s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:subscription_status=active",
+        "state:plays_in_last_14d=3"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T14:00:00.289000+00:00",
+        "Frequent subscriber will appreciate fresh content drops"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-03031-002",
+      "viewer_id": "U-03031",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:00:03.513Z",
+        "event_age_s": 569903
+      },
+      "goal": {
+        "id": "try_new_release_7d",
+        "deadline": "2026-10-08T14:00:03.513Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:fa5b502b-34b1-467c-a5fa-04382c6342ed:event_age=569903s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:subscription_status=active",
+        "state:plays_in_last_14d=3"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T14:00:03.513000+00:00",
+        "Frequent subscriber will appreciate fresh content drops"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

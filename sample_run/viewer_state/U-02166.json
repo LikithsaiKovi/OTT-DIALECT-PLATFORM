@@ -1,0 +1,166 @@
+{
+  "user_id": "U-02166",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-11-07T23:42:16.792Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-11-07T23:42:16.792Z",
+      "freshness_s": 59807038.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:27:32.327Z",
+      "freshness_s": 181122.6
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:27:32.327Z",
+      "freshness_s": 181122.6
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:27:32.327Z",
+      "freshness_s": 181122.6
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:27:32.327Z",
+      "freshness_s": 181122.6
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T05:46:15.356Z",
+      "freshness_s": 341999.5
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-21T12:59:00.055Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-21T12:59:00.055Z",
+      "freshness_s": 834434.9
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-21T13:02:40.529Z",
+      "freshness_s": 834214.4
+    }
+  },
+  "watch_progress": {
+    "bhaja-moguba-d2": "bhaja-moguba-d2-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Romance",
+    "Thriller"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-08",
+    "2026-09-16",
+    "2026-09-21",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-08",
+    "2026-09-21"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:46:14.906Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:bhaja-moguba-d2",
+    "content_slug": "bhaja-moguba-d2",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-02166",
+      "decision_id": "D-U-02166-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:46:14.906Z",
+      "deadline": "2026-10-04T04:46:14.906Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-02166-001",
+      "viewer_id": "U-02166",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:46:14.906Z",
+        "event_age_s": 665973
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:46:14.906Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:eb76d358-3b35-47c8-b17e-eb5bd5908b8f:event_age=665973s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d2:app_setting",
+        "state:watch_progress=bhaja-moguba-d2",
+        "state:days_since_play=9.7"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'never' is reliable as of 2026-10-01T04:46:14.906000+00:00",
+        "Viewer left series bhaja-moguba-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

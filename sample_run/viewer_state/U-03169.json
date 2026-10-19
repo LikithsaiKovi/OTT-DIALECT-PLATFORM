@@ -1,0 +1,213 @@
+{
+  "user_id": "U-03169",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-03-20T21:25:38.551Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-03-20T21:25:38.551Z",
+      "freshness_s": 16808386.5
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "events:85c816e3-c7b3-4572-b25a-8c67f1db5e68:subscription_lapsed",
+      "timestamp": "2026-09-02T15:07:05.448Z",
+      "freshness_s": 2488699.6
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:28:05.913Z",
+      "freshness_s": 215839.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:28:05.913Z",
+      "freshness_s": 215839.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:28:05.913Z",
+      "freshness_s": 215839.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d6",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T14:57:05.103Z",
+      "freshness_s": 70099.9
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T14:54:19.641Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T14:54:19.641Z",
+      "freshness_s": 70265.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 3,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-30T14:57:05.103Z",
+      "freshness_s": 70099.9
+    }
+  },
+  "watch_progress": {
+    "gubava-gihaya-d5": "gubava-gihaya-d5-s1e2",
+    "rasuya-moni-d6": "rasuya-moni-d6-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Thriller",
+    "Comedy"
+  ],
+  "sessions_count": 8,
+  "play_sessions_count": 5,
+  "ist_app_open_days": [
+    "2026-09-06",
+    "2026-09-09",
+    "2026-09-13",
+    "2026-09-28",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-06",
+    "2026-09-13",
+    "2026-09-28",
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "reactivate_lapsed_14d",
+    "goal_id": "G06",
+    "window_hours": 336,
+    "deadline": "2026-10-15T10:25:25.048Z",
+    "success_event": "purchase_completed",
+    "success_condition": "any paid plan",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03169",
+      "decision_id": "D-U-03169-001",
+      "goal_id": "reactivate_lapsed_14d",
+      "goal_started_at": "2026-10-01T10:25:25.048Z",
+      "deadline": "2026-10-15T10:25:25.048Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal reactivate_lapsed_14d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03169-001",
+      "viewer_id": "U-03169",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T10:25:25.048Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "reactivate_lapsed_14d",
+        "deadline": "2026-10-15T10:25:25.048Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d6",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d5"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:8cd1f723-0ac1-45e9-8ddc-289a8b1e7486:event_age=2s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d6:app_setting",
+        "state:subscription_status=lapsed",
+        "goal_rule:G06"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d6",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T10:25:25.048000+00:00",
+        "Viewer subscription lapsed recently (<30d) and responds to reactivation value"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-03169-002",
+      "viewer_id": "U-03169",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T10:27:16.456Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "none",
+        "deadline": null
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "none",
+        "source": "idempotency_cache",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 1.0,
+      "confidence_reason": "Trigger event already processed; strictly idempotent",
+      "evidence": [
+        "trigger_seen:8cd1f723-0ac1-45e9-8ddc-289a8b1e7486"
+      ],
+      "assumptions": [
+        "Duplicate delivery over network"
+      ],
+      "checks": {
+        "passed": [
+          "idempotency"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "duplicate_trigger_idempotency",
+      "fallback_used": false,
+      "model_calls": 0,
+      "tool_calls": 0,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

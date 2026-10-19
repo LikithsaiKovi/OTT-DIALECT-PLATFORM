@@ -1,0 +1,173 @@
+{
+  "user_id": "U-03560",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-10-24T08:37:57.292Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-10-24T08:37:57.292Z",
+      "freshness_s": 61070901.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:98d101e1-b978-4d30-ad4a-bae2a1c0fba3:subscription_renewed",
+      "timestamp": "2026-09-15T08:29:40.675Z",
+      "freshness_s": 1368997.6
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:28:35.318Z",
+      "freshness_s": 184662.9
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:28:35.318Z",
+      "freshness_s": 184662.9
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:28:35.318Z",
+      "freshness_s": 184662.9
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T09:00:32.034Z",
+      "freshness_s": 71146.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T17:23:04.689Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T17:23:04.689Z",
+      "freshness_s": 300193.6
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-27T17:25:50.424Z",
+      "freshness_s": 300027.8
+    }
+  },
+  "watch_progress": {
+    "hapibha-d1": "hapibha-d1-s1e1"
+  },
+  "top_genres": [
+    "Comedy",
+    "Thriller",
+    "Drama"
+  ],
+  "sessions_count": 11,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-09",
+    "2026-09-13",
+    "2026-09-18",
+    "2026-09-23",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-13",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:46:18.250Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:hapibha-d1",
+    "content_slug": "hapibha-d1",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03560",
+      "decision_id": "D-U-03560-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:46:18.250Z",
+      "deadline": "2026-10-04T04:46:18.250Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-022560",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-03T17:30:33.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03560-001",
+      "viewer_id": "U-03560",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:46:18.250Z",
+        "event_age_s": 29734
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:46:18.250Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d2"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:4660349f-0d94-4740-b643-ea7d4e47ca5e:event_age=29734s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:watch_progress=hapibha-d1",
+        "state:days_since_play=3.5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T04:46:18.250000+00:00",
+        "Viewer left series hapibha-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

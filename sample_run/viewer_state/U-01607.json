@@ -1,0 +1,104 @@
+{
+  "user_id": "U-01607",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-12-09T08:29:02.313Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-12-09T08:29:02.313Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:306b9fc5-a075-4706-ac41-d3427f52be22:subscription_renewed",
+      "timestamp": "2026-09-26T07:33:01.584Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d7",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:08:40.354Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:08:40.354Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:08:40.354Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d7",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T17:52:29.968Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T13:47:27.038Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T13:47:27.038Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 3,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-27T13:49:18.189Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "dhapipa-gini-d2": "dhapipa-gini-d2-s1e3"
+  },
+  "top_genres": [
+    "Family",
+    "Drama",
+    "Thriller"
+  ],
+  "sessions_count": 21,
+  "play_sessions_count": 6,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-03",
+    "2026-09-07",
+    "2026-09-09",
+    "2026-09-12",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-24",
+    "2026-09-26",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-12",
+    "2026-09-19",
+    "2026-09-26",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

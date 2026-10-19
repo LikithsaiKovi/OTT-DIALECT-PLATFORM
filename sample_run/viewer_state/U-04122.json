@@ -1,0 +1,197 @@
+{
+  "user_id": "U-04122",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-02-28T17:43:01.220Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-02-28T17:43:01.220Z",
+      "freshness_s": 18572732.9
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:46:30.696Z",
+      "freshness_s": 226923.4
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:46:30.696Z",
+      "freshness_s": 226923.4
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:46:30.696Z",
+      "freshness_s": 226923.4
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:46:30.696Z",
+      "freshness_s": 226923.4
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-23T06:30:17.238Z",
+      "freshness_s": 728296.9
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-18T16:51:21.345Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-18T16:51:21.345Z",
+      "freshness_s": 1123032.7
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-16T06:05:18.148Z",
+      "freshness_s": 1334595.9
+    }
+  },
+  "watch_progress": {
+    "kasu-piva-d4": "kasu-piva-d4-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Family",
+    "Devotional"
+  ],
+  "sessions_count": 13,
+  "play_sessions_count": 5,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-18",
+    "2026-09-21",
+    "2026-09-23"
+  ],
+  "ist_play_days": [
+    "2026-09-10",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-18"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T16:48:34.092Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:kasu-piva-d4",
+    "content_slug": "kasu-piva-d4",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04122",
+      "decision_id": "D-U-04122-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T16:48:34.092Z",
+      "deadline": "2026-10-04T16:48:34.092Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-026206",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T16:52:41.092Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04122-001",
+      "viewer_id": "U-04122",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:48:34.092Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T16:48:34.092Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0915",
+        "title:T0933",
+        "title:T0917",
+        "title:T0939",
+        "title:T0941",
+        "title:T0943",
+        "title:T0952",
+        "title:T0916",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0921",
+        "title:T0922",
+        "title:T0937",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0923",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926",
+        "title:T0927"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:dd080b1f-f503-42d9-83d6-19aeb89d451c:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=kasu-piva-d4",
+        "state:days_since_play=13.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T16:48:34.092000+00:00",
+        "Viewer left series kasu-piva-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

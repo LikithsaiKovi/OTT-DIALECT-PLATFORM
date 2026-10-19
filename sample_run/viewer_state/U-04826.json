@@ -1,0 +1,198 @@
+{
+  "user_id": "U-04826",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-07-29T16:41:00.153Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-07-29T16:41:00.153Z",
+      "freshness_s": 5477876.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "events:6ddbfeb4-ee87-4e63-8108-6a150c1fafb6:subscription_lapsed",
+      "timestamp": "2026-09-05T16:37:33.839Z",
+      "freshness_s": 2194883.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d6",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T04:41:50.799Z",
+      "freshness_s": 164226.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T04:41:50.799Z",
+      "freshness_s": 164226.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T04:41:50.799Z",
+      "freshness_s": 164226.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d6",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T13:28:07.535Z",
+      "freshness_s": 132649.4
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-28T00:35:03.258Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-28T00:35:03.258Z",
+      "freshness_s": 265433.7
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 9,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-27T11:16:09.153Z",
+      "freshness_s": 313367.8
+    }
+  },
+  "watch_progress": {
+    "labhaya-d6": "labhaya-d6-s1e1",
+    "chupi-gugi-d6": "chupi-gugi-d6-s1e5",
+    "lojane-pijasa-d6": "lojane-pijasa-d6-s1e1",
+    "sajachu-jabha-d6": "sajachu-jabha-d6-s1e1",
+    "rasuya-moni-d6": "rasuya-moni-d6-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Thriller",
+    "Drama"
+  ],
+  "sessions_count": 25,
+  "play_sessions_count": 18,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-02",
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-10",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-28",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-02",
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-10",
+    "2026-09-14",
+    "2026-09-17",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-28"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T02:18:56.968Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:labhaya-d6",
+    "content_slug": "labhaya-d6",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04826",
+      "decision_id": "D-U-04826-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T02:18:56.968Z",
+      "deadline": "2026-10-04T02:18:56.968Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-030293",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T02:19:27.968Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04826-001",
+      "viewer_id": "U-04826",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T02:18:56.968Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T02:18:56.968Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d6",
+        "source": "app_setting",
+        "conflicts": [
+          "campaign:d4"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:ddee6a04-d719-427d-ba6a-266408c1bc32:event_age=0s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d6:app_setting",
+        "state:watch_progress=labhaya-d6",
+        "state:days_since_play=3.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d6",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T02:18:56.968000+00:00",
+        "Viewer left series labhaya-d6 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

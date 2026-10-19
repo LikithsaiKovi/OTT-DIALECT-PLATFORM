@@ -1,0 +1,60 @@
+{
+  "user_id": "U-03848",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T07:47:08.928Z",
+      "freshness_s": 0.0
+    },
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-30T07:41:08.382Z",
+      "source": "events:signup_completed",
+      "timestamp": "2026-09-30T07:41:08.382Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T07:43:30.428Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T07:43:30.428Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-30T07:47:08.928Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "yane-tegi-d3": "yane-tegi-d3-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Crime"
+  ],
+  "sessions_count": 1,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

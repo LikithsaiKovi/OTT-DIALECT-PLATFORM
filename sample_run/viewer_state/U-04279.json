@@ -1,0 +1,110 @@
+{
+  "user_id": "U-04279",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-07-12T14:35:50.393Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-07-12T14:35:50.393Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:16282e28-d9d3-4909-bf02-f1bcd7e336c2:subscription_renewed",
+      "timestamp": "2026-09-07T08:53:25.190Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d6",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:22:05.794Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:22:05.794Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:22:05.794Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d6",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T02:46:11.948Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-28T09:22:25.892Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-28T09:22:25.892Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 5,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-28T09:24:15.318Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "chupi-gugi-d6": "chupi-gugi-d6-s1e2",
+    "rasuya-moni-d6": "rasuya-moni-d6-s1e1",
+    "suchumo-yadi-d6": "suchumo-yadi-d6-s1e2"
+  },
+  "top_genres": [
+    "Thriller",
+    "Action",
+    "Devotional"
+  ],
+  "sessions_count": 15,
+  "play_sessions_count": 7,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-13",
+    "2026-09-15",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-28",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-02",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-22",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-28"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

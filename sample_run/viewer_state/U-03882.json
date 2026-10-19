@@ -1,0 +1,190 @@
+{
+  "user_id": "U-03882",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-05T10:08:20.436Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-05T10:08:20.436Z",
+      "freshness_s": 2262618.5
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:7dec0c4d-cfd5-460c-a994-ca7fa5bfe263:purchase_completed",
+      "timestamp": "2026-09-05T10:58:15.407Z",
+      "freshness_s": 2259623.5
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:01:02.539Z",
+      "freshness_s": 189456.4
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:01:02.539Z",
+      "freshness_s": 189456.4
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:01:02.539Z",
+      "freshness_s": 189456.4
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T10:14:43.412Z",
+      "freshness_s": 275035.5
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-24T10:06:11.473Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-24T10:06:11.473Z",
+      "freshness_s": 621147.5
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-24T10:08:01.883Z",
+      "freshness_s": 621037.0
+    }
+  },
+  "watch_progress": {
+    "raja-d4": "raja-d4-s1e2"
+  },
+  "top_genres": [
+    "Romance"
+  ],
+  "sessions_count": 7,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-18",
+    "2026-09-24",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-05",
+    "2026-09-24"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T14:38:38.924Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:raja-d4",
+    "content_slug": "raja-d4",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03882",
+      "decision_id": "D-U-03882-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T14:38:38.924Z",
+      "deadline": "2026-10-04T14:38:38.924Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-024731",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T14:41:55.924Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03882-001",
+      "viewer_id": "U-03882",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:38:38.924Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T14:38:38.924Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0916",
+        "title:T0931",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0915",
+        "title:T0917",
+        "title:T0921",
+        "title:T0924",
+        "title:T0925",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0926",
+        "title:T0927",
+        "title:T0928",
+        "title:T0929",
+        "title:T0932"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:c9bfdad3-8911-4464-bc21-cd934a15fa6b:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=raja-d4",
+        "state:days_since_play=7.2"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T14:38:38.924000+00:00",
+        "Viewer left series raja-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

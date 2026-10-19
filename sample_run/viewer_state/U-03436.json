@@ -1,0 +1,144 @@
+{
+  "user_id": "U-03436",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-05-27T14:47:13.305Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-05-27T14:47:13.305Z",
+      "freshness_s": 42486145.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:50:24.428Z",
+      "freshness_s": 142754.6
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:50:24.428Z",
+      "freshness_s": 142754.6
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:50:24.428Z",
+      "freshness_s": 142754.6
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T16:50:24.428Z",
+      "freshness_s": 142754.6
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "NA",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-09T06:22:09.357Z",
+      "freshness_s": 1908449.7
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [],
+  "sessions_count": 9,
+  "play_sessions_count": 0,
+  "ist_app_open_days": [
+    "2026-09-09",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-19"
+  ],
+  "ist_play_days": [],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_full_episode_3d",
+    "goal_id": "G02",
+    "window_hours": 72,
+    "deadline": "2026-10-04T08:29:39.069Z",
+    "success_event": "episode_completed",
+    "success_condition": "any episode",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03436",
+      "decision_id": "D-U-03436-001",
+      "goal_id": "first_full_episode_3d",
+      "goal_started_at": "2026-10-01T08:29:39.069Z",
+      "deadline": "2026-10-04T08:29:39.069Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_full_episode_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03436-001",
+      "viewer_id": "U-03436",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T08:29:39.069Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-04T08:29:39.069Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "NA",
+        "source": "viewer_state_history",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: no_available_content_in_dialect",
+      "evidence": [
+        "trigger:98add935-38ab-4a20-a3ed-7daa1b047263:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:NA:viewer_state_history",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect NA",
+        "Subscription status 'never' is reliable as of 2026-10-01T08:29:39.069000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "no_available_content_in_dialect",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

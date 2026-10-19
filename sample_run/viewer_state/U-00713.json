@@ -1,0 +1,97 @@
+{
+  "user_id": "U-00713",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-07-12T11:29:27.254Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-07-12T11:29:27.254Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:10:33.123Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:10:33.123Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:10:33.123Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:10:33.123Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T12:52:47.959Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-23T20:42:47.730Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-23T20:42:47.730Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-23T21:23:15.958Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "molo-d2": "molo-d2-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Comedy",
+    "Romance"
+  ],
+  "sessions_count": 8,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-15",
+    "2026-09-17",
+    "2026-09-24",
+    "2026-09-26",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-09",
+    "2026-09-24"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

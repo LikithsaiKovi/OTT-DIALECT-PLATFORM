@@ -1,0 +1,185 @@
+{
+  "user_id": "U-03492",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-02-22T05:13:51.185Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-02-22T05:13:51.185Z",
+      "freshness_s": 19076231.7
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:3f9569bf-c0c8-4c13-9ef6-807ea5631930:subscription_renewed",
+      "timestamp": "2026-09-02T04:26:20.543Z",
+      "freshness_s": 2490282.4
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:26:00.824Z",
+      "freshness_s": 153902.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:26:00.824Z",
+      "freshness_s": 153902.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:26:00.824Z",
+      "freshness_s": 153902.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T17:14:27.761Z",
+      "freshness_s": 197795.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-28T17:13:42.182Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-28T17:13:42.182Z",
+      "freshness_s": 197840.7
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 6,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-23T16:36:51.999Z",
+      "freshness_s": 632050.9
+    }
+  },
+  "watch_progress": {
+    "hapi-niri-d5": "hapi-niri-d5-s1e2",
+    "haya-kani-d5": "haya-kani-d5-s1e1",
+    "gubava-gihaya-d5": "gubava-gihaya-d5-s1e2",
+    "diti-kochu-d5": "diti-kochu-d5-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Family",
+    "Action"
+  ],
+  "sessions_count": 20,
+  "play_sessions_count": 12,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-13",
+    "2026-09-16",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-09",
+    "2026-09-11",
+    "2026-09-13",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-28"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "try_new_release_7d",
+    "goal_id": "G08",
+    "window_hours": 168,
+    "deadline": "2026-10-08T00:11:02.920Z",
+    "success_event": "play_started",
+    "success_condition": "title released in last 30d",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03492",
+      "decision_id": "D-U-03492-001",
+      "goal_id": "try_new_release_7d",
+      "goal_started_at": "2026-10-01T00:11:02.920Z",
+      "deadline": "2026-10-08T00:11:02.920Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal try_new_release_7d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03492-001",
+      "viewer_id": "U-03492",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T00:11:02.920Z",
+        "event_age_s": 11481
+      },
+      "goal": {
+        "id": "try_new_release_7d",
+        "deadline": "2026-10-08T00:11:02.920Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:b43006ad-ff74-4a7c-911f-cdd079b82b23:event_age=11481s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:subscription_status=active",
+        "state:plays_in_last_14d=5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-10-01T00:11:02.920000+00:00",
+        "Frequent subscriber will appreciate fresh content drops"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

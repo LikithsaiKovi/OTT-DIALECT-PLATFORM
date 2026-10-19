@@ -1,0 +1,121 @@
+{
+  "user_id": "U-01705",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-12-12T19:20:06.735Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-12-12T19:20:06.735Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:7a4b357d-b27e-480a-bcb6-34701ed4d73f:subscription_renewed",
+      "timestamp": "2026-09-22T09:27:27.125Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:07:09.416Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:07:09.416Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:07:09.416Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T20:32:18.821Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-29T20:31:18.840Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-29T20:31:18.840Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 6,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-26T16:43:16.169Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "gubava-gihaya-d5": "gubava-gihaya-d5-s1e4",
+    "haya-kani-d5": "haya-kani-d5-s1e1",
+    "rigu-d5": "rigu-d5-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Romance",
+    "Family"
+  ],
+  "sessions_count": 23,
+  "play_sessions_count": 18,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-09",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-17",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-28",
+    "2026-09-29",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-15",
+    "2026-09-17",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-28",
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

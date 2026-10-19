@@ -1,0 +1,192 @@
+{
+  "user_id": "U-01021",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-02-07T15:05:54.437Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-02-07T15:05:54.437Z",
+      "freshness_s": 51886792.7
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "events:52cf7a53-aed3-436b-bc64-f36ea46ded0f:subscription_lapsed",
+      "timestamp": "2026-09-20T20:10:34.807Z",
+      "freshness_s": 892512.3
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:08:30.941Z",
+      "freshness_s": 179836.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:08:30.941Z",
+      "freshness_s": 179836.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:08:30.941Z",
+      "freshness_s": 179836.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T11:53:17.753Z",
+      "freshness_s": 144749.4
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T13:48:13.979Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T13:48:13.979Z",
+      "freshness_s": 310653.1
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 7,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-27T15:29:25.049Z",
+      "freshness_s": 304582.1
+    }
+  },
+  "watch_progress": {
+    "lomobha-moni-d3": "lomobha-moni-d3-s1e3",
+    "jakasa-dapi-d3": "jakasa-dapi-d3-s1e1",
+    "yatite-roloda-d3": "yatite-roloda-d3-s1e2",
+    "rate-java-d3": "rate-java-d3-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Action",
+    "Romance"
+  ],
+  "sessions_count": 27,
+  "play_sessions_count": 17,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-04",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-19",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-04",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-19",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:05:47.120Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:lomobha-moni-d3",
+    "content_slug": "lomobha-moni-d3",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01021",
+      "decision_id": "D-U-01021-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:05:47.120Z",
+      "deadline": "2026-10-04T04:05:47.120Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01021-001",
+      "viewer_id": "U-01021",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:05:47.120Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:05:47.120Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d5"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:0b465f14-ccab-4877-996f-c4112f59772d:event_age=2s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d3:app_setting",
+        "state:watch_progress=lomobha-moni-d3",
+        "state:days_since_play=3.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T04:05:47.120000+00:00",
+        "Viewer left series lomobha-moni-d3 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

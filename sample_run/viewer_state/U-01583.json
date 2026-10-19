@@ -1,0 +1,168 @@
+{
+  "user_id": "U-01583",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-09-20T03:42:54.653Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-09-20T03:42:54.653Z",
+      "freshness_s": 32490235.7
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:24:42.370Z",
+      "freshness_s": 210127.9
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:24:42.370Z",
+      "freshness_s": 210127.9
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:24:42.370Z",
+      "freshness_s": 210127.9
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:24:42.370Z",
+      "freshness_s": 210127.9
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d6",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T16:23:17.729Z",
+      "freshness_s": 217412.6
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-21T13:31:11.002Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-21T13:31:11.002Z",
+      "freshness_s": 832539.3
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-21T15:46:25.686Z",
+      "freshness_s": 824424.6
+    }
+  },
+  "watch_progress": {
+    "sajachu-jabha-d6": "sajachu-jabha-d6-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Comedy"
+  ],
+  "sessions_count": 8,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-04",
+    "2026-09-05",
+    "2026-09-14",
+    "2026-09-18",
+    "2026-09-21",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-21"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:46:50.309Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:sajachu-jabha-d6",
+    "content_slug": "sajachu-jabha-d6",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01583",
+      "decision_id": "D-U-01583-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:46:50.309Z",
+      "deadline": "2026-10-04T04:46:50.309Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01583-001",
+      "viewer_id": "U-01583",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:46:50.309Z",
+        "event_age_s": 47864
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:46:50.309Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d6",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d2"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:013e1d3b-cc67-4721-a3b5-67291be4cc3e:event_age=47864s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d6:app_setting",
+        "state:watch_progress=sajachu-jabha-d6",
+        "state:days_since_play=9.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d6",
+        "Subscription status 'never' is reliable as of 2026-10-01T04:46:50.309000+00:00",
+        "Viewer left series sajachu-jabha-d6 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

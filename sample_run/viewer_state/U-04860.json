@@ -1,0 +1,155 @@
+{
+  "user_id": "U-04860",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-01-31T04:08:09.391Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-01-31T04:08:09.391Z",
+      "freshness_s": 52533469.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:09:07.785Z",
+      "freshness_s": 135411.4
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:09:07.785Z",
+      "freshness_s": 135411.4
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:09:07.785Z",
+      "freshness_s": 135411.4
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:09:07.785Z",
+      "freshness_s": 135411.4
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-24T10:27:22.015Z",
+      "freshness_s": 584317.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-16T07:18:20.957Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-16T07:18:20.957Z",
+      "freshness_s": 1286858.3
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Drama",
+    "Romance"
+  ],
+  "sessions_count": 7,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-10",
+    "2026-09-16",
+    "2026-09-24"
+  ],
+  "ist_play_days": [
+    "2026-09-16"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_full_episode_3d",
+    "goal_id": "G02",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:45:59.225Z",
+    "success_event": "episode_completed",
+    "success_condition": "any episode",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04860",
+      "decision_id": "D-U-04860-001",
+      "goal_id": "trial_to_paid_7d",
+      "goal_started_at": "2026-10-01T04:45:59.225Z",
+      "deadline": "2026-10-01T04:45:59.225Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal trial_to_paid_7d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04860-001",
+      "viewer_id": "U-04860",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:45:59.225Z",
+        "event_age_s": 34119
+      },
+      "goal": {
+        "id": "trial_to_paid_7d",
+        "deadline": "2026-10-01T04:45:59.225Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: verifier_rejection:eligibility",
+      "evidence": [
+        "trigger:cd885956-0406-4b17-8e0b-3b97bbdd8a13:event_age=34119s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T04:45:59.225000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode",
+        "Model asserted unverified trial billing status"
+      ],
+      "checks": {
+        "passed": [
+          "action_safety"
+        ],
+        "failed": [
+          "eligibility"
+        ]
+      },
+      "decided_in_ms": 1,
+      "status": "REJECTED",
+      "no_action_reason": "verifier_rejection:eligibility",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

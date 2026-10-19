@@ -1,0 +1,193 @@
+{
+  "user_id": "U-00753",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-10-22T06:31:01.915Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-10-22T06:31:01.915Z",
+      "freshness_s": 29732314.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:1708c5f9-ccc0-4bf8-bb12-f79b29a1d8c3:subscription_renewed",
+      "timestamp": "2026-09-22T19:21:04.935Z",
+      "freshness_s": 742111.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:18:12.237Z",
+      "freshness_s": 213083.7
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:18:12.237Z",
+      "freshness_s": 213083.7
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:18:12.237Z",
+      "freshness_s": 213083.7
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T16:06:18.140Z",
+      "freshness_s": 62597.8
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T10:52:08.609Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T10:52:08.609Z",
+      "freshness_s": 340647.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 4,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-25T11:06:29.472Z",
+      "freshness_s": 512586.5
+    }
+  },
+  "watch_progress": {
+    "guka-kosusa-d2": "guka-kosusa-d2-s1e3",
+    "bhaja-moguba-d2": "bhaja-moguba-d2-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Romance",
+    "Drama"
+  ],
+  "sessions_count": 22,
+  "play_sessions_count": 11,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-03",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-28",
+    "2026-09-29",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-03",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-13",
+    "2026-09-16",
+    "2026-09-19",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-25",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T09:29:35.981Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:guka-kosusa-d2",
+    "content_slug": "guka-kosusa-d2",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00753",
+      "decision_id": "D-U-00753-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T09:29:35.981Z",
+      "deadline": "2026-10-04T09:29:35.981Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-004998",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-02T13:13:09.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00753-001",
+      "viewer_id": "U-00753",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T09:29:35.981Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T09:29:35.981Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:3ed168b7-ad8f-481d-822f-3f2025e11f24:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:watch_progress=guka-kosusa-d2",
+        "state:days_since_play=3.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T09:29:35.981000+00:00",
+        "Viewer left series guka-kosusa-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

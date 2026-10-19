@@ -1,0 +1,164 @@
+{
+  "user_id": "U-03447",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-08-18T23:09:31.906Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-08-18T23:09:31.906Z",
+      "freshness_s": 3735328.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:08:09.311Z",
+      "freshness_s": 211011.4
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:08:09.311Z",
+      "freshness_s": 211011.4
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:08:09.311Z",
+      "freshness_s": 211011.4
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:08:09.311Z",
+      "freshness_s": 211011.4
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-25T14:05:12.438Z",
+      "freshness_s": 484788.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-24T14:24:55.346Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-24T14:24:55.346Z",
+      "freshness_s": 570005.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-24T14:27:42.076Z",
+      "freshness_s": 569838.6
+    }
+  },
+  "watch_progress": {
+    "hama-chudibha-d1": "hama-chudibha-d1-s1e1"
+  },
+  "top_genres": [
+    "Comedy",
+    "Thriller"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-14",
+    "2026-09-24",
+    "2026-09-25"
+  ],
+  "ist_play_days": [
+    "2026-09-24"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:45:00.722Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:hama-chudibha-d1",
+    "content_slug": "hama-chudibha-d1",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03447",
+      "decision_id": "D-U-03447-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:45:00.722Z",
+      "deadline": "2026-10-04T04:45:00.722Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-021725",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-03T07:52:50.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03447-001",
+      "viewer_id": "U-03447",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:45:00.722Z",
+        "event_age_s": 19916
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:45:00.722Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:a5df0e3c-5433-4e34-82aa-82ec53295f8c:event_age=19916s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=hama-chudibha-d1",
+        "state:days_since_play=6.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T04:45:00.722000+00:00",
+        "Viewer left series hama-chudibha-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "user_id": "U-02669",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-11-22T10:55:36.588Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-11-22T10:55:36.588Z",
+      "freshness_s": 58602943.9
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:c4a15c69-d513-48b3-970f-71ac5cecd32b:subscription_renewed",
+      "timestamp": "2026-09-07T13:41:47.553Z",
+      "freshness_s": 2087373.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:47:06.389Z",
+      "freshness_s": 215054.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:47:06.389Z",
+      "freshness_s": 215054.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:47:06.389Z",
+      "freshness_s": 215054.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-20T12:21:10.235Z",
+      "freshness_s": 969010.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-15T14:54:50.073Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-15T14:54:50.073Z",
+      "freshness_s": 1391790.5
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-08T14:25:53.319Z",
+      "freshness_s": 1998327.2
+    }
+  },
+  "watch_progress": {
+    "hapibha-d1": "hapibha-d1-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Thriller"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-08",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-20"
+  ],
+  "ist_play_days": [
+    "2026-09-08",
+    "2026-09-15"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T17:31:20.537Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:hapibha-d1",
+    "content_slug": "hapibha-d1",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 3,
+  "actions_count": 3,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-02669",
+      "decision_id": "D-U-02669-003",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T17:31:20.537Z",
+      "deadline": "2026-10-04T17:31:20.537Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-016601",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T17:35:45.537Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-02669-001",
+      "viewer_id": "U-02669",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-09-30T23:55:50.384Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-03T23:55:50.384Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0001",
+        "title:T0004",
+        "title:T0009",
+        "title:T0010",
+        "title:T0045",
+        "title:T0046",
+        "title:T0047",
+        "title:T0003",
+        "title:T0005",
+        "title:T0006",
+        "title:T0007",
+        "title:T0008",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0051",
+        "title:T0060",
+        "title:T0011",
+        "title:T0012",
+        "title:T0013",
+        "title:T0014",
+        "title:T0015"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:994636f9-f826-40cf-932f-66f624d8413e:event_age=0s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:watch_progress=hapibha-d1",
+        "state:days_since_play=15.4"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-09-30T23:55:50.384000+00:00",
+        "Viewer left series hapibha-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-02669-002",
+      "viewer_id": "U-02669",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T10:22:52.670Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T10:22:52.670Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0004",
+        "title:T0009",
+        "title:T0010",
+        "title:T0045",
+        "title:T0046",
+        "title:T0047",
+        "title:T0003",
+        "title:T0005",
+        "title:T0006",
+        "title:T0007",
+        "title:T0008",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0051",
+        "title:T0060",
+        "title:T0011",
+        "title:T0012",
+        "title:T0013",
+        "title:T0014",
+        "title:T0015"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:8813f379-e17d-4c40-b9cc-c2be31efc458:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:watch_progress=hapibha-d1",
+        "state:days_since_play=15.8"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T10:22:52.670000+00:00",
+        "Viewer left series hapibha-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-02669-003",
+      "viewer_id": "U-02669",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T17:31:20.537Z",
+        "event_age_s": 212
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T17:31:20.537Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0004",
+        "title:T0009",
+        "title:T0010",
+        "title:T0045",
+        "title:T0046",
+        "title:T0047",
+        "title:T0003",
+        "title:T0005",
+        "title:T0006",
+        "title:T0007",
+        "title:T0008",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0051",
+        "title:T0060",
+        "title:T0011",
+        "title:T0012",
+        "title:T0013",
+        "title:T0014",
+        "title:T0015"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:a6b36d8b-590f-4526-9738-db5bbf90378b:event_age=212s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:watch_progress=hapibha-d1",
+        "state:days_since_play=16.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T17:31:20.537000+00:00",
+        "Viewer left series hapibha-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 15,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "user_id": "U-04720",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-11-28T21:16:42.318Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-11-28T21:16:42.318Z",
+      "freshness_s": 26504185.2
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:00:00.437Z",
+      "freshness_s": 246787.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:00:00.437Z",
+      "freshness_s": 246787.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:00:00.437Z",
+      "freshness_s": 246787.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:00:00.437Z",
+      "freshness_s": 246787.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-20T07:40:08.199Z",
+      "freshness_s": 978779.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-20T07:14:22.965Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-20T07:14:22.965Z",
+      "freshness_s": 980324.5
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-20T07:40:08.199Z",
+      "freshness_s": 978779.3
+    }
+  },
+  "watch_progress": {
+    "tidha-dakachu-d1": "tidha-dakachu-d1-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Family"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-10",
+    "2026-09-15",
+    "2026-09-20"
+  ],
+  "ist_play_days": [
+    "2026-09-20"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T15:33:07.494Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:tidha-dakachu-d1",
+    "content_slug": "tidha-dakachu-d1",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 2,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04720",
+      "decision_id": "D-U-04720-002",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T15:33:07.494Z",
+      "deadline": "2026-10-04T15:33:07.494Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04720-001",
+      "viewer_id": "U-04720",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-09-30T19:03:24.232Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-03T19:03:24.232Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0003",
+        "title:T0005",
+        "title:T0007",
+        "title:T0010",
+        "title:T0016",
+        "title:T0022",
+        "title:T0030",
+        "title:T0001",
+        "title:T0004",
+        "title:T0006",
+        "title:T0008",
+        "title:T0009",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0046",
+        "title:T0047",
+        "title:T0011",
+        "title:T0012",
+        "title:T0013",
+        "title:T0014",
+        "title:T0015"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:8693fa5c-8e0e-4968-adda-3ae5d6633a21:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=tidha-dakachu-d1",
+        "state:days_since_play=10.5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-09-30T19:03:24.232000+00:00",
+        "Viewer left series tidha-dakachu-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-04720-002",
+      "viewer_id": "U-04720",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:33:07.494Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:33:07.494Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0003",
+        "title:T0005",
+        "title:T0007",
+        "title:T0010",
+        "title:T0016",
+        "title:T0022",
+        "title:T0030",
+        "title:T0004",
+        "title:T0006",
+        "title:T0008",
+        "title:T0009",
+        "title:T0011",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0046",
+        "title:T0047",
+        "title:T0012",
+        "title:T0013",
+        "title:T0014",
+        "title:T0015",
+        "title:T0017"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:0778555b-5fd0-4115-a157-6d1766f2e813:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=tidha-dakachu-d1",
+        "state:days_since_play=11.3"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:33:07.494000+00:00",
+        "Viewer left series tidha-dakachu-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

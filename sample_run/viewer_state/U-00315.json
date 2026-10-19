@@ -1,0 +1,285 @@
+{
+  "user_id": "U-00315",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-02-05T13:32:07.377Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-02-05T13:32:07.377Z",
+      "freshness_s": 20516283.5
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:fc0d093e-d541-43a2-b113-6603f3b2660d:subscription_renewed",
+      "timestamp": "2026-09-08T14:44:32.890Z",
+      "freshness_s": 1935938.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:45:33.740Z",
+      "freshness_s": 182677.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:45:33.740Z",
+      "freshness_s": 182677.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:45:33.740Z",
+      "freshness_s": 182677.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T06:39:51.035Z",
+      "freshness_s": 64219.8
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T04:41:09.820Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T04:41:09.820Z",
+      "freshness_s": 71341.1
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 3,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-30T06:39:51.035Z",
+      "freshness_s": 64219.8
+    }
+  },
+  "watch_progress": {
+    "hama-chudibha-d1": "hama-chudibha-d1-s1e2",
+    "raloja-d1": "raloja-d1-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Comedy",
+    "Drama"
+  ],
+  "sessions_count": 18,
+  "play_sessions_count": 8,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-16",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-29",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-03",
+    "2026-09-09",
+    "2026-09-16",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "try_new_release_7d",
+    "goal_id": "G08",
+    "window_hours": 168,
+    "deadline": "2026-10-08T00:30:10.873Z",
+    "success_event": "play_started",
+    "success_condition": "title released in last 30d",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 2,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00315",
+      "decision_id": "D-U-00315-002",
+      "goal_id": "try_new_release_7d",
+      "goal_started_at": "2026-10-01T00:30:10.873Z",
+      "deadline": "2026-10-08T00:30:10.873Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-002206",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-06T12:40:40.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal try_new_release_7d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00315-001",
+      "viewer_id": "U-00315",
+      "trigger": {
+        "event": "login_success",
+        "received_at": "2026-10-01T00:30:09.422Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "try_new_release_7d",
+        "deadline": "2026-10-08T00:30:09.422Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d4"
+        ]
+      },
+      "content": [
+        "title:T0001",
+        "title:T0003",
+        "title:T0011",
+        "title:T0018",
+        "title:T0023",
+        "title:T0026",
+        "title:T0027",
+        "title:T0004",
+        "title:T0005",
+        "title:T0006",
+        "title:T0007",
+        "title:T0008",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0046",
+        "title:T0047",
+        "title:T0009",
+        "title:T0010",
+        "title:T0012",
+        "title:T0013",
+        "title:T0014"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:4a431be8-8ec1-48fd-8f09-ac4e94f6fda7:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:subscription_status=active",
+        "state:plays_in_last_14d=5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T00:30:09.422000+00:00",
+        "Frequent subscriber will appreciate fresh content drops"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-00315-002",
+      "viewer_id": "U-00315",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T00:30:10.873Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "try_new_release_7d",
+        "deadline": "2026-10-08T00:30:10.873Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d4"
+        ]
+      },
+      "content": [
+        "title:T0001",
+        "title:T0003",
+        "title:T0011",
+        "title:T0018",
+        "title:T0023",
+        "title:T0026",
+        "title:T0027",
+        "title:T0004",
+        "title:T0005",
+        "title:T0006",
+        "title:T0007",
+        "title:T0008",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0046",
+        "title:T0047",
+        "title:T0009",
+        "title:T0010",
+        "title:T0012",
+        "title:T0013",
+        "title:T0014"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:b4bbafa9-ca58-4567-88e3-c800da5ea577:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:subscription_status=active",
+        "state:plays_in_last_14d=5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T00:30:10.873000+00:00",
+        "Frequent subscriber will appreciate fresh content drops"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "user_id": "U-04490",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-04-04T01:03:32.349Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-04-04T01:03:32.349Z",
+      "freshness_s": 47102357.9
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:38:57.081Z",
+      "freshness_s": 185033.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:38:57.081Z",
+      "freshness_s": 185033.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:38:57.081Z",
+      "freshness_s": 185033.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:38:57.081Z",
+      "freshness_s": 185033.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-25T15:08:39.983Z",
+      "freshness_s": 482050.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-25T15:04:58.427Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-25T15:04:58.427Z",
+      "freshness_s": 482271.8
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-25T15:08:39.983Z",
+      "freshness_s": 482050.3
+    }
+  },
+  "watch_progress": {
+    "tiko-subava-d4": "tiko-subava-d4-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Romance",
+    "Drama"
+  ],
+  "sessions_count": 10,
+  "play_sessions_count": 4,
+  "ist_app_open_days": [
+    "2026-09-05",
+    "2026-09-12",
+    "2026-09-14",
+    "2026-09-21",
+    "2026-09-25"
+  ],
+  "ist_play_days": [
+    "2026-09-05",
+    "2026-09-12",
+    "2026-09-21",
+    "2026-09-25"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T05:02:50.259Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:tiko-subava-d4",
+    "content_slug": "tiko-subava-d4",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04490",
+      "decision_id": "D-U-04490-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T05:02:50.259Z",
+      "deadline": "2026-10-04T05:02:50.259Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-028162",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T05:05:05.259Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04490-001",
+      "viewer_id": "U-04490",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T05:02:50.259Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T05:02:50.259Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0916",
+        "title:T0932",
+        "title:T0933",
+        "title:T0946",
+        "title:T0955",
+        "title:T0961",
+        "title:T0964",
+        "title:T0915",
+        "title:T0917",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0921",
+        "title:T0923",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:f4753fb5-9a52-4e3b-9064-96493d872156:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=tiko-subava-d4",
+        "state:days_since_play=5.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T05:02:50.259000+00:00",
+        "Viewer left series tiko-subava-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

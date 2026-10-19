@@ -1,0 +1,122 @@
+{
+  "user_id": "U-02909",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-05-14T07:19:43.287Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-05-14T07:19:43.287Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "events:b074c041-bc5f-46cb-9417-d0dd73826df5:subscription_lapsed",
+      "timestamp": "2026-09-02T19:04:14.227Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:17:52.582Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:17:52.582Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:17:52.582Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T08:05:54.552Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-29T08:04:05.604Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-29T08:04:05.604Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 12,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-29T08:05:54.552Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "guka-kosusa-d2": "guka-kosusa-d2-s1e5",
+    "nipi-maniba-d2": "nipi-maniba-d2-s1e1",
+    "rigu-dhadi-d2": "rigu-dhadi-d2-s1e1",
+    "molo-d2": "molo-d2-s1e3"
+  },
+  "top_genres": [
+    "Romance",
+    "Devotional",
+    "Action"
+  ],
+  "sessions_count": 30,
+  "play_sessions_count": 14,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-19",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-05",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-19",
+    "2026-09-21",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-29"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

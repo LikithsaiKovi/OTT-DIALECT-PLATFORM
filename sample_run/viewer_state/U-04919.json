@@ -1,0 +1,155 @@
+{
+  "user_id": "U-04919",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-02-11T21:54:02.388Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-02-11T21:54:02.388Z",
+      "freshness_s": 19983090.6
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T13:39:43.870Z",
+      "freshness_s": 140749.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d3",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T13:39:43.870Z",
+      "freshness_s": 140749.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T13:39:43.870Z",
+      "freshness_s": 140749.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T13:39:43.870Z",
+      "freshness_s": 140749.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-16T08:33:10.995Z",
+      "freshness_s": 1282341.9
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-07T14:49:18.556Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-07T14:49:18.556Z",
+      "freshness_s": 2037374.4
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Family"
+  ],
+  "sessions_count": 3,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-07",
+    "2026-09-14",
+    "2026-09-16"
+  ],
+  "ist_play_days": [
+    "2026-09-07"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_full_episode_3d",
+    "goal_id": "G02",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:45:32.944Z",
+    "success_event": "episode_completed",
+    "success_condition": "any episode",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04919",
+      "decision_id": "D-U-04919-001",
+      "goal_id": "first_full_episode_3d",
+      "goal_started_at": "2026-10-01T04:45:32.944Z",
+      "deadline": "2026-10-04T04:45:32.944Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_full_episode_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04919-001",
+      "viewer_id": "U-04919",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:45:32.944Z",
+        "event_age_s": 48366
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-04T04:45:32.944Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d3"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:d98a6648-b947-4ce8-b34d-18f5fe0baa79:event_age=48366s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d2:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'never' is reliable as of 2026-10-01T04:45:32.944000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

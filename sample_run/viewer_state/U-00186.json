@@ -1,0 +1,132 @@
+{
+  "user_id": "U-00186",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T12:50:59.208Z",
+      "freshness_s": 255602.5
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:6716a710-60bb-4f87-a51d-3bf9ca75f683:purchase_completed",
+      "timestamp": "2026-09-03T08:52:16.014Z",
+      "freshness_s": 2429925.7
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-23T23:26:27.554Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-23T23:26:27.554Z",
+      "freshness_s": 649474.2
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Action",
+    "Romance"
+  ],
+  "sessions_count": 9,
+  "play_sessions_count": 3,
+  "ist_app_open_days": [
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-12",
+    "2026-09-16",
+    "2026-09-22",
+    "2026-09-24",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-04",
+    "2026-09-16",
+    "2026-09-24"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_full_episode_3d",
+    "goal_id": "G02",
+    "window_hours": 72,
+    "deadline": "2026-10-04T11:51:01.746Z",
+    "success_event": "episode_completed",
+    "success_condition": "any episode",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00186",
+      "decision_id": "D-U-00186-001",
+      "goal_id": "first_full_episode_3d",
+      "goal_started_at": "2026-10-01T11:51:01.746Z",
+      "deadline": "2026-10-04T11:51:01.746Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-001186",
+      "attributed_event": "episode_completed",
+      "attributed_at": "2026-10-02T14:52:30.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_full_episode_3d -> SUCCEEDED (attributed to episode_completed)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00186-001",
+      "viewer_id": "U-00186",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T11:51:01.746Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-04T11:51:01.746Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:93255332-4a9b-46b0-9a47-d9f6ac2b8a2f:event_age=2s",
+        "subscription_status:active:events:6716a710-60bb-4f87-a51d-3bf9ca75f683:purchase_completed",
+        "dialect:d2:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T11:51:01.746000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

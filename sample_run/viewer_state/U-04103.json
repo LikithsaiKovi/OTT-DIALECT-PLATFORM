@@ -1,0 +1,342 @@
+{
+  "user_id": "U-04103",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-10-12T16:16:35.517Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-10-12T16:16:35.517Z",
+      "freshness_s": 62116146.2
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:09:08.822Z",
+      "freshness_s": 196592.9
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:09:08.822Z",
+      "freshness_s": 196592.9
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:09:08.822Z",
+      "freshness_s": 196592.9
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:09:08.822Z",
+      "freshness_s": 196592.9
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T06:33:26.250Z",
+      "freshness_s": 375135.5
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-03T01:45:14.611Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-03T01:45:14.611Z",
+      "freshness_s": 2466027.1
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-03T01:47:59.597Z",
+      "freshness_s": 2465862.2
+    }
+  },
+  "watch_progress": {
+    "kova-sako-d5": "kova-sako-d5-s1e1"
+  },
+  "top_genres": [
+    "Family",
+    "Devotional"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-15",
+    "2026-09-20",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-03"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T14:45:41.756Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:kova-sako-d5",
+    "content_slug": "kova-sako-d5",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 3,
+  "actions_count": 3,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04103",
+      "decision_id": "D-U-04103-003",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T14:45:41.756Z",
+      "deadline": "2026-10-04T14:45:41.756Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04103-001",
+      "viewer_id": "U-04103",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T03:53:46.884Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T03:53:46.884Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T1177",
+        "title:T1180",
+        "title:T1181",
+        "title:T1184",
+        "title:T1186",
+        "title:T1191",
+        "title:T1206",
+        "title:T1178",
+        "title:T1179",
+        "title:T1182",
+        "title:T1183",
+        "title:T1185",
+        "title:T1189",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1215",
+        "title:T1187",
+        "title:T1188",
+        "title:T1190",
+        "title:T1193",
+        "title:T1194"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:40d037bc-4e1e-45ea-9d62-b29d11a21409:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=kova-sako-d5",
+        "state:days_since_play=28.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T03:53:46.884000+00:00",
+        "Viewer left series kova-sako-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-04103-002",
+      "viewer_id": "U-04103",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T09:56:33.355Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T09:56:33.355Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T1177",
+        "title:T1180",
+        "title:T1181",
+        "title:T1184",
+        "title:T1186",
+        "title:T1191",
+        "title:T1206",
+        "title:T1178",
+        "title:T1179",
+        "title:T1182",
+        "title:T1183",
+        "title:T1185",
+        "title:T1189",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1215",
+        "title:T1187",
+        "title:T1188",
+        "title:T1190",
+        "title:T1193",
+        "title:T1194"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:ab85a227-c8cf-46a8-8de6-246a69b9cc8b:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=kova-sako-d5",
+        "state:days_since_play=28.3"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T09:56:33.355000+00:00",
+        "Viewer left series kova-sako-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-04103-003",
+      "viewer_id": "U-04103",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:45:41.756Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T14:45:41.756Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1",
+          "campaign:d3"
+        ]
+      },
+      "content": [
+        "title:T1177",
+        "title:T1180",
+        "title:T1181",
+        "title:T1184",
+        "title:T1186",
+        "title:T1191",
+        "title:T1206",
+        "title:T1178",
+        "title:T1179",
+        "title:T1182",
+        "title:T1183",
+        "title:T1185",
+        "title:T1189",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1215",
+        "title:T1187",
+        "title:T1188",
+        "title:T1190",
+        "title:T1193",
+        "title:T1194"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:01f35ae8-cc8e-4ea2-84d6-fdf46a17af8f:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=kova-sako-d5",
+        "state:days_since_play=28.5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T14:45:41.756000+00:00",
+        "Viewer left series kova-sako-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

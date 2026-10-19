@@ -1,0 +1,86 @@
+{
+  "user_id": "U-02777",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-10-04T09:06:47.314Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-10-04T09:06:47.314Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:43f1df36-b280-4deb-8e25-86dcbeb46ff2:subscription_renewed",
+      "timestamp": "2026-09-19T18:17:24.425Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:00:48.113Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:00:48.113Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:00:48.113Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-29T17:55:10.971Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-29T17:55:10.971Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-29T03:20:15.167Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "molo-d2": "molo-d2-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Action",
+    "Comedy"
+  ],
+  "sessions_count": 9,
+  "play_sessions_count": 5,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-07",
+    "2026-09-28",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-07",
+    "2026-09-29"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

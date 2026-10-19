@@ -1,0 +1,170 @@
+{
+  "user_id": "U-01438",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-01-30T20:27:06.837Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-01-30T20:27:06.837Z",
+      "freshness_s": 21049257.3
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:4b1c02c8-c70b-4d86-9ae7-3c253db4d083:subscription_renewed",
+      "timestamp": "2026-09-03T11:45:47.528Z",
+      "freshness_s": 2418136.7
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:43:23.556Z",
+      "freshness_s": 229480.6
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:43:23.556Z",
+      "freshness_s": 229480.6
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:43:23.556Z",
+      "freshness_s": 229480.6
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-26T12:29:45.778Z",
+      "freshness_s": 428298.4
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-25T00:26:43.426Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-25T00:26:43.426Z",
+      "freshness_s": 558080.8
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-01T15:31:14.441Z",
+      "freshness_s": 2577409.7
+    }
+  },
+  "watch_progress": {
+    "molo-d2": "molo-d2-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Romance"
+  ],
+  "sessions_count": 12,
+  "play_sessions_count": 3,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-03",
+    "2026-09-15",
+    "2026-09-17",
+    "2026-09-23",
+    "2026-09-25",
+    "2026-09-26"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-03",
+    "2026-09-25"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T11:28:04.182Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:molo-d2",
+    "content_slug": "molo-d2",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01438",
+      "decision_id": "D-U-01438-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T11:28:04.182Z",
+      "deadline": "2026-10-04T11:28:04.182Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-009853",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-02T16:34:32.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01438-001",
+      "viewer_id": "U-01438",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T11:28:04.182Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T11:28:04.182Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:156ca8a6-f969-4eb4-9853-d815ab339c70:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:watch_progress=molo-d2",
+        "state:days_since_play=6.5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T11:28:04.182000+00:00",
+        "Viewer left series molo-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

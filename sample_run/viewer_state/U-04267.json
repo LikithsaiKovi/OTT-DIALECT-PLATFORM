@@ -1,0 +1,168 @@
+{
+  "user_id": "U-04267",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-06-16T17:00:06.397Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-06-16T17:00:06.397Z",
+      "freshness_s": 40778427.6
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:02:41.838Z",
+      "freshness_s": 209872.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:02:41.838Z",
+      "freshness_s": 209872.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:02:41.838Z",
+      "freshness_s": 209872.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:02:41.838Z",
+      "freshness_s": 209872.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T08:22:53.775Z",
+      "freshness_s": 374260.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-24T13:10:18.072Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-24T13:10:18.072Z",
+      "freshness_s": 616216.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-24T13:13:02.932Z",
+      "freshness_s": 616051.1
+    }
+  },
+  "watch_progress": {
+    "yane-tegi-d3": "yane-tegi-d3-s1e2"
+  },
+  "top_genres": [
+    "Thriller",
+    "Crime"
+  ],
+  "sessions_count": 5,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-22",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-22",
+    "2026-09-24"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T16:20:34.043Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:yane-tegi-d3",
+    "content_slug": "yane-tegi-d3",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04267",
+      "decision_id": "D-U-04267-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T16:20:34.043Z",
+      "deadline": "2026-10-04T16:20:34.043Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-026940",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T16:24:22.043Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04267-001",
+      "viewer_id": "U-04267",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:20:34.043Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T16:20:34.043Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d4"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:c48f786a-780e-4f5c-be3a-e517cbad7b69:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d3:app_setting",
+        "state:watch_progress=yane-tegi-d3",
+        "state:days_since_play=7.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'never' is reliable as of 2026-10-01T16:20:34.043000+00:00",
+        "Viewer left series yane-tegi-d3 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

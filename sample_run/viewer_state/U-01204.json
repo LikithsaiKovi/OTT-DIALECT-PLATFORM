@@ -1,0 +1,180 @@
+{
+  "user_id": "U-01204",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-12-20T06:34:43.922Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-12-20T06:34:43.922Z",
+      "freshness_s": 24615942.6
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:2ea3f3b0-95f4-4c9f-9767-d9b8fd20ccdd:subscription_renewed",
+      "timestamp": "2026-09-09T11:13:50.742Z",
+      "freshness_s": 1875995.7
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:11:56.741Z",
+      "freshness_s": 194909.7
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:11:56.741Z",
+      "freshness_s": 194909.7
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:11:56.741Z",
+      "freshness_s": 194909.7
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T14:40:12.947Z",
+      "freshness_s": 308413.5
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-23T07:38:29.492Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-23T07:38:29.492Z",
+      "freshness_s": 679317.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 3,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-23T07:41:16.368Z",
+      "freshness_s": 679150.1
+    }
+  },
+  "watch_progress": {
+    "chuchu-jahada-d2": "chuchu-jahada-d2-s1e1",
+    "dhapipa-gini-d2": "dhapipa-gini-d2-s1e1",
+    "guka-kosusa-d2": "guka-kosusa-d2-s1e1"
+  },
+  "top_genres": [
+    "Family",
+    "Romance",
+    "Devotional"
+  ],
+  "sessions_count": 15,
+  "play_sessions_count": 7,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-05",
+    "2026-09-12",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-12",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-23"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:20:26.490Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:chuchu-jahada-d2",
+    "content_slug": "chuchu-jahada-d2",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01204",
+      "decision_id": "D-U-01204-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:20:26.490Z",
+      "deadline": "2026-10-04T04:20:26.490Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-007945",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T04:22:24.490Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01204-001",
+      "viewer_id": "U-01204",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:20:26.490Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:20:26.490Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:8f1f6c6f-6493-411c-88a2-5c204795dd01:event_age=0s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:watch_progress=chuchu-jahada-d2",
+        "state:days_since_play=7.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T04:20:26.490000+00:00",
+        "Viewer left series chuchu-jahada-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "user_id": "U-04355",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-04-15T03:44:06.775Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-04-15T03:44:06.775Z",
+      "freshness_s": 46141270.6
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:18:16.546Z",
+      "freshness_s": 192420.8
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:18:16.546Z",
+      "freshness_s": 192420.8
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:18:16.546Z",
+      "freshness_s": 192420.8
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:18:16.546Z",
+      "freshness_s": 192420.8
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T11:38:38.093Z",
+      "freshness_s": 320799.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T10:43:09.223Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T10:43:09.223Z",
+      "freshness_s": 324128.2
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-18T03:32:41.511Z",
+      "freshness_s": 1127555.9
+    }
+  },
+  "watch_progress": {
+    "gineni-d4": "gineni-d4-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Family"
+  ],
+  "sessions_count": 3,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-18",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-18",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:45:17.394Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:gineni-d4",
+    "content_slug": "gineni-d4",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04355",
+      "decision_id": "D-U-04355-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:45:17.394Z",
+      "deadline": "2026-10-04T04:45:17.394Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04355-001",
+      "viewer_id": "U-04355",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:45:17.394Z",
+        "event_age_s": 677345
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:45:17.394Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:6b9f60bd-9503-40ad-b2ec-ea0b800ae59b:event_age=677345s",
+        "subscription_status:lapsed:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=gineni-d4",
+        "state:days_since_play=3.8"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T04:45:17.394000+00:00",
+        "Viewer left series gineni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

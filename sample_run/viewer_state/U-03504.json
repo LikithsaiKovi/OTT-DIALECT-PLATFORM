@@ -1,0 +1,170 @@
+{
+  "user_id": "U-03504",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-10-05T10:57:00.364Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-10-05T10:57:00.364Z",
+      "freshness_s": 31168111.4
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:55:49.640Z",
+      "freshness_s": 204582.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:55:49.640Z",
+      "freshness_s": 204582.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:55:49.640Z",
+      "freshness_s": 204582.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:55:49.640Z",
+      "freshness_s": 204582.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T10:08:52.285Z",
+      "freshness_s": 66999.5
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T10:06:50.748Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T10:06:50.748Z",
+      "freshness_s": 67121.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-02T14:29:26.850Z",
+      "freshness_s": 2470564.9
+    }
+  },
+  "watch_progress": {
+    "yane-tegi-d3": "yane-tegi-d3-s1e1"
+  },
+  "top_genres": [
+    "Crime",
+    "Thriller",
+    "Romance"
+  ],
+  "sessions_count": 8,
+  "play_sessions_count": 3,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-23",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-29",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-02",
+    "2026-09-25",
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_paid_7d",
+    "goal_id": "G05",
+    "window_hours": 168,
+    "deadline": "2026-10-08T04:45:31.792Z",
+    "success_event": "purchase_completed",
+    "success_condition": "is_trial = false",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03504",
+      "decision_id": "D-U-03504-001",
+      "goal_id": "first_paid_7d",
+      "goal_started_at": "2026-10-01T04:45:31.792Z",
+      "deadline": "2026-10-08T04:45:31.792Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_paid_7d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03504-001",
+      "viewer_id": "U-03504",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:45:31.792Z",
+        "event_age_s": 627369
+      },
+      "goal": {
+        "id": "first_paid_7d",
+        "deadline": "2026-10-08T04:45:31.792Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d4"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:2c08363d-ef25-433f-af77-0a57274b870f:event_age=627369s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d3:app_setting",
+        "state:subscription_status=never",
+        "goal_rule:G05"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'never' is reliable as of 2026-10-01T04:45:31.792000+00:00",
+        "Viewer has not yet committed to premium catalog"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

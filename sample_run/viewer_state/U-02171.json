@@ -1,0 +1,164 @@
+{
+  "user_id": "U-02171",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-09-03T23:17:22.051Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-09-03T23:17:22.051Z",
+      "freshness_s": 33888523.2
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:04:11.619Z",
+      "freshness_s": 200513.7
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d6",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:04:11.619Z",
+      "freshness_s": 200513.7
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:04:11.619Z",
+      "freshness_s": 200513.7
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:04:11.619Z",
+      "freshness_s": 200513.7
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d6",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T06:07:05.205Z",
+      "freshness_s": 167940.1
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-21T13:55:15.573Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-21T13:55:15.573Z",
+      "freshness_s": 831049.7
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-21T14:24:39.613Z",
+      "freshness_s": 829285.7
+    }
+  },
+  "watch_progress": {
+    "rasuya-moni-d6": "rasuya-moni-d6-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Thriller"
+  ],
+  "sessions_count": 3,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-21",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-03",
+    "2026-09-21"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:46:05.285Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:rasuya-moni-d6",
+    "content_slug": "rasuya-moni-d6",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-02171",
+      "decision_id": "D-U-02171-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:46:05.285Z",
+      "deadline": "2026-10-04T04:46:05.285Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-02171-001",
+      "viewer_id": "U-02171",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:46:05.285Z",
+        "event_age_s": 21615
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:46:05.285Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d6",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:e1e6f54c-e1c1-49c2-b185-30676d853db9:event_age=21615s",
+        "subscription_status:lapsed:profile_snapshot",
+        "dialect:d6:app_setting",
+        "state:watch_progress=rasuya-moni-d6",
+        "state:days_since_play=9.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d6",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T04:46:05.285000+00:00",
+        "Viewer left series rasuya-moni-d6 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

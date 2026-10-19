@@ -1,0 +1,189 @@
+{
+  "user_id": "U-00891",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-08-22T22:10:52.924Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-08-22T22:10:52.924Z",
+      "freshness_s": 3396482.2
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:5c9262c7-50e7-47fb-8704-c9d4b59c25e2:subscription_renewed",
+      "timestamp": "2026-09-23T16:47:43.322Z",
+      "freshness_s": 651071.8
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:14:54.377Z",
+      "freshness_s": 149040.8
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:14:54.377Z",
+      "freshness_s": 149040.8
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:14:54.377Z",
+      "freshness_s": 149040.8
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T14:21:34.364Z",
+      "freshness_s": 55040.8
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-22T14:28:35.913Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-22T14:28:35.913Z",
+      "freshness_s": 745819.2
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 8,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-20T07:55:23.290Z",
+      "freshness_s": 942211.8
+    }
+  },
+  "watch_progress": {
+    "daya-d4": "daya-d4-s1e1",
+    "radi-d4": "radi-d4-s1e2",
+    "gineni-d4": "gineni-d4-s1e1",
+    "hada-maloni-d4": "hada-maloni-d4-s1e1",
+    "bagi-baya-d4": "bagi-baya-d4-s1e1"
+  },
+  "top_genres": [
+    "Romance",
+    "Family",
+    "Drama"
+  ],
+  "sessions_count": 23,
+  "play_sessions_count": 10,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-11",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-06",
+    "2026-09-11",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-22"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T05:38:55.130Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:daya-d4",
+    "content_slug": "daya-d4",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00891",
+      "decision_id": "D-U-00891-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T05:38:55.130Z",
+      "deadline": "2026-10-04T05:38:55.130Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00891-001",
+      "viewer_id": "U-00891",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T05:38:55.130Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T05:38:55.130Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:60811dde-fd15-4d3e-9f2d-b750fdb1ae00:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=daya-d4",
+        "state:days_since_play=8.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T05:38:55.130000+00:00",
+        "Viewer left series daya-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

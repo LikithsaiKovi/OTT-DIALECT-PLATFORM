@@ -1,0 +1,350 @@
+{
+  "user_id": "U-01556",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-11-03T08:36:56.079Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-11-03T08:36:56.079Z",
+      "freshness_s": 60244095.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "events:394bb8ab-e310-47bc-8259-50b54469a35f:subscription_lapsed",
+      "timestamp": "2026-09-21T10:28:47.019Z",
+      "freshness_s": 880584.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T17:57:14.660Z",
+      "freshness_s": 162476.5
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T17:57:14.660Z",
+      "freshness_s": 162476.5
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T17:57:14.660Z",
+      "freshness_s": 162476.5
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T01:50:42.270Z",
+      "freshness_s": 393268.9
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-26T03:01:41.691Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-26T03:01:41.691Z",
+      "freshness_s": 475409.5
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 3,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-07T19:19:27.290Z",
+      "freshness_s": 2058343.9
+    }
+  },
+  "watch_progress": {
+    "gubava-gihaya-d5": "gubava-gihaya-d5-s1e2",
+    "diti-kochu-d5": "diti-kochu-d5-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Crime",
+    "Romance"
+  ],
+  "sessions_count": 18,
+  "play_sessions_count": 6,
+  "ist_app_open_days": [
+    "2026-09-04",
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-16",
+    "2026-09-19",
+    "2026-09-22",
+    "2026-09-26",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-04",
+    "2026-09-06",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-19",
+    "2026-09-26"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T15:05:11.180Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:gubava-gihaya-d5",
+    "content_slug": "gubava-gihaya-d5",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 3,
+  "actions_count": 3,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01556",
+      "decision_id": "D-U-01556-003",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T15:05:11.180Z",
+      "deadline": "2026-10-04T15:05:11.180Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-010472",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T15:09:12.180Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01556-001",
+      "viewer_id": "U-01556",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T03:27:31.047Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T03:27:31.047Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1177",
+        "title:T1187",
+        "title:T1180",
+        "title:T1182",
+        "title:T1183",
+        "title:T1184",
+        "title:T1188",
+        "title:T1178",
+        "title:T1179",
+        "title:T1181",
+        "title:T1185",
+        "title:T1186",
+        "title:T1189",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1215",
+        "title:T1190",
+        "title:T1191",
+        "title:T1193",
+        "title:T1194",
+        "title:T1195"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:8b99bcda-1290-4754-b3b6-60147bb28b2d:event_age=1s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=gubava-gihaya-d5",
+        "state:days_since_play=5.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T03:27:31.047000+00:00",
+        "Viewer left series gubava-gihaya-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 16,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-01556-002",
+      "viewer_id": "U-01556",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T09:57:56.236Z",
+        "event_age_s": 190
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T09:57:56.236Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1177",
+        "title:T1187",
+        "title:T1180",
+        "title:T1182",
+        "title:T1183",
+        "title:T1184",
+        "title:T1188",
+        "title:T1178",
+        "title:T1179",
+        "title:T1181",
+        "title:T1185",
+        "title:T1186",
+        "title:T1189",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1215",
+        "title:T1190",
+        "title:T1191",
+        "title:T1193",
+        "title:T1194",
+        "title:T1195"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:18538ca4-7275-4afd-a3f1-59c6e89d82e6:event_age=190s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=gubava-gihaya-d5",
+        "state:days_since_play=5.3"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T09:57:56.236000+00:00",
+        "Viewer left series gubava-gihaya-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01556-003",
+      "viewer_id": "U-01556",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:05:11.180Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:05:11.180Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1177",
+        "title:T1187",
+        "title:T1180",
+        "title:T1182",
+        "title:T1183",
+        "title:T1184",
+        "title:T1188",
+        "title:T1178",
+        "title:T1179",
+        "title:T1181",
+        "title:T1185",
+        "title:T1186",
+        "title:T1189",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1215",
+        "title:T1190",
+        "title:T1191",
+        "title:T1193",
+        "title:T1194",
+        "title:T1195"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:a101c0f3-ec5d-4e75-a9ff-c117533175af:event_age=2s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=gubava-gihaya-d5",
+        "state:days_since_play=5.5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T15:05:11.180000+00:00",
+        "Viewer left series gubava-gihaya-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

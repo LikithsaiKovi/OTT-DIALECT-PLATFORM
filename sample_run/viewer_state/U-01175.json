@@ -1,0 +1,178 @@
+{
+  "user_id": "U-01175",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-11-07T13:50:29.678Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-11-07T13:50:29.678Z",
+      "freshness_s": 59879304.4
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:0f74ed4b-7356-4ab1-8aa4-a018972a9748:subscription_renewed",
+      "timestamp": "2026-09-27T19:24:23.615Z",
+      "freshness_s": 329670.5
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T07:51:30.190Z",
+      "freshness_s": 198443.9
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T07:51:30.190Z",
+      "freshness_s": 198443.9
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T07:51:30.190Z",
+      "freshness_s": 198443.9
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T19:24:23.615Z",
+      "freshness_s": 329670.5
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T00:53:41.233Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T00:53:41.233Z",
+      "freshness_s": 396312.8
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 3,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-27T02:35:50.297Z",
+      "freshness_s": 390183.8
+    }
+  },
+  "watch_progress": {
+    "neba-d2": "neba-d2-s1e1",
+    "molo-d2": "molo-d2-s1e1",
+    "nipi-maniba-d2": "nipi-maniba-d2-s1e1"
+  },
+  "top_genres": [
+    "Romance",
+    "Action",
+    "Devotional"
+  ],
+  "sessions_count": 16,
+  "play_sessions_count": 10,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-12",
+    "2026-09-15",
+    "2026-09-18",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-03",
+    "2026-09-05",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-15",
+    "2026-09-18",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T14:58:54.073Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:neba-d2",
+    "content_slug": "neba-d2",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01175",
+      "decision_id": "D-U-01175-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T14:58:54.073Z",
+      "deadline": "2026-10-04T14:58:54.073Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01175-001",
+      "viewer_id": "U-01175",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:58:54.073Z",
+        "event_age_s": 446513
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T14:58:54.073Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:70a5aa6a-f2b7-485f-98d9-102c48979788:event_age=446513s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:watch_progress=neba-d2",
+        "state:days_since_play=4.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T14:58:54.073000+00:00",
+        "Viewer left series neba-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "user_id": "U-03263",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-21T02:23:55.857Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-21T02:21:10.511Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-21T02:21:10.511Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-21T02:23:55.857Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "bhaja-moguba-d2": "bhaja-moguba-d2-s1e1",
+    "kolani-mari-d2": "kolani-mari-d2-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Drama"
+  ],
+  "sessions_count": 4,
+  "play_sessions_count": 3,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-16",
+    "2026-09-18",
+    "2026-09-21"
+  ],
+  "ist_play_days": [
+    "2026-09-16",
+    "2026-09-18",
+    "2026-09-21"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

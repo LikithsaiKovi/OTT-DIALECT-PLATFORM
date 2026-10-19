@@ -1,0 +1,167 @@
+{
+  "user_id": "U-00096",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-12-29T12:46:12.210Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-12-29T12:46:12.210Z",
+      "freshness_s": 55353534.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:32:04.025Z",
+      "freshness_s": 202382.3
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d3",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:32:04.025Z",
+      "freshness_s": 202382.3
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:32:04.025Z",
+      "freshness_s": 202382.3
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:32:04.025Z",
+      "freshness_s": 202382.3
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T12:12:33.939Z",
+      "freshness_s": 318752.4
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-08T04:27:52.226Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-08T04:27:52.226Z",
+      "freshness_s": 1988234.1
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-08T04:29:42.502Z",
+      "freshness_s": 1988123.9
+    }
+  },
+  "watch_progress": {
+    "tepa-lagi-d3": "tepa-lagi-d3-s1e1",
+    "lomobha-moni-d3": "lomobha-moni-d3-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Thriller"
+  ],
+  "sessions_count": 8,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-05",
+    "2026-09-08",
+    "2026-09-21",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-05",
+    "2026-09-08"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:45:06.360Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:tepa-lagi-d3",
+    "content_slug": "tepa-lagi-d3",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00096",
+      "decision_id": "D-U-00096-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:45:06.360Z",
+      "deadline": "2026-10-04T04:45:06.360Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00096-001",
+      "viewer_id": "U-00096",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:45:06.360Z",
+        "event_age_s": 11062
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:45:06.360Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:c410a669-c9c6-40ee-82ab-c7acc6594b6a:event_age=11062s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d3:app_setting",
+        "state:watch_progress=tepa-lagi-d3",
+        "state:days_since_play=23.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'never' is reliable as of 2026-10-01T04:45:06.360000+00:00",
+        "Viewer left series tepa-lagi-d3 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

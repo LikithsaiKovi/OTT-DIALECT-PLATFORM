@@ -1,0 +1,162 @@
+{
+  "user_id": "U-03952",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-28T17:00:01.814Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T17:00:01.814Z",
+      "freshness_s": 258091.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:9eee0101-1690-44a2-a45a-22a13eafc58b:purchase_completed",
+      "timestamp": "2026-09-29T09:21:52.514Z",
+      "freshness_s": 199180.4
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:49:50.834Z",
+      "freshness_s": 237102.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:49:50.834Z",
+      "freshness_s": 237102.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:49:50.834Z",
+      "freshness_s": 237102.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T04:39:23.718Z",
+      "freshness_s": 129729.1
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-29T07:22:46.250Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-29T07:22:46.250Z",
+      "freshness_s": 206326.6
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-29T09:13:09.401Z",
+      "freshness_s": 199703.5
+    }
+  },
+  "watch_progress": {
+    "rava-baya-d1": "rava-baya-d1-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Thriller"
+  ],
+  "sessions_count": 2,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-29",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-29"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "weekly_habit_14d",
+    "goal_id": "G09",
+    "window_hours": 336,
+    "deadline": "2026-10-15T16:41:32.868Z",
+    "success_event": "play_started",
+    "success_condition": "on 3 distinct IST days",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03952",
+      "decision_id": "D-U-03952-001",
+      "goal_id": "weekly_habit_14d",
+      "goal_started_at": "2026-10-01T16:41:32.868Z",
+      "deadline": "2026-10-15T16:41:32.868Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-025206",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-05T16:22:00.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal weekly_habit_14d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03952-001",
+      "viewer_id": "U-03952",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:41:32.868Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "weekly_habit_14d",
+        "deadline": "2026-10-15T16:41:32.868Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:27150897-9f91-44bf-bef0-98a4b6186f2c:event_age=1s",
+        "subscription_status:active:events:9eee0101-1690-44a2-a45a-22a13eafc58b:purchase_completed",
+        "dialect:d1:app_setting",
+        "state:subscription_status=active",
+        "state:plays_in_last_14d=1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T16:41:32.868000+00:00",
+        "Active paying subscriber is at churn risk due to infrequent usage"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

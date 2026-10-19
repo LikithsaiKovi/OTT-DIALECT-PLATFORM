@@ -1,0 +1,445 @@
+{
+  "user_id": "U-01712",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-20T06:22:45.507Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-20T06:22:45.507Z",
+      "freshness_s": 962970.5
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:cfd0fdcc-6622-4ef7-bc9d-6844f1998a0b:purchase_completed",
+      "timestamp": "2026-09-20T08:20:20.661Z",
+      "freshness_s": 955915.3
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:19:08.498Z",
+      "freshness_s": 163987.5
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:19:08.498Z",
+      "freshness_s": 163987.5
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:19:08.498Z",
+      "freshness_s": 163987.5
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-22T04:52:27.042Z",
+      "freshness_s": 795588.9
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-20T06:25:27.815Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-20T06:25:27.815Z",
+      "freshness_s": 962808.2
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-20T08:07:34.041Z",
+      "freshness_s": 956681.9
+    }
+  },
+  "watch_progress": {
+    "gineni-d4": "gineni-d4-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Family"
+  ],
+  "sessions_count": 2,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-20",
+    "2026-09-22"
+  ],
+  "ist_play_days": [
+    "2026-09-20"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T09:52:15.983Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:gineni-d4",
+    "content_slug": "gineni-d4",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 5,
+  "actions_count": 4,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01712",
+      "decision_id": "D-U-01712-005",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T09:52:15.983Z",
+      "deadline": "2026-10-04T09:52:15.983Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01712-001",
+      "viewer_id": "U-01712",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T03:30:08.890Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T03:30:08.890Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0915",
+        "title:T0917",
+        "title:T0939",
+        "title:T0941",
+        "title:T0943",
+        "title:T0952",
+        "title:T0916",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0921",
+        "title:T0922",
+        "title:T0937",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0923",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926",
+        "title:T0927"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:d368d809-c6b0-441f-b079-6f5863301890:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=gineni-d4",
+        "state:days_since_play=10.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T03:30:08.890000+00:00",
+        "Viewer left series gineni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-01712-002",
+      "viewer_id": "U-01712",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T03:31:58.923Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "none",
+        "deadline": null
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "none",
+        "source": "idempotency_cache",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 1.0,
+      "confidence_reason": "Trigger event already processed; strictly idempotent",
+      "evidence": [
+        "trigger_seen:d368d809-c6b0-441f-b079-6f5863301890"
+      ],
+      "assumptions": [
+        "Duplicate delivery over network"
+      ],
+      "checks": {
+        "passed": [
+          "idempotency"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "duplicate_trigger_idempotency",
+      "fallback_used": false,
+      "model_calls": 0,
+      "tool_calls": 0,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-01712-003",
+      "viewer_id": "U-01712",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T05:05:08.431Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T05:05:08.431Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0915",
+        "title:T0917",
+        "title:T0939",
+        "title:T0941",
+        "title:T0943",
+        "title:T0952",
+        "title:T0916",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0921",
+        "title:T0922",
+        "title:T0937",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0923",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926",
+        "title:T0927"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:44ebba46-bde7-499f-b48b-677f331177e8:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=gineni-d4",
+        "state:days_since_play=10.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T05:05:08.431000+00:00",
+        "Viewer left series gineni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-01712-004",
+      "viewer_id": "U-01712",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T08:43:20.128Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T08:43:20.128Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "campaign:d6"
+        ]
+      },
+      "content": [
+        "title:T0915",
+        "title:T0917",
+        "title:T0939",
+        "title:T0941",
+        "title:T0943",
+        "title:T0952",
+        "title:T0916",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0921",
+        "title:T0922",
+        "title:T0937",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0923",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926",
+        "title:T0927"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:14f87129-32e1-45d2-b9b1-e3700acc78ba:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=gineni-d4",
+        "state:days_since_play=11.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T08:43:20.128000+00:00",
+        "Viewer left series gineni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01712-005",
+      "viewer_id": "U-01712",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T09:52:15.983Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T09:52:15.983Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0915",
+        "title:T0917",
+        "title:T0939",
+        "title:T0941",
+        "title:T0943",
+        "title:T0952",
+        "title:T0916",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0921",
+        "title:T0922",
+        "title:T0937",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0923",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926",
+        "title:T0927"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:0cc74baa-aaa5-49b3-8b1b-8a27cde4ce14:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=gineni-d4",
+        "state:days_since_play=11.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T09:52:15.983000+00:00",
+        "Viewer left series gineni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

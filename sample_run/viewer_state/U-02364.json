@@ -1,0 +1,194 @@
+{
+  "user_id": "U-02364",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-06-01T14:57:52.460Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-06-01T14:57:52.460Z",
+      "freshness_s": 10541086.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:12:53.335Z",
+      "freshness_s": 204585.9
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d6",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:12:53.335Z",
+      "freshness_s": 204585.9
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:12:53.335Z",
+      "freshness_s": 204585.9
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:12:53.335Z",
+      "freshness_s": 204585.9
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d6",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T15:47:51.896Z",
+      "freshness_s": 342887.4
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-15T14:58:54.346Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-15T14:58:54.346Z",
+      "freshness_s": 1382624.9
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-15T15:28:19.900Z",
+      "freshness_s": 1380859.4
+    }
+  },
+  "watch_progress": {
+    "yagi-dagi-d6": "yagi-dagi-d6-s1e1",
+    "rasuya-moni-d6": "rasuya-moni-d6-s1e1"
+  },
+  "top_genres": [
+    "Comedy",
+    "Romance",
+    "Devotional"
+  ],
+  "sessions_count": 7,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-12",
+    "2026-09-15",
+    "2026-09-19",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-12",
+    "2026-09-15"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T15:02:39.250Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:yagi-dagi-d6",
+    "content_slug": "yagi-dagi-d6",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-02364",
+      "decision_id": "D-U-02364-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T15:02:39.250Z",
+      "deadline": "2026-10-04T15:02:39.250Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-02364-001",
+      "viewer_id": "U-02364",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:02:39.250Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:02:39.250Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d6",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1392",
+        "title:T1394",
+        "title:T1387",
+        "title:T1403",
+        "title:T1407",
+        "title:T1411",
+        "title:T1412",
+        "title:T1424",
+        "title:T1389",
+        "title:T1390",
+        "title:T1391",
+        "title:T1393",
+        "title:T1395",
+        "title:T1421",
+        "title:T1456",
+        "title:T1461",
+        "title:T1468",
+        "title:T1472",
+        "title:T1396",
+        "title:T1397",
+        "title:T1398",
+        "title:T1399",
+        "title:T1400"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d6 matching user history",
+      "evidence": [
+        "trigger:762fe2b7-4986-4595-9d61-8142a79133c8:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d6:app_setting",
+        "state:watch_progress=yagi-dagi-d6",
+        "state:days_since_play=16.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d6",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:02:39.250000+00:00",
+        "Viewer left series yagi-dagi-d6 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

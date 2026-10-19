@@ -1,0 +1,194 @@
+{
+  "user_id": "U-04579",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-11-18T23:12:19.769Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-11-18T23:12:19.769Z",
+      "freshness_s": 27309872.7
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:36:01.260Z",
+      "freshness_s": 189651.3
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:36:01.260Z",
+      "freshness_s": 189651.3
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:36:01.260Z",
+      "freshness_s": 189651.3
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:36:01.260Z",
+      "freshness_s": 189651.3
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T15:46:22.662Z",
+      "freshness_s": 293429.9
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-20T06:30:54.527Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-20T06:30:54.527Z",
+      "freshness_s": 931558.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-20T08:08:26.539Z",
+      "freshness_s": 925706.0
+    }
+  },
+  "watch_progress": {
+    "koha-tena-d1": "koha-tena-d1-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Drama",
+    "Crime"
+  ],
+  "sessions_count": 7,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-09",
+    "2026-09-12",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-20",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-16",
+    "2026-09-20"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T01:16:52.518Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:koha-tena-d1",
+    "content_slug": "koha-tena-d1",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04579",
+      "decision_id": "D-U-04579-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T01:16:52.518Z",
+      "deadline": "2026-10-04T01:16:52.518Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-028668",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T01:21:27.518Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04579-001",
+      "viewer_id": "U-04579",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T01:16:52.518Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T01:16:52.518Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0001",
+        "title:T0026",
+        "title:T0011",
+        "title:T0018",
+        "title:T0023",
+        "title:T0027",
+        "title:T0028",
+        "title:T0003",
+        "title:T0004",
+        "title:T0005",
+        "title:T0006",
+        "title:T0007",
+        "title:T0031",
+        "title:T0036",
+        "title:T0046",
+        "title:T0047",
+        "title:T0051",
+        "title:T0008",
+        "title:T0009",
+        "title:T0010",
+        "title:T0012",
+        "title:T0013"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:e6a05a21-cf41-478d-abaf-6411b9a65adf:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=koha-tena-d1",
+        "state:days_since_play=10.8"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T01:16:52.518000+00:00",
+        "Viewer left series koha-tena-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

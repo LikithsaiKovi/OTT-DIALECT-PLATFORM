@@ -1,0 +1,271 @@
+{
+  "user_id": "U-03717",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-04-02T10:26:47.950Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-04-02T10:26:47.950Z",
+      "freshness_s": 15729014.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:12:17.656Z",
+      "freshness_s": 170685.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:12:17.656Z",
+      "freshness_s": 170685.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:12:17.656Z",
+      "freshness_s": 170685.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:12:17.656Z",
+      "freshness_s": 170685.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-20T17:15:13.873Z",
+      "freshness_s": 930108.9
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-19T17:19:52.247Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-19T17:19:52.247Z",
+      "freshness_s": 1016230.5
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-19T17:23:32.892Z",
+      "freshness_s": 1016009.9
+    }
+  },
+  "watch_progress": {
+    "bagi-baya-d4": "bagi-baya-d4-s1e1"
+  },
+  "top_genres": [
+    "Romance",
+    "Drama",
+    "Family"
+  ],
+  "sessions_count": 7,
+  "play_sessions_count": 3,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-11",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20"
+  ],
+  "ist_play_days": [
+    "2026-09-03",
+    "2026-09-11",
+    "2026-09-19"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T11:37:02.749Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:bagi-baya-d4",
+    "content_slug": "bagi-baya-d4",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 2,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03717",
+      "decision_id": "D-U-03717-002",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T11:37:02.749Z",
+      "deadline": "2026-10-04T11:37:02.749Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03717-001",
+      "viewer_id": "U-03717",
+      "trigger": {
+        "event": "login_success",
+        "received_at": "2026-10-01T11:37:00.862Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T11:37:00.862Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0915",
+        "title:T0916",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0917",
+        "title:T0921",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0927",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:18eb5335-caf3-42e5-a528-6e072dccb507:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=bagi-baya-d4",
+        "state:days_since_play=11.8"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T11:37:00.862000+00:00",
+        "Viewer left series bagi-baya-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-03717-002",
+      "viewer_id": "U-03717",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T11:37:02.749Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T11:37:02.749Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1",
+          "campaign:d5"
+        ]
+      },
+      "content": [
+        "title:T0915",
+        "title:T0916",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0917",
+        "title:T0921",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0927",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:2f5569d3-7a1f-49b2-aa54-2b9b097809bd:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=bagi-baya-d4",
+        "state:days_since_play=11.8"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T11:37:02.749000+00:00",
+        "Viewer left series bagi-baya-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

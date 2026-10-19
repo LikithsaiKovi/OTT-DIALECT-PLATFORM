@@ -1,0 +1,292 @@
+{
+  "user_id": "U-03850",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-01-08T15:06:35.832Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-01-08T15:06:35.832Z",
+      "freshness_s": 54527677.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "events:5afe9d99-2409-44b7-9018-88b6356ac7d0:subscription_lapsed",
+      "timestamp": "2026-09-24T16:52:20.654Z",
+      "freshness_s": 607732.3
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:20:27.163Z",
+      "freshness_s": 253245.8
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:20:27.163Z",
+      "freshness_s": 253245.8
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:20:27.163Z",
+      "freshness_s": 253245.8
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T04:45:36.579Z",
+      "freshness_s": 132936.4
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T04:43:46.621Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T04:43:46.621Z",
+      "freshness_s": 133046.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 8,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-30T04:45:36.579Z",
+      "freshness_s": 132936.4
+    }
+  },
+  "watch_progress": {
+    "bagugu-gigupi-d1": "bagugu-gigupi-d1-s1e3",
+    "hate-d1": "hate-d1-s1e2",
+    "rava-baya-d1": "rava-baya-d1-s1e1",
+    "raloja-d1": "raloja-d1-s1e1",
+    "tiya-bhamaro-d1": "tiya-bhamaro-d1-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Devotional",
+    "Romance"
+  ],
+  "sessions_count": 27,
+  "play_sessions_count": 14,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-04",
+    "2026-09-05",
+    "2026-09-07",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-13",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-04",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-13",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "reactivate_lapsed_14d",
+    "goal_id": "G06",
+    "window_hours": 336,
+    "deadline": "2026-10-15T17:41:12.973Z",
+    "success_event": "purchase_completed",
+    "success_condition": "any paid plan",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 2,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03850",
+      "decision_id": "D-U-03850-002",
+      "goal_id": "reactivate_lapsed_14d",
+      "goal_started_at": "2026-10-01T17:41:12.973Z",
+      "deadline": "2026-10-15T17:41:12.973Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal reactivate_lapsed_14d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03850-001",
+      "viewer_id": "U-03850",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T03:01:26.224Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "reactivate_lapsed_14d",
+        "deadline": "2026-10-15T03:01:26.224Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0001",
+        "title:T0009",
+        "title:T0008",
+        "title:T0003",
+        "title:T0007",
+        "title:T0004",
+        "title:T0010",
+        "title:T0045",
+        "title:T0046",
+        "title:T0047",
+        "title:T0005",
+        "title:T0006",
+        "title:T0011",
+        "title:T0012",
+        "title:T0013",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0051",
+        "title:T0060",
+        "title:T0014",
+        "title:T0015",
+        "title:T0016",
+        "title:T0017",
+        "title:T0018"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:01811775-9d4c-4f72-b91a-1d5ddd706a1a:event_age=2s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:subscription_status=lapsed",
+        "goal_rule:G06"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T03:01:26.224000+00:00",
+        "Viewer subscription lapsed recently (<30d) and responds to reactivation value"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-03850-002",
+      "viewer_id": "U-03850",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T17:41:12.973Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "reactivate_lapsed_14d",
+        "deadline": "2026-10-15T17:41:12.973Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0003",
+        "title:T0009",
+        "title:T0008",
+        "title:T0007",
+        "title:T0004",
+        "title:T0010",
+        "title:T0045",
+        "title:T0046",
+        "title:T0047",
+        "title:T0005",
+        "title:T0006",
+        "title:T0011",
+        "title:T0012",
+        "title:T0013",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0051",
+        "title:T0060",
+        "title:T0014",
+        "title:T0015",
+        "title:T0016",
+        "title:T0017",
+        "title:T0018"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:a3e7fb3a-b945-4d9f-a74c-a64b51ba7bb5:event_age=1s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:subscription_status=lapsed",
+        "goal_rule:G06"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T17:41:12.973000+00:00",
+        "Viewer subscription lapsed recently (<30d) and responds to reactivation value"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

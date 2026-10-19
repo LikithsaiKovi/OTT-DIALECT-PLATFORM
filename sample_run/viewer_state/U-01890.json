@@ -1,0 +1,60 @@
+{
+  "user_id": "U-01890",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T15:27:29.677Z",
+      "freshness_s": 0.0
+    },
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-29T23:18:03.373Z",
+      "source": "events:signup_completed",
+      "timestamp": "2026-09-29T23:18:03.373Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T13:36:44.746Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T13:36:44.746Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-30T15:27:09.468Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "rava-baya-d1": "rava-baya-d1-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Thriller"
+  ],
+  "sessions_count": 2,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

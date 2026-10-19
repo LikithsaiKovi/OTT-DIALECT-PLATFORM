@@ -1,0 +1,181 @@
+{
+  "user_id": "U-00347",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-12-24T15:39:18.697Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-12-24T15:39:18.697Z",
+      "freshness_s": 55745474.4
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T13:00:28.890Z",
+      "freshness_s": 113404.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T13:00:28.890Z",
+      "freshness_s": 113404.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T13:00:28.890Z",
+      "freshness_s": 113404.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T13:00:28.890Z",
+      "freshness_s": 113404.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T06:52:07.782Z",
+      "freshness_s": 308305.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T03:57:13.989Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T03:57:13.989Z",
+      "freshness_s": 318799.1
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Comedy",
+    "Family",
+    "Thriller"
+  ],
+  "sessions_count": 7,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-06",
+    "2026-09-18",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-18",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_full_episode_3d",
+    "goal_id": "G02",
+    "window_hours": 72,
+    "deadline": "2026-10-03T20:30:33.062Z",
+    "success_event": "episode_completed",
+    "success_condition": "any episode",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00347",
+      "decision_id": "D-U-00347-001",
+      "goal_id": "first_full_episode_3d",
+      "goal_started_at": "2026-09-30T20:30:33.062Z",
+      "deadline": "2026-10-03T20:30:33.062Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-002420",
+      "attributed_event": "episode_completed",
+      "attributed_at": "2026-09-30T20:49:56.062Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_full_episode_3d -> SUCCEEDED (attributed to episode_completed)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00347-001",
+      "viewer_id": "U-00347",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-09-30T20:30:33.062Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "first_full_episode_3d",
+        "deadline": "2026-10-03T20:30:33.062Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d5"
+        ]
+      },
+      "content": [
+        "title:T0005",
+        "title:T0008",
+        "title:T0014",
+        "title:T0015",
+        "title:T0017",
+        "title:T0018",
+        "title:T0001",
+        "title:T0003",
+        "title:T0004",
+        "title:T0006",
+        "title:T0007",
+        "title:T0028",
+        "title:T0031",
+        "title:T0036",
+        "title:T0046",
+        "title:T0047",
+        "title:T0009",
+        "title:T0010",
+        "title:T0011",
+        "title:T0012",
+        "title:T0013"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d1 matching user history",
+      "evidence": [
+        "trigger:1bb10827-cb9a-4093-843c-e76a09c137ec:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:total_completes=0",
+        "goal_rule:G02"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-09-30T20:30:33.062000+00:00",
+        "Viewer has not yet experienced the emotional payoff of a full episode"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

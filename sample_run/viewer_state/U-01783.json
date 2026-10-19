@@ -1,0 +1,219 @@
+{
+  "user_id": "U-01783",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-07-17T12:57:44.008Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-07-17T12:57:44.008Z",
+      "freshness_s": 6560197.9
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:5678257e-5559-456c-ab7f-7b5a23caf95b:subscription_renewed",
+      "timestamp": "2026-09-03T14:01:44.465Z",
+      "freshness_s": 2409157.5
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:39:44.118Z",
+      "freshness_s": 200077.8
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:39:44.118Z",
+      "freshness_s": 200077.8
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:39:44.118Z",
+      "freshness_s": 200077.8
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T08:54:40.563Z",
+      "freshness_s": 181181.4
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-22T01:16:05.366Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-22T01:16:05.366Z",
+      "freshness_s": 813496.6
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 3,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-20T04:55:51.470Z",
+      "freshness_s": 973110.5
+    }
+  },
+  "watch_progress": {
+    "bagi-baya-d4": "bagi-baya-d4-s1e2",
+    "chuma-daja-d4": "chuma-daja-d4-s1e1"
+  },
+  "top_genres": [
+    "Romance",
+    "Crime",
+    "Comedy"
+  ],
+  "sessions_count": 10,
+  "play_sessions_count": 6,
+  "ist_app_open_days": [
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-10",
+    "2026-09-12",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-27",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T11:14:21.926Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:bagi-baya-d4",
+    "content_slug": "bagi-baya-d4",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01783",
+      "decision_id": "D-U-01783-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T11:14:21.926Z",
+      "deadline": "2026-10-04T11:14:21.926Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01783-001",
+      "viewer_id": "U-01783",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T11:14:21.926Z",
+        "event_age_s": 81756
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T11:14:21.926Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:28bce024-bad6-47ac-857b-3b6446915b61:event_age=81756s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=bagi-baya-d4",
+        "state:days_since_play=9.4"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T11:14:21.926000+00:00",
+        "Viewer left series bagi-baya-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01783-002",
+      "viewer_id": "U-01783",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T11:24:42.122Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "none",
+        "deadline": null
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "none",
+        "source": "idempotency_cache",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 1.0,
+      "confidence_reason": "Trigger event already processed; strictly idempotent",
+      "evidence": [
+        "trigger_seen:28bce024-bad6-47ac-857b-3b6446915b61"
+      ],
+      "assumptions": [
+        "Duplicate delivery over network"
+      ],
+      "checks": {
+        "passed": [
+          "idempotency"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "duplicate_trigger_idempotency",
+      "fallback_used": false,
+      "model_calls": 0,
+      "tool_calls": 0,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

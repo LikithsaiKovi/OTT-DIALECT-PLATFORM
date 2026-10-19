@@ -1,0 +1,168 @@
+{
+  "user_id": "U-04764",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-07-25T10:20:46.711Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-07-25T10:20:46.711Z",
+      "freshness_s": 5892336.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:05:17.767Z",
+      "freshness_s": 226865.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:05:17.767Z",
+      "freshness_s": 226865.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:05:17.767Z",
+      "freshness_s": 226865.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:05:17.767Z",
+      "freshness_s": 226865.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T02:48:36.466Z",
+      "freshness_s": 389866.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T02:08:09.358Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T02:08:09.358Z",
+      "freshness_s": 392293.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-27T02:48:36.466Z",
+      "freshness_s": 389866.3
+    }
+  },
+  "watch_progress": {
+    "nane-yayaja-d2": "nane-yayaja-d2-s1e1",
+    "molo-d2": "molo-d2-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Romance",
+    "Family"
+  ],
+  "sessions_count": 3,
+  "play_sessions_count": 3,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-25",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-25",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T15:06:22.771Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:nane-yayaja-d2",
+    "content_slug": "nane-yayaja-d2",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04764",
+      "decision_id": "D-U-04764-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T15:06:22.771Z",
+      "deadline": "2026-10-04T15:06:22.771Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-029731",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T15:09:55.771Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04764-001",
+      "viewer_id": "U-04764",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:06:22.771Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:06:22.771Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:5dc158ee-d630-4dd0-a5ac-cf81edbdbd17:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d2:app_setting",
+        "state:watch_progress=nane-yayaja-d2",
+        "state:days_since_play=4.5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:06:22.771000+00:00",
+        "Viewer left series nane-yayaja-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

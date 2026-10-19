@@ -1,0 +1,172 @@
+{
+  "user_id": "U-04098",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-01-08T13:12:57.593Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-01-08T13:12:57.593Z",
+      "freshness_s": 54519490.7
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:14:49.526Z",
+      "freshness_s": 202578.8
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:14:49.526Z",
+      "freshness_s": 202578.8
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:14:49.526Z",
+      "freshness_s": 202578.8
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:14:49.526Z",
+      "freshness_s": 202578.8
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-18T16:23:58.285Z",
+      "freshness_s": 1112830.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-16T14:10:42.939Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-16T14:10:42.939Z",
+      "freshness_s": 1293625.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 3,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-16T14:13:28.109Z",
+      "freshness_s": 1293460.2
+    }
+  },
+  "watch_progress": {
+    "neya-kadhana-d2": "neya-kadhana-d2-s1e1",
+    "molo-d2": "molo-d2-s1e1",
+    "guka-kosusa-d2": "guka-kosusa-d2-s1e1"
+  },
+  "top_genres": [
+    "Romance",
+    "Action",
+    "Devotional"
+  ],
+  "sessions_count": 8,
+  "play_sessions_count": 3,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-18"
+  ],
+  "ist_play_days": [
+    "2026-09-10",
+    "2026-09-14",
+    "2026-09-16"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T13:31:08.330Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:neya-kadhana-d2",
+    "content_slug": "neya-kadhana-d2",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04098",
+      "decision_id": "D-U-04098-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T13:31:08.330Z",
+      "deadline": "2026-10-04T13:31:08.330Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-026000",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T13:34:52.330Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04098-001",
+      "viewer_id": "U-04098",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T13:31:08.330Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T13:31:08.330Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:4478b728-99c5-4362-967b-78cb4e180f28:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d2:app_setting",
+        "state:watch_progress=neya-kadhana-d2",
+        "state:days_since_play=15.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'never' is reliable as of 2026-10-01T13:31:08.330000+00:00",
+        "Viewer left series neya-kadhana-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

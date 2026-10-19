@@ -1,0 +1,92 @@
+{
+  "user_id": "U-01975",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-09-08T04:29:33.283Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-09-08T04:29:33.283Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T17:02:25.358Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T17:02:25.358Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T17:02:25.358Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T17:02:25.358Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T12:23:20.271Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-22T16:39:53.359Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-22T16:39:53.359Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-22T18:22:01.913Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "gineni-d4": "gineni-d4-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Family"
+  ],
+  "sessions_count": 4,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-10",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-10",
+    "2026-09-22"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

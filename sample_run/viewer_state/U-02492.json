@@ -1,0 +1,233 @@
+{
+  "user_id": "U-02492",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-09-26T05:39:48.352Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-09-26T05:39:48.352Z",
+      "freshness_s": 31963194.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:b012e833-f7c9-4d72-83b5-a40ecc5ae96c:subscription_renewed",
+      "timestamp": "2026-09-08T05:57:33.914Z",
+      "freshness_s": 1981328.4
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d3",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:48:21.154Z",
+      "freshness_s": 156681.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:48:21.154Z",
+      "freshness_s": 156681.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:48:21.154Z",
+      "freshness_s": 156681.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-22T16:47:08.967Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-22T16:47:08.967Z",
+      "freshness_s": 732753.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 5,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-22T16:49:52.461Z",
+      "freshness_s": 732589.9
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "NA",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-15T10:14:55.655Z",
+      "freshness_s": 1361086.7
+    }
+  },
+  "watch_progress": {
+    "nipi-maniba-d2": "nipi-maniba-d2-s1e1",
+    "raloja-d1": "raloja-d1-s1e1",
+    "gima-bhadaba-d1": "gima-bhadaba-d1-s1e3"
+  },
+  "top_genres": [
+    "Devotional",
+    "Comedy",
+    "Drama"
+  ],
+  "sessions_count": 20,
+  "play_sessions_count": 8,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-05",
+    "2026-09-10",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-19",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-25",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-05",
+    "2026-09-10",
+    "2026-09-13",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-21",
+    "2026-09-22"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:19:42.339Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:nipi-maniba-d2",
+    "content_slug": "nipi-maniba-d2",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-02492",
+      "decision_id": "D-U-02492-002",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:19:42.339Z",
+      "deadline": "2026-10-04T04:19:42.339Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-02492-001",
+      "viewer_id": "U-02492",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T03:08:30.358Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T03:08:30.358Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "NA",
+        "source": "viewer_state_history",
+        "conflicts": [
+          "profile:d3"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: no_available_content_in_dialect",
+      "evidence": [
+        "trigger:7c8e767a-9884-4557-a8b9-ddfebbb8b475:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:NA:viewer_state_history",
+        "state:watch_progress=nipi-maniba-d2",
+        "state:days_since_play=8.4"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect NA",
+        "Subscription status 'active' is reliable as of 2026-10-01T03:08:30.358000+00:00",
+        "Viewer left series nipi-maniba-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "no_available_content_in_dialect",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-02492-002",
+      "viewer_id": "U-02492",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:19:42.339Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:19:42.339Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "NA",
+        "source": "viewer_state_history",
+        "conflicts": [
+          "profile:d3"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: no_available_content_in_dialect",
+      "evidence": [
+        "trigger:8507e319-9d36-44d5-9f8b-b3f5dba805e9:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:NA:viewer_state_history",
+        "state:watch_progress=nipi-maniba-d2",
+        "state:days_since_play=8.5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect NA",
+        "Subscription status 'active' is reliable as of 2026-10-01T04:19:42.339000+00:00",
+        "Viewer left series nipi-maniba-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "no_available_content_in_dialect",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

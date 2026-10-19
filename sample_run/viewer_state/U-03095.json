@@ -1,0 +1,185 @@
+{
+  "user_id": "U-03095",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-08-09T16:30:59.706Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-08-09T16:30:59.706Z",
+      "freshness_s": 4536998.2
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:1573d889-9ed7-439f-9107-f3659ef5608d:subscription_renewed",
+      "timestamp": "2026-09-12T00:11:51.926Z",
+      "freshness_s": 1658146.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d3",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T04:24:23.599Z",
+      "freshness_s": 174194.3
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T04:24:23.599Z",
+      "freshness_s": 174194.3
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T04:24:23.599Z",
+      "freshness_s": 174194.3
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T15:08:22.633Z",
+      "freshness_s": 49155.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-23T11:01:44.203Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-23T11:01:44.203Z",
+      "freshness_s": 668753.7
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 7,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-23T11:32:06.910Z",
+      "freshness_s": 666931.0
+    }
+  },
+  "watch_progress": {
+    "jakasa-dapi-d3": "jakasa-dapi-d3-s1e4",
+    "sane-d3": "sane-d3-s1e1",
+    "ririgi-d3": "ririgi-d3-s1e1",
+    "rate-java-d3": "rate-java-d3-s1e1"
+  },
+  "top_genres": [
+    "Crime",
+    "Comedy",
+    "Drama"
+  ],
+  "sessions_count": 18,
+  "play_sessions_count": 11,
+  "ist_app_open_days": [
+    "2026-09-05",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-29",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-05",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-23"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:47:37.888Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:jakasa-dapi-d3",
+    "content_slug": "jakasa-dapi-d3",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03095",
+      "decision_id": "D-U-03095-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:47:37.888Z",
+      "deadline": "2026-10-04T04:47:37.888Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-019354",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-03T16:09:49.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03095-001",
+      "viewer_id": "U-03095",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:47:37.888Z",
+        "event_age_s": 381120
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:47:37.888Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:d3ca60ef-086b-42bc-befa-a26bbe9b00a0:event_age=381120s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d3:app_setting",
+        "state:watch_progress=jakasa-dapi-d3",
+        "state:days_since_play=7.7"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'active' is reliable as of 2026-10-01T04:47:37.888000+00:00",
+        "Viewer left series jakasa-dapi-d3 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "user_id": "U-03884",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-04T00:36:32.949Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-04T00:36:32.949Z",
+      "freshness_s": 2387360.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:46:17.713Z",
+      "freshness_s": 248375.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:46:17.713Z",
+      "freshness_s": 248375.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:46:17.713Z",
+      "freshness_s": 248375.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T18:46:17.713Z",
+      "freshness_s": 248375.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T11:59:51.907Z",
+      "freshness_s": 186361.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-23T13:04:04.192Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-23T13:04:04.192Z",
+      "freshness_s": 700908.8
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 7,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-23T14:54:29.111Z",
+      "freshness_s": 694283.8
+    }
+  },
+  "watch_progress": {
+    "tidha-dakachu-d1": "tidha-dakachu-d1-s1e2",
+    "haba-d1": "haba-d1-s1e1",
+    "tiya-bhamaro-d1": "tiya-bhamaro-d1-s1e1",
+    "rava-baya-d1": "rava-baya-d1-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Family",
+    "Romance"
+  ],
+  "sessions_count": 17,
+  "play_sessions_count": 9,
+  "ist_app_open_days": [
+    "2026-09-04",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-11",
+    "2026-09-14",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-21",
+    "2026-09-23",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-08",
+    "2026-09-14",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-21",
+    "2026-09-23"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T15:45:52.947Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:tidha-dakachu-d1",
+    "content_slug": "tidha-dakachu-d1",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 3,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03884",
+      "decision_id": "D-U-03884-003",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T15:45:52.947Z",
+      "deadline": "2026-10-04T15:45:52.947Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-024750",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-04T15:25:33.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03884-001",
+      "viewer_id": "U-03884",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T12:34:48.201Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T12:34:48.201Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:6c7d242a-b893-49e6-9cb8-61b34edf67a6:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=tidha-dakachu-d1",
+        "state:days_since_play=8.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T12:34:48.201000+00:00",
+        "Viewer left series tidha-dakachu-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-03884-002",
+      "viewer_id": "U-03884",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:45:42.281Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:45:42.281Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:db330cba-99a7-431c-9849-a64ca129487c:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=tidha-dakachu-d1",
+        "state:days_since_play=8.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:45:42.281000+00:00",
+        "Viewer left series tidha-dakachu-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-03884-003",
+      "viewer_id": "U-03884",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:45:52.947Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:45:52.947Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:cd6ca9d2-00bd-4341-b59b-96bd6bd374b7:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=tidha-dakachu-d1",
+        "state:days_since_play=8.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:45:52.947000+00:00",
+        "Viewer left series tidha-dakachu-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

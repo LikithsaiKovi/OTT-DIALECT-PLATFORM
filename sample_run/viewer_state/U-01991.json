@@ -1,0 +1,250 @@
+{
+  "user_id": "U-01991",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-03-23T01:00:34.016Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-03-23T01:00:34.016Z",
+      "freshness_s": 48147544.4
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:36:57.824Z",
+      "freshness_s": 164560.6
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d3",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:36:57.824Z",
+      "freshness_s": 164560.6
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:36:57.824Z",
+      "freshness_s": 164560.6
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:36:57.824Z",
+      "freshness_s": 164560.6
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T15:49:23.227Z",
+      "freshness_s": 315015.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-25T10:09:16.648Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-25T10:09:16.648Z",
+      "freshness_s": 508221.8
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-25T10:42:25.474Z",
+      "freshness_s": 506232.9
+    }
+  },
+  "watch_progress": {
+    "ririgi-d3": "ririgi-d3-s1e1",
+    "yadha-kopa-d3": "yadha-kopa-d3-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Drama",
+    "Thriller"
+  ],
+  "sessions_count": 7,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-14",
+    "2026-09-23",
+    "2026-09-25",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-14",
+    "2026-09-25"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T07:19:38.414Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:ririgi-d3",
+    "content_slug": "ririgi-d3",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01991",
+      "decision_id": "D-U-01991-002",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T07:19:38.414Z",
+      "deadline": "2026-10-04T07:19:38.414Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01991-001",
+      "viewer_id": "U-01991",
+      "trigger": {
+        "event": "login_success",
+        "received_at": "2026-10-01T07:19:33.100Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "trial_to_paid_7d",
+        "deadline": "2026-10-01T07:19:33.100Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0902",
+        "title:T0914",
+        "title:T0905",
+        "title:T0901",
+        "title:T0903",
+        "title:T0904",
+        "title:T0906",
+        "title:T0907",
+        "title:T0908",
+        "title:T0909",
+        "title:T0910",
+        "title:T0911",
+        "title:T0913"
+      ],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: verifier_rejection:eligibility",
+      "evidence": [
+        "trigger:202cccb8-8127-465f-b2d0-038cf533197e:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d3:app_setting",
+        "state:watch_progress=ririgi-d3",
+        "state:days_since_play=5.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'never' is reliable as of 2026-10-01T07:19:33.100000+00:00",
+        "Viewer left series ririgi-d3 unfinished and retains story context",
+        "Model asserted unverified trial billing status"
+      ],
+      "checks": {
+        "passed": [
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": [
+          "eligibility"
+        ]
+      },
+      "decided_in_ms": 1,
+      "status": "REJECTED",
+      "no_action_reason": "verifier_rejection:eligibility",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-01991-002",
+      "viewer_id": "U-01991",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T07:19:38.414Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T07:19:38.414Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0902",
+        "title:T0914",
+        "title:T0905",
+        "title:T0901",
+        "title:T0903",
+        "title:T0904",
+        "title:T0906",
+        "title:T0907",
+        "title:T0908",
+        "title:T0909",
+        "title:T0910",
+        "title:T0911",
+        "title:T0913"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d3 matching user history",
+      "evidence": [
+        "trigger:ce154083-0df4-481d-a57d-8afa291fdd66:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d3:app_setting",
+        "state:watch_progress=ririgi-d3",
+        "state:days_since_play=5.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'never' is reliable as of 2026-10-01T07:19:38.414000+00:00",
+        "Viewer left series ririgi-d3 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

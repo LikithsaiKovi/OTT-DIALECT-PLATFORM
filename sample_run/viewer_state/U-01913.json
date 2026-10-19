@@ -1,0 +1,98 @@
+{
+  "user_id": "U-01913",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-01-11T11:08:19.131Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-01-11T11:08:19.131Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:f26b6038-808c-4a73-8dfe-df8ed6425efd:subscription_renewed",
+      "timestamp": "2026-09-25T08:02:40.136Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:44:06.097Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:44:06.097Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:44:06.097Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T17:31:39.488Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-19T10:08:52.328Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-19T10:08:52.328Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-16T05:40:23.344Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "kolani-mari-d2": "kolani-mari-d2-s1e2"
+  },
+  "top_genres": [
+    "Drama",
+    "Thriller",
+    "Action"
+  ],
+  "sessions_count": 10,
+  "play_sessions_count": 4,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-05",
+    "2026-09-10",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-19",
+    "2026-09-23",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-10",
+    "2026-09-16",
+    "2026-09-19"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

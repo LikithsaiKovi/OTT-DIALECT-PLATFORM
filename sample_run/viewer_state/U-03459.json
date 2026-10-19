@@ -1,0 +1,158 @@
+{
+  "user_id": "U-03459",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-24T20:44:16.675Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-24T20:44:16.675Z",
+      "freshness_s": 583617.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:02d1cea3-7991-4af2-97c3-1e760abdda58:purchase_completed",
+      "timestamp": "2026-09-27T20:44:17.782Z",
+      "freshness_s": 324415.9
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:53:04.053Z",
+      "freshness_s": 190689.7
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:53:04.053Z",
+      "freshness_s": 190689.7
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T09:53:04.053Z",
+      "freshness_s": 190689.7
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d6",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T20:44:17.782Z",
+      "freshness_s": 324415.9
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [],
+  "sessions_count": 1,
+  "play_sessions_count": 0,
+  "ist_app_open_days": [
+    "2026-09-25"
+  ],
+  "ist_play_days": [],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_play_24h",
+    "goal_id": "G01",
+    "window_hours": 24,
+    "deadline": "2026-10-02T14:51:13.706Z",
+    "success_event": "play_started",
+    "success_condition": "any title",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03459",
+      "decision_id": "D-U-03459-001",
+      "goal_id": "first_play_24h",
+      "goal_started_at": "2026-10-01T14:51:13.706Z",
+      "deadline": "2026-10-02T14:51:13.706Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal first_play_24h -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03459-001",
+      "viewer_id": "U-03459",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:51:13.706Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "first_play_24h",
+        "deadline": "2026-10-02T14:51:13.706Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d6",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1387",
+        "title:T1389",
+        "title:T1390",
+        "title:T1391",
+        "title:T1392",
+        "title:T1393",
+        "title:T1421",
+        "title:T1456",
+        "title:T1461",
+        "title:T1468",
+        "title:T1472",
+        "title:T1394",
+        "title:T1395",
+        "title:T1396",
+        "title:T1397",
+        "title:T1398"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d6 matching user history",
+      "evidence": [
+        "trigger:4b1d541f-9672-4b29-9aa2-ab1407062525:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d6:app_setting",
+        "profile:signup_at=2026-09-24T20:44:16.675Z",
+        "state:total_plays=0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d6",
+        "Subscription status 'active' is reliable as of 2026-10-01T14:51:13.706000+00:00",
+        "Viewer is interested in catalog discovery upon sign-up"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

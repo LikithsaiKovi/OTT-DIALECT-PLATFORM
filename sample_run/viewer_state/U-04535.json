@@ -1,0 +1,96 @@
+{
+  "user_id": "U-04535",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-10-14T09:11:35.593Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-10-14T09:11:35.593Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:a3fa9a0b-a5d6-4e5a-945f-040782b28358:subscription_renewed",
+      "timestamp": "2026-09-05T23:40:57.313Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:16:08.344Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:16:08.344Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:16:08.344Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-25T19:45:10.119Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-25T18:52:39.705Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-25T18:52:39.705Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-19T12:35:33.541Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "tidaka-koni-d4": "tidaka-koni-d4-s1e1",
+    "nada-sada-d4": "nada-sada-d4-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Crime",
+    "Romance"
+  ],
+  "sessions_count": 7,
+  "play_sessions_count": 4,
+  "ist_app_open_days": [
+    "2026-09-06",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-24",
+    "2026-09-26"
+  ],
+  "ist_play_days": [
+    "2026-09-06",
+    "2026-09-19",
+    "2026-09-26"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

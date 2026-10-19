@@ -1,0 +1,500 @@
+{
+  "user_id": "U-03024",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-07-09T10:10:34.259Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-07-09T10:10:34.259Z",
+      "freshness_s": 7279550.7
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:58:35.064Z",
+      "freshness_s": 235069.9
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:58:35.064Z",
+      "freshness_s": 235069.9
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:58:35.064Z",
+      "freshness_s": 235069.9
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T22:58:35.064Z",
+      "freshness_s": 235069.9
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T08:55:27.892Z",
+      "freshness_s": 199257.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-24T15:18:35.750Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-24T15:18:35.750Z",
+      "freshness_s": 608269.2
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-24T17:00:44.881Z",
+      "freshness_s": 602140.1
+    }
+  },
+  "watch_progress": {
+    "baguti-gida-d4": "baguti-gida-d4-s1e1",
+    "gineni-d4": "gineni-d4-s1e1"
+  },
+  "top_genres": [
+    "Romance",
+    "Comedy",
+    "Drama"
+  ],
+  "sessions_count": 13,
+  "play_sessions_count": 4,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-10",
+    "2026-09-12",
+    "2026-09-15",
+    "2026-09-17",
+    "2026-09-24",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-10",
+    "2026-09-17",
+    "2026-09-24"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T16:16:24.932Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:baguti-gida-d4",
+    "content_slug": "baguti-gida-d4",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 5,
+  "actions_count": 5,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03024",
+      "decision_id": "D-U-03024-005",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T16:16:24.932Z",
+      "deadline": "2026-10-04T16:16:24.932Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03024-001",
+      "viewer_id": "U-03024",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:55:07.876Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:55:07.876Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0916",
+        "title:T0925",
+        "title:T0915",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0917",
+        "title:T0921",
+        "title:T0924",
+        "title:T0926",
+        "title:T0927",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932",
+        "title:T0933"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:fa47909f-afa7-4567-a80b-bacd14820490:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=baguti-gida-d4",
+        "state:days_since_play=6.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T04:55:07.876000+00:00",
+        "Viewer left series baguti-gida-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-03024-002",
+      "viewer_id": "U-03024",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:16:28.962Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T14:16:28.962Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0916",
+        "title:T0925",
+        "title:T0915",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0917",
+        "title:T0921",
+        "title:T0924",
+        "title:T0926",
+        "title:T0927",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932",
+        "title:T0933"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:0e986ebe-8f3d-48c7-9c3c-0869e4d90637:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=baguti-gida-d4",
+        "state:days_since_play=7.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T14:16:28.962000+00:00",
+        "Viewer left series baguti-gida-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-03024-003",
+      "viewer_id": "U-03024",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:10:00.656Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:10:00.656Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0916",
+        "title:T0925",
+        "title:T0915",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0917",
+        "title:T0921",
+        "title:T0924",
+        "title:T0926",
+        "title:T0927",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932",
+        "title:T0933"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:57975425-7d97-434c-bf26-954fcb006188:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=baguti-gida-d4",
+        "state:days_since_play=7.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:10:00.656000+00:00",
+        "Viewer left series baguti-gida-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-03024-004",
+      "viewer_id": "U-03024",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:24:21.864Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:24:21.864Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "campaign:d6"
+        ]
+      },
+      "content": [
+        "title:T0916",
+        "title:T0925",
+        "title:T0915",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0917",
+        "title:T0921",
+        "title:T0924",
+        "title:T0926",
+        "title:T0927",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932",
+        "title:T0933"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:b1d59703-dc6f-4dfe-8708-7855c4cfc96f:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=baguti-gida-d4",
+        "state:days_since_play=7.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:24:21.864000+00:00",
+        "Viewer left series baguti-gida-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-03024-005",
+      "viewer_id": "U-03024",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T16:16:24.932Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T16:16:24.932Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "campaign:d2"
+        ]
+      },
+      "content": [
+        "title:T0916",
+        "title:T0925",
+        "title:T0915",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0923",
+        "title:T0917",
+        "title:T0921",
+        "title:T0924",
+        "title:T0926",
+        "title:T0927",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0928",
+        "title:T0929",
+        "title:T0931",
+        "title:T0932",
+        "title:T0933"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:395f2874-e493-4b9d-8166-5681630ea6d6:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d4:app_setting",
+        "state:watch_progress=baguti-gida-d4",
+        "state:days_since_play=7.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'never' is reliable as of 2026-10-01T16:16:24.932000+00:00",
+        "Viewer left series baguti-gida-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

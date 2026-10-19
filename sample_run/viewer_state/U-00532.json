@@ -1,0 +1,185 @@
+{
+  "user_id": "U-00532",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-08-27T19:01:55.079Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-08-27T19:01:55.079Z",
+      "freshness_s": 2972624.4
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:cf516cf5-6060-420e-8c3e-4a9409067b9a:subscription_renewed",
+      "timestamp": "2026-09-16T20:42:06.697Z",
+      "freshness_s": 1238612.7
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:49:19.036Z",
+      "freshness_s": 179780.4
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:49:19.036Z",
+      "freshness_s": 179780.4
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T02:49:19.036Z",
+      "freshness_s": 179780.4
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T02:33:56.043Z",
+      "freshness_s": 94303.4
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-25T16:47:23.714Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-25T16:47:23.714Z",
+      "freshness_s": 475095.7
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-23T05:57:11.846Z",
+      "freshness_s": 686907.6
+    }
+  },
+  "watch_progress": {
+    "gineni-d4": "gineni-d4-s1e1",
+    "tidaka-koni-d4": "tidaka-koni-d4-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Family",
+    "Romance"
+  ],
+  "sessions_count": 17,
+  "play_sessions_count": 6,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-09",
+    "2026-09-11",
+    "2026-09-13",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-06",
+    "2026-09-09",
+    "2026-09-21",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:45:39.435Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:gineni-d4",
+    "content_slug": "gineni-d4",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00532",
+      "decision_id": "D-U-00532-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:45:39.435Z",
+      "deadline": "2026-10-04T04:45:39.435Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00532-001",
+      "viewer_id": "U-00532",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:45:39.435Z",
+        "event_age_s": 345536
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:45:39.435Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d2"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:987843cc-5abf-45bb-84ef-4557395c5c2b:event_age=345536s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=gineni-d4",
+        "state:days_since_play=5.5"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T04:45:39.435000+00:00",
+        "Viewer left series gineni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "user_id": "U-02578",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T12:36:30.489Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:e9f2747b-5192-4363-9786-cfa8942c7b7e:subscription_renewed",
+      "timestamp": "2026-09-17T12:17:00.086Z",
+      "freshness_s": 0.0
+    },
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-30T10:04:39.159Z",
+      "source": "events:signup_completed",
+      "timestamp": "2026-09-30T10:04:39.159Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T11:31:33.167Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T11:31:33.167Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Action",
+    "Romance"
+  ],
+  "sessions_count": 4,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

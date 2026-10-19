@@ -1,0 +1,193 @@
+{
+  "user_id": "U-03641",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-06-30T07:30:38.989Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-06-30T07:30:38.989Z",
+      "freshness_s": 8038012.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:51:50.748Z",
+      "freshness_s": 195940.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:51:50.748Z",
+      "freshness_s": 195940.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:51:50.748Z",
+      "freshness_s": 195940.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T01:51:50.748Z",
+      "freshness_s": 195940.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T02:08:23.201Z",
+      "freshness_s": 194947.7
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-23T09:20:03.541Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-23T09:20:03.541Z",
+      "freshness_s": 687447.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-23T10:00:34.378Z",
+      "freshness_s": 685016.6
+    }
+  },
+  "watch_progress": {
+    "jakasa-dapi-d3": "jakasa-dapi-d3-s1e2"
+  },
+  "top_genres": [
+    "Crime",
+    "Romance",
+    "Thriller"
+  ],
+  "sessions_count": 13,
+  "play_sessions_count": 5,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-12",
+    "2026-09-20",
+    "2026-09-23"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T08:17:30.947Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:jakasa-dapi-d3",
+    "content_slug": "jakasa-dapi-d3",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03641",
+      "decision_id": "D-U-03641-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T08:17:30.947Z",
+      "deadline": "2026-10-04T08:17:30.947Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03641-001",
+      "viewer_id": "U-03641",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T08:17:30.947Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T08:17:30.947Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0901",
+        "title:T0904",
+        "title:T0903",
+        "title:T0902",
+        "title:T0905",
+        "title:T0906",
+        "title:T0907",
+        "title:T0908",
+        "title:T0909",
+        "title:T0910",
+        "title:T0911",
+        "title:T0913",
+        "title:T0914"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d3 matching user history",
+      "evidence": [
+        "trigger:5d648fa6-c529-4758-b667-a91f5ce39916:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d3:app_setting",
+        "state:watch_progress=jakasa-dapi-d3",
+        "state:days_since_play=8.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'never' is reliable as of 2026-10-01T08:17:30.947000+00:00",
+        "Viewer left series jakasa-dapi-d3 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

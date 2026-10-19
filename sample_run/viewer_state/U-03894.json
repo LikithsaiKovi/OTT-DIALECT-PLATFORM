@@ -1,0 +1,198 @@
+{
+  "user_id": "U-03894",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-11-19T00:27:59.551Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-11-19T00:27:59.551Z",
+      "freshness_s": 58888893.4
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "lapsed",
+      "source": "events:238873c8-45c9-4489-a495-dd5bf52028fb:subscription_lapsed",
+      "timestamp": "2026-09-02T17:30:46.352Z",
+      "freshness_s": 2494726.6
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:58:02.763Z",
+      "freshness_s": 210690.2
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:58:02.763Z",
+      "freshness_s": 210690.2
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:58:02.763Z",
+      "freshness_s": 210690.2
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T07:22:40.153Z",
+      "freshness_s": 371212.8
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-23T08:52:18.488Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-23T08:52:18.488Z",
+      "freshness_s": 711434.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-12T18:20:41.813Z",
+      "freshness_s": 1627731.1
+    }
+  },
+  "watch_progress": {
+    "gimo-nati-d4": "gimo-nati-d4-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Romance",
+    "Family"
+  ],
+  "sessions_count": 12,
+  "play_sessions_count": 6,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-14",
+    "2026-09-23",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-02",
+    "2026-09-04",
+    "2026-09-12",
+    "2026-09-14",
+    "2026-09-23"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T14:29:32.922Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:gimo-nati-d4",
+    "content_slug": "gimo-nati-d4",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03894",
+      "decision_id": "D-U-03894-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T14:29:32.922Z",
+      "deadline": "2026-10-04T14:29:32.922Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03894-001",
+      "viewer_id": "U-03894",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:29:32.922Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T14:29:32.922Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0916",
+        "title:T0978",
+        "title:T0932",
+        "title:T0933",
+        "title:T0946",
+        "title:T0955",
+        "title:T0961",
+        "title:T0915",
+        "title:T0917",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0921",
+        "title:T0923",
+        "title:T0924",
+        "title:T0925",
+        "title:T0926"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:5982f123-7e90-4e03-bc96-2b50bc25fa9d:event_age=0s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=gimo-nati-d4",
+        "state:days_since_play=8.2"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T14:29:32.922000+00:00",
+        "Viewer left series gimo-nati-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

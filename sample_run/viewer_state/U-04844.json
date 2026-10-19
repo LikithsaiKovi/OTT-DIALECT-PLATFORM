@@ -1,0 +1,169 @@
+{
+  "user_id": "U-04844",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-08-07T18:56:51.123Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-08-07T18:56:51.123Z",
+      "freshness_s": 4738632.5
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:7c7cb635-ee12-4411-b2f6-7311c5c30f74:subscription_renewed",
+      "timestamp": "2026-09-06T06:12:57.549Z",
+      "freshness_s": 2192466.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:29:57.608Z",
+      "freshness_s": 229446.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:29:57.608Z",
+      "freshness_s": 229446.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:29:57.608Z",
+      "freshness_s": 229446.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T13:37:10.630Z",
+      "freshness_s": 265013.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-20T14:38:52.728Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-20T14:38:52.728Z",
+      "freshness_s": 952510.9
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-11T12:26:24.333Z",
+      "freshness_s": 1738059.3
+    }
+  },
+  "watch_progress": {
+    "dapa-pini-d1": "dapa-pini-d1-s1e1"
+  },
+  "top_genres": [
+    "Comedy"
+  ],
+  "sessions_count": 11,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-11",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-24",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-11",
+    "2026-09-20"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T15:14:03.653Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:dapa-pini-d1",
+    "content_slug": "dapa-pini-d1",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04844",
+      "decision_id": "D-U-04844-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T15:14:03.653Z",
+      "deadline": "2026-10-04T15:14:03.653Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04844-001",
+      "viewer_id": "U-04844",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:14:03.653Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:14:03.653Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:5dcd024c-f3fb-4e41-8a55-ada02bda4f18:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d1:app_setting",
+        "state:watch_progress=dapa-pini-d1",
+        "state:days_since_play=11.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'active' is reliable as of 2026-10-01T15:14:03.653000+00:00",
+        "Viewer left series dapa-pini-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

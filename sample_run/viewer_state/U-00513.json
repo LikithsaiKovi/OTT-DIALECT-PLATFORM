@@ -1,0 +1,94 @@
+{
+  "user_id": "U-00513",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-02-28T19:59:39.485Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-02-28T19:59:39.485Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T17:22:37.670Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d6",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T17:22:37.670Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T17:22:37.670Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T17:22:37.670Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d6",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-20T16:38:08.248Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-20T02:57:54.384Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-20T02:57:54.384Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-20T04:25:19.118Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "piri-jama-d6": "piri-jama-d6-s1e1"
+  },
+  "top_genres": [
+    "Comedy",
+    "Romance",
+    "Thriller"
+  ],
+  "sessions_count": 9,
+  "play_sessions_count": 3,
+  "ist_app_open_days": [
+    "2026-09-07",
+    "2026-09-12",
+    "2026-09-14",
+    "2026-09-18",
+    "2026-09-20"
+  ],
+  "ist_play_days": [
+    "2026-09-14",
+    "2026-09-20"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

@@ -1,0 +1,205 @@
+{
+  "user_id": "U-01449",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-12-16T06:31:47.300Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-12-16T06:31:47.300Z",
+      "freshness_s": 24966245.7
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:bfd7080c-b829-464e-a473-2ca0ff383b6e:subscription_renewed",
+      "timestamp": "2026-09-25T23:34:43.736Z",
+      "freshness_s": 453669.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d3",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:19:32.891Z",
+      "freshness_s": 155780.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:19:32.891Z",
+      "freshness_s": 155780.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T10:19:32.891Z",
+      "freshness_s": 155780.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T10:33:47.817Z",
+      "freshness_s": 154925.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T12:02:47.062Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T12:02:47.062Z",
+      "freshness_s": 322385.9
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 8,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-27T00:37:06.329Z",
+      "freshness_s": 363526.7
+    }
+  },
+  "watch_progress": {
+    "lomobha-moni-d3": "lomobha-moni-d3-s1e4",
+    "yane-tegi-d3": "yane-tegi-d3-s1e1",
+    "rate-java-d3": "rate-java-d3-s1e1",
+    "yadha-kopa-d3": "yadha-kopa-d3-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Action",
+    "Crime"
+  ],
+  "sessions_count": 22,
+  "play_sessions_count": 14,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-05",
+    "2026-09-07",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-24",
+    "2026-09-26",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T05:35:52.980Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:lomobha-moni-d3",
+    "content_slug": "lomobha-moni-d3",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01449",
+      "decision_id": "D-U-01449-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T05:35:52.980Z",
+      "deadline": "2026-10-04T05:35:52.980Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-009945",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T05:37:57.980Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01449-001",
+      "viewer_id": "U-01449",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T05:35:52.980Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T05:35:52.980Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0903",
+        "title:T0908",
+        "title:T0902",
+        "title:T0905",
+        "title:T0901",
+        "title:T0904",
+        "title:T0906",
+        "title:T0907",
+        "title:T0909",
+        "title:T0910",
+        "title:T0911",
+        "title:T0913",
+        "title:T0914"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d3 matching user history",
+      "evidence": [
+        "trigger:61e0556b-cbea-4231-a30d-6226598bdcd2:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d3:app_setting",
+        "state:watch_progress=lomobha-moni-d3",
+        "state:days_since_play=3.7"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'active' is reliable as of 2026-10-01T05:35:52.980000+00:00",
+        "Viewer left series lomobha-moni-d3 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

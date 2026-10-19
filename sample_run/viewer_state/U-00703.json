@@ -1,0 +1,168 @@
+{
+  "user_id": "U-00703",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-10-14T10:50:02.335Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-10-14T10:50:02.335Z",
+      "freshness_s": 30391950.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "event:17dca1e5-7413-4951-8ca1-f3051963c547:purchase_completed",
+      "timestamp": "2026-10-01T05:04:30.420Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:41:29.389Z",
+      "freshness_s": 134463.7
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:41:29.389Z",
+      "freshness_s": 134463.7
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:41:29.389Z",
+      "freshness_s": 134463.7
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T03:26:37.420Z",
+      "freshness_s": 178555.7
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-29T03:25:53.898Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-29T03:25:53.898Z",
+      "freshness_s": 178599.2
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-17T20:58:49.986Z",
+      "freshness_s": 1152223.1
+    }
+  },
+  "watch_progress": {
+    "rigu-d5": "rigu-d5-s1e1"
+  },
+  "top_genres": [
+    "Comedy",
+    "Romance",
+    "Crime"
+  ],
+  "sessions_count": 3,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-18",
+    "2026-09-21",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-18",
+    "2026-09-29"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "first_paid_7d",
+    "goal_id": "G05",
+    "window_hours": 168,
+    "deadline": "2026-10-08T05:02:33.087Z",
+    "success_event": "purchase_completed",
+    "success_condition": "is_trial = false",
+    "rule_version": "2026-09-30",
+    "status": "SUCCEEDED",
+    "closed_at": "2026-10-01T05:04:30.420Z"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00703",
+      "decision_id": "D-U-00703-001",
+      "goal_id": "first_paid_7d",
+      "goal_started_at": "2026-10-01T05:02:33.087Z",
+      "deadline": "2026-10-08T05:02:33.087Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "17dca1e5-7413-4951-8ca1-f3051963c547",
+      "attributed_event": "purchase_completed",
+      "attributed_at": "2026-10-01T05:04:30.420Z"
+    }
+  ],
+  "learnings": [
+    "Conversion goal succeeded organically at 2026-10-01 05:04:30.420000+00:00",
+    "Evaluated goal first_paid_7d -> SUCCEEDED (attributed to purchase_completed)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00703-001",
+      "viewer_id": "U-00703",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T05:02:33.087Z",
+        "event_age_s": 455602
+      },
+      "goal": {
+        "id": "first_paid_7d",
+        "deadline": "2026-10-08T05:02:33.087Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:f0aa16e5-9cd8-4e5c-b94a-ca18ac8c7372:event_age=455602s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:subscription_status=never",
+        "goal_rule:G05"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T05:02:33.087000+00:00",
+        "Viewer has not yet committed to premium catalog"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

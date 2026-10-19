@@ -1,0 +1,214 @@
+{
+  "user_id": "U-01789",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-12-17T11:49:39.534Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-12-17T11:49:39.534Z",
+      "freshness_s": 24891550.4
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:10:44.594Z",
+      "freshness_s": 223085.3
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d6",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:10:44.594Z",
+      "freshness_s": 223085.3
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:10:44.594Z",
+      "freshness_s": 223085.3
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T00:10:44.594Z",
+      "freshness_s": 223085.3
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d6",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-22T15:43:36.888Z",
+      "freshness_s": 771913.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-19T16:55:59.200Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-19T16:55:59.200Z",
+      "freshness_s": 1026770.7
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-19T19:11:13.027Z",
+      "freshness_s": 1018656.9
+    }
+  },
+  "watch_progress": {
+    "sajachu-jabha-d6": "sajachu-jabha-d6-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Comedy"
+  ],
+  "sessions_count": 4,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-11",
+    "2026-09-19",
+    "2026-09-22"
+  ],
+  "ist_play_days": [
+    "2026-09-11",
+    "2026-09-19"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T14:08:49.936Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:sajachu-jabha-d6",
+    "content_slug": "sajachu-jabha-d6",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01789",
+      "decision_id": "D-U-01789-002",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T14:08:49.936Z",
+      "deadline": "2026-10-04T14:08:49.936Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01789-001",
+      "viewer_id": "U-01789",
+      "trigger": {
+        "event": "login_success",
+        "received_at": "2026-10-01T14:08:44.343Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T14:08:44.343Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d6",
+        "source": "viewer_state_history",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:8e99284f-344b-4bf8-bb33-633ce1d6a71e:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d6:viewer_state_history",
+        "state:watch_progress=sajachu-jabha-d6",
+        "state:days_since_play=11.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d6",
+        "Subscription status 'never' is reliable as of 2026-10-01T14:08:44.343000+00:00",
+        "Viewer left series sajachu-jabha-d6 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-01789-002",
+      "viewer_id": "U-01789",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:08:49.936Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T14:08:49.936Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d6",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:310ed357-05f3-4a8d-91aa-fed2593d676e:event_age=1s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d6:app_setting",
+        "state:watch_progress=sajachu-jabha-d6",
+        "state:days_since_play=11.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d6",
+        "Subscription status 'never' is reliable as of 2026-10-01T14:08:49.936000+00:00",
+        "Viewer left series sajachu-jabha-d6 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "user_id": "U-02226",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-01-26T12:41:13.823Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-01-26T12:41:13.823Z",
+      "freshness_s": 52939606.9
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:b34b56af-e2c6-4fb0-9147-21907b31e40d:subscription_renewed",
+      "timestamp": "2026-09-12T09:51:15.974Z",
+      "freshness_s": 1628204.7
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:59:53.633Z",
+      "freshness_s": 180487.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:59:53.633Z",
+      "freshness_s": 180487.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:59:53.633Z",
+      "freshness_s": 180487.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T01:49:13.491Z",
+      "freshness_s": 274727.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-22T07:14:19.385Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-22T07:14:19.385Z",
+      "freshness_s": 773621.3
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-22T07:17:05.337Z",
+      "freshness_s": 773455.4
+    }
+  },
+  "watch_progress": {
+    "dava-nedi-d2": "dava-nedi-d2-s1e1",
+    "rigu-dhadi-d2": "rigu-dhadi-d2-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Comedy",
+    "Thriller"
+  ],
+  "sessions_count": 11,
+  "play_sessions_count": 5,
+  "ist_app_open_days": [
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-17",
+    "2026-09-22",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-05",
+    "2026-09-08",
+    "2026-09-12",
+    "2026-09-22"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T06:08:00.697Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:dava-nedi-d2",
+    "content_slug": "dava-nedi-d2",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-02226",
+      "decision_id": "D-U-02226-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T06:08:00.697Z",
+      "deadline": "2026-10-04T06:08:00.697Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-014376",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T06:09:58.697Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-02226-001",
+      "viewer_id": "U-02226",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T06:08:00.697Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T06:08:00.697Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:9dbcd722-bf48-4e21-ab7f-b95dc7c1ec9a:event_age=0s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:watch_progress=dava-nedi-d2",
+        "state:days_since_play=9.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T06:08:00.697000+00:00",
+        "Viewer left series dava-nedi-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "user_id": "U-03007",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-12-09T21:40:26.760Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-12-09T21:40:26.760Z",
+      "freshness_s": 25538052.9
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:32:47.661Z",
+      "freshness_s": 190912.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:32:47.661Z",
+      "freshness_s": 190912.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:32:47.661Z",
+      "freshness_s": 190912.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T06:32:47.661Z",
+      "freshness_s": 190912.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T08:29:48.479Z",
+      "freshness_s": 183891.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-26T05:35:54.527Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-26T05:35:54.527Z",
+      "freshness_s": 453525.1
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-16T10:52:08.114Z",
+      "freshness_s": 1298551.6
+    }
+  },
+  "watch_progress": {
+    "gune-halo-d1": "gune-halo-d1-s1e1",
+    "tidha-dakachu-d1": "tidha-dakachu-d1-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Romance",
+    "Family"
+  ],
+  "sessions_count": 10,
+  "play_sessions_count": 3,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-07",
+    "2026-09-13",
+    "2026-09-16",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-13",
+    "2026-09-16",
+    "2026-09-26"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T11:34:39.671Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:gune-halo-d1",
+    "content_slug": "gune-halo-d1",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-03007",
+      "decision_id": "D-U-03007-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T11:34:39.671Z",
+      "deadline": "2026-10-04T11:34:39.671Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-018721",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-03T15:56:18.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-03007-001",
+      "viewer_id": "U-03007",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T11:34:39.671Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T11:34:39.671Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d1",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:54577c17-c57b-4e30-a71d-a00365ee4432:event_age=2s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d1:app_setting",
+        "state:watch_progress=gune-halo-d1",
+        "state:days_since_play=5.2"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d1",
+        "Subscription status 'never' is reliable as of 2026-10-01T11:34:39.671000+00:00",
+        "Viewer left series gune-halo-d1 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

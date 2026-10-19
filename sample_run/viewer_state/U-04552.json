@@ -1,0 +1,112 @@
+{
+  "user_id": "U-04552",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-04-26T01:25:05.361Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-04-26T01:25:05.361Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:9ba1876f-231c-4257-a0d4-5f87b2571db8:subscription_renewed",
+      "timestamp": "2026-09-20T21:34:53.117Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:49:11.133Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:49:11.133Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T08:49:11.133Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T07:16:42.017Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-28T06:48:58.512Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-28T06:48:58.512Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 8,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-26T06:51:36.922Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "nada-sada-d4": "nada-sada-d4-s1e1",
+    "radi-d4": "radi-d4-s1e5",
+    "loba-d4": "loba-d4-s1e1",
+    "gineni-d4": "gineni-d4-s1e1"
+  },
+  "top_genres": [
+    "Romance",
+    "Action",
+    "Drama"
+  ],
+  "sessions_count": 23,
+  "play_sessions_count": 11,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-04",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-04",
+    "2026-09-10",
+    "2026-09-15",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-26",
+    "2026-09-28"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

@@ -1,0 +1,313 @@
+{
+  "user_id": "U-02167",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-05-09T07:15:19.838Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-05-09T07:15:19.838Z",
+      "freshness_s": 44090014.3
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:0581e5cb-febd-4c6b-9135-74294925a431:purchase_completed",
+      "timestamp": "2026-09-26T08:51:26.554Z",
+      "freshness_s": 452247.6
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:32:35.325Z",
+      "freshness_s": 233778.8
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:32:35.325Z",
+      "freshness_s": 233778.8
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:32:35.325Z",
+      "freshness_s": 233778.8
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-26T08:51:26.554Z",
+      "freshness_s": 452247.6
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-23T06:17:22.398Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-23T06:17:22.398Z",
+      "freshness_s": 720691.7
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-23T08:32:38.122Z",
+      "freshness_s": 712576.0
+    }
+  },
+  "watch_progress": {
+    "pana-mobako-d5": "pana-mobako-d5-s1e1"
+  },
+  "top_genres": [
+    "Romance",
+    "Family"
+  ],
+  "sessions_count": 9,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-09",
+    "2026-09-13",
+    "2026-09-15",
+    "2026-09-19",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-26"
+  ],
+  "ist_play_days": [
+    "2026-09-23"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T14:28:54.125Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:pana-mobako-d5",
+    "content_slug": "pana-mobako-d5",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 3,
+  "actions_count": 2,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-02167",
+      "decision_id": "D-U-02167-003",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T14:28:54.125Z",
+      "deadline": "2026-10-04T14:28:54.125Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-02167-001",
+      "viewer_id": "U-02167",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-09-30T19:57:35.848Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-03T19:57:35.848Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1179",
+        "title:T1181",
+        "title:T1182",
+        "title:T1192",
+        "title:T1198",
+        "title:T1209",
+        "title:T1213",
+        "title:T1177",
+        "title:T1178",
+        "title:T1180",
+        "title:T1183",
+        "title:T1184",
+        "title:T1185",
+        "title:T1189",
+        "title:T1202",
+        "title:T1215",
+        "title:T1219",
+        "title:T1186",
+        "title:T1187",
+        "title:T1188",
+        "title:T1190",
+        "title:T1191"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:81eaeb2b-6e54-4e42-961f-cfce8b4567c9:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=pana-mobako-d5",
+        "state:days_since_play=7.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-09-30T19:57:35.848000+00:00",
+        "Viewer left series pana-mobako-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-02167-002",
+      "viewer_id": "U-02167",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:28:39.057Z",
+        "event_age_s": 342830
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:28:39.057Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:0303b962-a017-4ee0-9223-3f813c8de408:event_age=342830s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=pana-mobako-d5",
+        "state:days_since_play=7.9"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-10-01T04:28:39.057000+00:00",
+        "Viewer left series pana-mobako-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-02167-003",
+      "viewer_id": "U-02167",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T14:28:54.125Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T14:28:54.125Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1179",
+        "title:T1181",
+        "title:T1182",
+        "title:T1192",
+        "title:T1198",
+        "title:T1209",
+        "title:T1213",
+        "title:T1177",
+        "title:T1178",
+        "title:T1180",
+        "title:T1183",
+        "title:T1184",
+        "title:T1185",
+        "title:T1189",
+        "title:T1202",
+        "title:T1215",
+        "title:T1219",
+        "title:T1186",
+        "title:T1187",
+        "title:T1188",
+        "title:T1190",
+        "title:T1191"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:65d1ab39-70ef-4621-af55-b5198adf7bc8:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=pana-mobako-d5",
+        "state:days_since_play=8.3"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-10-01T14:28:54.125000+00:00",
+        "Viewer left series pana-mobako-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

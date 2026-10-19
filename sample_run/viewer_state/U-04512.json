@@ -1,0 +1,95 @@
+{
+  "user_id": "U-04512",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-11-01T20:28:58.060Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-11-01T20:28:58.060Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:3b5fd644-24fc-4396-a260-5ccb1e14edde:subscription_renewed",
+      "timestamp": "2026-09-18T04:39:38.101Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d1",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:50:57.161Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:50:57.161Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:50:57.161Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d1",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-24T23:36:42.810Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-23T12:08:34.138Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-23T12:08:34.138Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-20T17:59:52.774Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "raloja-d1": "raloja-d1-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Thriller",
+    "Devotional"
+  ],
+  "sessions_count": 10,
+  "play_sessions_count": 3,
+  "ist_app_open_days": [
+    "2026-09-09",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-25"
+  ],
+  "ist_play_days": [
+    "2026-09-20",
+    "2026-09-23"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

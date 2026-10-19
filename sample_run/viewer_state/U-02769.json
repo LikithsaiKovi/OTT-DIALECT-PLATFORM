@@ -1,0 +1,194 @@
+{
+  "user_id": "U-02769",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-10-30T14:07:51.610Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-10-30T14:07:51.610Z",
+      "freshness_s": 29009149.3
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:7edbcbc2-0a15-4020-8a13-b2c31fcfa1a5:subscription_renewed",
+      "timestamp": "2026-09-03T01:31:58.710Z",
+      "freshness_s": 2443302.2
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:09:13.806Z",
+      "freshness_s": 205467.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:09:13.806Z",
+      "freshness_s": 205467.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T23:09:13.806Z",
+      "freshness_s": 205467.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T04:32:15.696Z",
+      "freshness_s": 272485.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T17:47:20.591Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T17:47:20.591Z",
+      "freshness_s": 311180.3
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 4,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-21T07:57:03.066Z",
+      "freshness_s": 864997.8
+    }
+  },
+  "watch_progress": {
+    "kova-sako-d5": "kova-sako-d5-s1e2",
+    "gubava-gihaya-d5": "gubava-gihaya-d5-s1e1",
+    "lodi-d5": "lodi-d5-s1e1"
+  },
+  "top_genres": [
+    "Devotional",
+    "Family",
+    "Drama"
+  ],
+  "sessions_count": 25,
+  "play_sessions_count": 11,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-19",
+    "2026-09-21",
+    "2026-09-24",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-08",
+    "2026-09-10",
+    "2026-09-12",
+    "2026-09-14",
+    "2026-09-17",
+    "2026-09-19",
+    "2026-09-21",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T08:13:40.861Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:kova-sako-d5",
+    "content_slug": "kova-sako-d5",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-02769",
+      "decision_id": "D-U-02769-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T08:13:40.861Z",
+      "deadline": "2026-10-04T08:13:40.861Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-017329",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-02T16:15:58.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-02769-001",
+      "viewer_id": "U-02769",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T08:13:40.861Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T08:13:40.861Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d4"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:bdc3dc44-03d3-4e03-aa2d-46b45ee23516:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=kova-sako-d5",
+        "state:days_since_play=3.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-10-01T08:13:40.861000+00:00",
+        "Viewer left series kova-sako-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

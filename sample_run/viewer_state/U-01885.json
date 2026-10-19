@@ -1,0 +1,223 @@
+{
+  "user_id": "U-01885",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2024-12-07T13:34:33.640Z",
+      "source": "profile_snapshot",
+      "timestamp": "2024-12-07T13:34:33.640Z",
+      "freshness_s": 57258179.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:81415a5f-a430-49c1-8f6e-f82b039ab60b:subscription_renewed",
+      "timestamp": "2026-09-16T23:02:02.607Z",
+      "freshness_s": 1236930.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:14:06.574Z",
+      "freshness_s": 185006.1
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:14:06.574Z",
+      "freshness_s": 185006.1
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:14:06.574Z",
+      "freshness_s": 185006.1
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T15:06:51.474Z",
+      "freshness_s": 315041.2
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T15:05:51.240Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T15:05:51.240Z",
+      "freshness_s": 315101.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 10,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-26T11:08:42.247Z",
+      "freshness_s": 415730.4
+    }
+  },
+  "watch_progress": {
+    "nada-sada-d4": "nada-sada-d4-s1e1",
+    "tidaka-koni-d4": "tidaka-koni-d4-s1e1",
+    "nisu-sapapa-d4": "nisu-sapapa-d4-s1e4",
+    "bagi-baya-d4": "bagi-baya-d4-s1e1",
+    "baba-yarachu-d4": "baba-yarachu-d4-s1e1"
+  },
+  "top_genres": [
+    "Crime",
+    "Family",
+    "Action"
+  ],
+  "sessions_count": 23,
+  "play_sessions_count": 17,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-02",
+    "2026-09-04",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-16",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-02",
+    "2026-09-04",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-16",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T06:37:32.685Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:nada-sada-d4",
+    "content_slug": "nada-sada-d4",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01885",
+      "decision_id": "D-U-01885-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T06:37:32.685Z",
+      "deadline": "2026-10-04T06:37:32.685Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-012648",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T06:38:14.685Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01885-001",
+      "viewer_id": "U-01885",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T06:37:32.685Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T06:37:32.685Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0915",
+        "title:T0924",
+        "title:T0921",
+        "title:T0928",
+        "title:T0916",
+        "title:T0955",
+        "title:T0927",
+        "title:T0929",
+        "title:T0932",
+        "title:T0936",
+        "title:T0944",
+        "title:T0917",
+        "title:T0918",
+        "title:T0919",
+        "title:T0920",
+        "title:T0922",
+        "title:T0937",
+        "title:T0941",
+        "title:T0956",
+        "title:T0971",
+        "title:T0974",
+        "title:T0923",
+        "title:T0925",
+        "title:T0926",
+        "title:T0931",
+        "title:T0933"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d4 matching user history",
+      "evidence": [
+        "trigger:23b9935e-fa9e-490f-8a6a-b94c9e1edc34:event_age=1s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=nada-sada-d4",
+        "state:days_since_play=3.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T06:37:32.685000+00:00",
+        "Viewer left series nada-sada-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

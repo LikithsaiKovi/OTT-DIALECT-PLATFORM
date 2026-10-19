@@ -1,0 +1,105 @@
+{
+  "user_id": "U-03572",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-01-10T08:23:07.237Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-01-10T08:23:07.237Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:07bb2cbf-aa0a-4947-987a-b84a32434172:subscription_renewed",
+      "timestamp": "2026-09-05T11:23:24.783Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d2",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T11:59:44.799Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T11:59:44.799Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T11:59:44.799Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T13:36:26.259Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-28T10:10:03.134Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-28T10:10:03.134Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 2,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-28T10:13:43.080Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "bhaja-moguba-d2": "bhaja-moguba-d2-s1e2"
+  },
+  "top_genres": [
+    "Thriller",
+    "Romance",
+    "Devotional"
+  ],
+  "sessions_count": 15,
+  "play_sessions_count": 7,
+  "ist_app_open_days": [
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-06",
+    "2026-09-12",
+    "2026-09-13",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-19",
+    "2026-09-23",
+    "2026-09-28",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-04",
+    "2026-09-06",
+    "2026-09-13",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-23",
+    "2026-09-28"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

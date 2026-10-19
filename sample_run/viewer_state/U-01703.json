@@ -1,0 +1,287 @@
+{
+  "user_id": "U-01703",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-05-05T02:14:26.366Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-05-05T02:14:26.366Z",
+      "freshness_s": 44458083.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "event:ef105520-3dd0-4e83-9f53-b7d10a05a305:purchase_completed",
+      "timestamp": "2026-10-01T05:28:14.359Z",
+      "freshness_s": 36855.1
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:47:49.127Z",
+      "freshness_s": 240880.3
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:47:49.127Z",
+      "freshness_s": 240880.3
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T20:47:49.127Z",
+      "freshness_s": 240880.3
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d4",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-27T13:46:30.463Z",
+      "freshness_s": 352559.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T13:42:48.615Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T13:42:48.615Z",
+      "freshness_s": 352780.8
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 5,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-27T13:46:30.463Z",
+      "freshness_s": 352559.0
+    }
+  },
+  "watch_progress": {
+    "hada-maloni-d4": "hada-maloni-d4-s1e1",
+    "gineni-d4": "gineni-d4-s1e1",
+    "koha-kagite-d4": "koha-kagite-d4-s1e1",
+    "bagi-baya-d4": "bagi-baya-d4-s1e1"
+  },
+  "top_genres": [
+    "Family",
+    "Romance",
+    "Drama"
+  ],
+  "sessions_count": 22,
+  "play_sessions_count": 10,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-06",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-25",
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-01",
+    "2026-09-04",
+    "2026-09-06",
+    "2026-09-08",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-14",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T15:42:29.448Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:hada-maloni-d4",
+    "content_slug": "hada-maloni-d4",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 3,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01703",
+      "decision_id": "D-U-01703-003",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T15:42:29.448Z",
+      "deadline": "2026-10-04T15:42:29.448Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-011238",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T15:43:31.448Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01703-001",
+      "viewer_id": "U-01703",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:45:00.665Z",
+        "event_age_s": 35763
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:45:00.665Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:45ff22f6-abad-46eb-b974-a455f460996f:event_age=35763s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=hada-maloni-d4",
+        "state:days_since_play=3.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T04:45:00.665000+00:00",
+        "Viewer left series hada-maloni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-01703-002",
+      "viewer_id": "U-01703",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T05:25:59.574Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T05:25:59.574Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:2605f78a-bc62-41c2-8aba-6a38383cd478:event_age=0s",
+        "subscription_status:lapsed:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d4:app_setting",
+        "state:watch_progress=hada-maloni-d4",
+        "state:days_since_play=3.7"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'lapsed' is reliable as of 2026-10-01T05:25:59.574000+00:00",
+        "Viewer left series hada-maloni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-01703-003",
+      "viewer_id": "U-01703",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:42:29.448Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:42:29.448Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d4",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:4bf04969-d71e-4913-9c24-f6fe30343124:event_age=1s",
+        "subscription_status:active:event:ef105520-3dd0-4e83-9f53-b7d10a05a305:purchase_completed",
+        "dialect:d4:app_setting",
+        "state:watch_progress=hada-maloni-d4",
+        "state:days_since_play=4.1"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d4",
+        "Subscription status 'active' is reliable as of 2026-10-01T15:42:29.448000+00:00",
+        "Viewer left series hada-maloni-d4 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

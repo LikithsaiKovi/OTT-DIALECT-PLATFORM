@@ -1,0 +1,100 @@
+{
+  "user_id": "U-03834",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-08T16:35:23.084Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-08T16:35:23.084Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:4fe311e1-fe49-4687-b7f1-ec641565f739:purchase_completed",
+      "timestamp": "2026-09-11T16:35:25.633Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d6",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:25:24.576Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:25:24.576Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T21:25:24.576Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d6",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-30T15:49:40.508Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-30T15:24:54.474Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-30T15:24:54.474Z",
+      "freshness_s": 0.0
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 4,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-30T13:09:51.590Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {
+    "rasuya-moni-d6": "rasuya-moni-d6-s1e4"
+  },
+  "top_genres": [
+    "Thriller",
+    "Devotional",
+    "Family"
+  ],
+  "sessions_count": 13,
+  "play_sessions_count": 7,
+  "ist_app_open_days": [
+    "2026-09-08",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-19",
+    "2026-09-22",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-30"
+  ],
+  "ist_play_days": [
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-19",
+    "2026-09-22",
+    "2026-09-30"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

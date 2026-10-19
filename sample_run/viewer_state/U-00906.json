@@ -1,0 +1,170 @@
+{
+  "user_id": "U-00906",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-15T11:32:53.061Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-15T11:32:53.061Z",
+      "freshness_s": 1396090.4
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:53:23.894Z",
+      "freshness_s": 214059.6
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d4",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:53:23.894Z",
+      "freshness_s": 214059.6
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:53:23.894Z",
+      "freshness_s": 214059.6
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T03:53:23.894Z",
+      "freshness_s": 214059.6
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-25T16:13:31.192Z",
+      "freshness_s": 515252.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-25T16:10:45.873Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-25T16:10:45.873Z",
+      "freshness_s": 515417.6
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-25T16:13:31.192Z",
+      "freshness_s": 515252.3
+    }
+  },
+  "watch_progress": {
+    "haja-d3": "haja-d3-s1e1"
+  },
+  "top_genres": [
+    "Thriller",
+    "Crime",
+    "Family"
+  ],
+  "sessions_count": 7,
+  "play_sessions_count": 2,
+  "ist_app_open_days": [
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-20",
+    "2026-09-25"
+  ],
+  "ist_play_days": [
+    "2026-09-20",
+    "2026-09-25"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T15:21:03.487Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:haja-d3",
+    "content_slug": "haja-d3",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00906",
+      "decision_id": "D-U-00906-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T15:21:03.487Z",
+      "deadline": "2026-10-04T15:21:03.487Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-006067",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-04T08:09:28.000Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00906-001",
+      "viewer_id": "U-00906",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:21:03.487Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:21:03.487Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d4"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:fe9fa3cc-c4a8-4d9f-bb07-f22bd9301483:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d3:app_setting",
+        "state:watch_progress=haja-d3",
+        "state:days_since_play=6.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d3",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:21:03.487000+00:00",
+        "Viewer left series haja-d3 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "user_id": "U-04089",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-09-26T22:25:21.871Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-26T22:25:21.871Z",
+      "freshness_s": 406278.8
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:46:10.245Z",
+      "freshness_s": 171030.4
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d7",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:46:10.245Z",
+      "freshness_s": 171030.4
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:46:10.245Z",
+      "freshness_s": 171030.4
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T15:46:10.245Z",
+      "freshness_s": 171030.4
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d7",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-26T22:29:51.323Z",
+      "freshness_s": 406009.3
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-26T22:27:05.296Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-26T22:27:05.296Z",
+      "freshness_s": 406175.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-26T22:29:51.323Z",
+      "freshness_s": 406009.3
+    }
+  },
+  "watch_progress": {
+    "guka-kosusa-d2": "guka-kosusa-d2-s1e1"
+  },
+  "top_genres": [
+    "Romance",
+    "Devotional"
+  ],
+  "sessions_count": 1,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-27"
+  ],
+  "ist_play_days": [
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T15:16:40.669Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:guka-kosusa-d2",
+    "content_slug": "guka-kosusa-d2",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-04089",
+      "decision_id": "D-U-04089-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T15:16:40.669Z",
+      "deadline": "2026-10-04T15:16:40.669Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-04089-001",
+      "viewer_id": "U-04089",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T15:16:40.669Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T15:16:40.669Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d7",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: no_available_content_in_dialect",
+      "evidence": [
+        "trigger:80596eba-e7f9-47d2-9d7f-ffd05d07aab8:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d7:app_setting",
+        "state:watch_progress=guka-kosusa-d2",
+        "state:days_since_play=4.7"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d7",
+        "Subscription status 'never' is reliable as of 2026-10-01T15:16:40.669000+00:00",
+        "Viewer left series guka-kosusa-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "no_available_content_in_dialect",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    }
+  ]
+}

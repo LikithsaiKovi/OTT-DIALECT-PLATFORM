@@ -1,0 +1,175 @@
+{
+  "user_id": "U-01106",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-05-22T09:48:19.283Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-05-22T09:48:19.283Z",
+      "freshness_s": 42932700.9
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:3325ee65-e6ab-48cc-bb94-8c1e91619b34:subscription_renewed",
+      "timestamp": "2026-09-14T00:46:32.321Z",
+      "freshness_s": 1493207.9
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d6",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:26:56.525Z",
+      "freshness_s": 180383.7
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:26:56.525Z",
+      "freshness_s": 180383.7
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T05:26:56.525Z",
+      "freshness_s": 180383.7
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d2",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-21T12:55:19.724Z",
+      "freshness_s": 844680.5
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-19T06:46:26.769Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-19T06:46:26.769Z",
+      "freshness_s": 1039613.4
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 5,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-19T05:31:48.156Z",
+      "freshness_s": 1044092.0
+    }
+  },
+  "watch_progress": {
+    "neba-d2": "neba-d2-s1e1",
+    "rigu-dhadi-d2": "rigu-dhadi-d2-s1e3",
+    "chugu-d2": "chugu-d2-s1e1"
+  },
+  "top_genres": [
+    "Action",
+    "Comedy",
+    "Crime"
+  ],
+  "sessions_count": 9,
+  "play_sessions_count": 6,
+  "ist_app_open_days": [
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-10",
+    "2026-09-16",
+    "2026-09-19",
+    "2026-09-21"
+  ],
+  "ist_play_days": [
+    "2026-09-04",
+    "2026-09-10",
+    "2026-09-16",
+    "2026-09-19"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T07:33:20.205Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:neba-d2",
+    "content_slug": "neba-d2",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 1,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01106",
+      "decision_id": "D-U-01106-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T07:33:20.205Z",
+      "deadline": "2026-10-04T07:33:20.205Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01106-001",
+      "viewer_id": "U-01106",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T07:33:20.205Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T07:33:20.205Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d6"
+        ]
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: user_in_holdout_arm",
+      "evidence": [
+        "trigger:6f5a0b8f-2049-4bcf-a174-8cbd67c2d2bf:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d2:app_setting",
+        "state:watch_progress=neba-d2",
+        "state:days_since_play=12.0"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d2",
+        "Subscription status 'active' is reliable as of 2026-10-01T07:33:20.205000+00:00",
+        "Viewer left series neba-d2 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "holdout",
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "HOLDOUT_ABSTAINED",
+      "no_action_reason": "user_in_holdout_arm",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

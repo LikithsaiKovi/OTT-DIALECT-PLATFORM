@@ -1,0 +1,248 @@
+{
+  "user_id": "U-01827",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-07-27T10:15:46.018Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-07-27T10:15:46.018Z",
+      "freshness_s": 37218716.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:09e17577-515b-44c8-8f58-c134627775b9:subscription_renewed",
+      "timestamp": "2026-09-15T23:40:08.308Z",
+      "freshness_s": 1314453.7
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:38:52.752Z",
+      "freshness_s": 205729.3
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:38:52.752Z",
+      "freshness_s": 205729.3
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-28T19:38:52.752Z",
+      "freshness_s": 205729.3
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-29T00:41:38.294Z",
+      "freshness_s": 187563.7
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-27T14:44:17.220Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-27T14:44:17.220Z",
+      "freshness_s": 309804.8
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-16T12:43:18.426Z",
+      "freshness_s": 1267463.6
+    }
+  },
+  "watch_progress": {
+    "gilosa-dhate-d5": "gilosa-dhate-d5-s1e1"
+  },
+  "top_genres": [
+    "Drama",
+    "Devotional",
+    "Thriller"
+  ],
+  "sessions_count": 15,
+  "play_sessions_count": 6,
+  "ist_app_open_days": [
+    "2026-09-06",
+    "2026-09-10",
+    "2026-09-12",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-22",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-27",
+    "2026-09-29"
+  ],
+  "ist_play_days": [
+    "2026-09-12",
+    "2026-09-16",
+    "2026-09-22",
+    "2026-09-24",
+    "2026-09-27"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T04:47:42.013Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:gilosa-dhate-d5",
+    "content_slug": "gilosa-dhate-d5",
+    "rule_version": "2026-09-30"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-01827",
+      "decision_id": "D-U-01827-002",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T04:47:42.013Z",
+      "deadline": "2026-10-04T04:47:42.013Z",
+      "status": "EXPIRED_UNMET",
+      "succeeded": false,
+      "attributed_event_id": null,
+      "attributed_event": null,
+      "attributed_at": null
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> EXPIRED_UNMET (attributed to none)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-01827-001",
+      "viewer_id": "U-01827",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-09-30T18:57:53.240Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-03T18:57:53.240Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1177",
+        "title:T1200",
+        "title:T1189",
+        "title:T1199",
+        "title:T1204",
+        "title:T1211",
+        "title:T1214",
+        "title:T1178",
+        "title:T1179",
+        "title:T1180",
+        "title:T1181",
+        "title:T1182",
+        "title:T1183",
+        "title:T1185",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1184",
+        "title:T1186",
+        "title:T1187",
+        "title:T1188",
+        "title:T1190"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:0cc194c1-8bd6-4f2b-b807-abe897cb5dc9:event_age=2s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=gilosa-dhate-d5",
+        "state:days_since_play=3.2"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-09-30T18:57:53.240000+00:00",
+        "Viewer left series gilosa-dhate-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    },
+    {
+      "decision_id": "D-U-01827-002",
+      "viewer_id": "U-01827",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T04:47:42.013Z",
+        "event_age_s": 121738
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T04:47:42.013Z"
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.95,
+      "confidence_reason": "Abstention policy applied: stale_offline_trigger",
+      "evidence": [
+        "trigger:9b569b31-60b2-477a-865e-d570f0f67b40:event_age=121738s",
+        "subscription_status:active:profile_snapshot:2026-09-30T00:00:00.000Z",
+        "dialect:d5:app_setting",
+        "state:watch_progress=gilosa-dhate-d5",
+        "state:days_since_play=3.6"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'active' is reliable as of 2026-10-01T04:47:42.013000+00:00",
+        "Viewer left series gilosa-dhate-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "action_safety"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "stale_offline_trigger",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}

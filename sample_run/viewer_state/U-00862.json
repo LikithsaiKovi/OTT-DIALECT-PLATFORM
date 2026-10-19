@@ -1,0 +1,92 @@
+{
+  "user_id": "U-00862",
+  "arm": "holdout",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2026-05-02T01:01:24.881Z",
+      "source": "profile_snapshot",
+      "timestamp": "2026-05-02T01:01:24.881Z",
+      "freshness_s": 0.0
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "active",
+      "source": "events:d5335cb5-04be-4f15-b417-34c72d3f022a:subscription_renewed",
+      "timestamp": "2026-09-18T21:09:07.302Z",
+      "freshness_s": 0.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d3",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:44:59.503Z",
+      "freshness_s": 0.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:44:59.503Z",
+      "freshness_s": 0.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:44:59.503Z",
+      "freshness_s": 0.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d3",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-28T06:59:40.166Z",
+      "freshness_s": 0.0
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-28T06:59:40.166Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-28T06:59:40.166Z",
+      "freshness_s": 0.0
+    }
+  },
+  "watch_progress": {},
+  "top_genres": [
+    "Comedy",
+    "Thriller",
+    "Crime"
+  ],
+  "sessions_count": 13,
+  "play_sessions_count": 4,
+  "ist_app_open_days": [
+    "2026-09-02",
+    "2026-09-06",
+    "2026-09-10",
+    "2026-09-13",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-28"
+  ],
+  "ist_play_days": [
+    "2026-09-06",
+    "2026-09-15",
+    "2026-09-20",
+    "2026-09-28"
+  ],
+  "opt_outs": [],
+  "active_goal": null,
+  "active_plan": null,
+  "decisions_count": 0,
+  "actions_count": 0,
+  "outcomes_count": 0,
+  "outcomes_history": [],
+  "learnings": [],
+  "sent_messages_by_day": {},
+  "recent_decisions": []
+}

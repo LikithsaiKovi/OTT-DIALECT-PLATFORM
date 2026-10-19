@@ -1,0 +1,229 @@
+{
+  "user_id": "U-00745",
+  "arm": "agent",
+  "last_seen_at": null,
+  "facts": {
+    "signup_at": {
+      "name": "signup_at",
+      "value": "2025-09-02T06:48:47.304Z",
+      "source": "profile_snapshot",
+      "timestamp": "2025-09-02T06:48:47.304Z",
+      "freshness_s": 34064931.1
+    },
+    "subscription_status": {
+      "name": "subscription_status",
+      "value": "never",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:24:43.396Z",
+      "freshness_s": 175975.0
+    },
+    "preferred_dialect": {
+      "name": "preferred_dialect",
+      "value": "d5",
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:24:43.396Z",
+      "freshness_s": 175975.0
+    },
+    "notifications_opt_in": {
+      "name": "notifications_opt_in",
+      "value": true,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:24:43.396Z",
+      "freshness_s": 175975.0
+    },
+    "whatsapp_opt_in": {
+      "name": "whatsapp_opt_in",
+      "value": false,
+      "source": "profile_snapshot",
+      "timestamp": "2026-09-29T12:24:43.396Z",
+      "freshness_s": 175975.0
+    },
+    "current_dialect": {
+      "name": "current_dialect",
+      "value": "d5",
+      "source": "events:app_setting",
+      "timestamp": "2026-09-15T08:07:23.973Z",
+      "freshness_s": 1401014.4
+    },
+    "last_play_at": {
+      "name": "last_play_at",
+      "value": "2026-09-15T08:04:39.670Z",
+      "source": "events:play_started",
+      "timestamp": "2026-09-15T08:04:39.670Z",
+      "freshness_s": 1401178.7
+    },
+    "total_completes": {
+      "name": "total_completes",
+      "value": 1,
+      "source": "events:episode_completed",
+      "timestamp": "2026-09-15T08:07:23.973Z",
+      "freshness_s": 1401014.4
+    }
+  },
+  "watch_progress": {
+    "yaka-naka-d5": "yaka-naka-d5-s1e1"
+  },
+  "top_genres": [
+    "Thriller"
+  ],
+  "sessions_count": 6,
+  "play_sessions_count": 1,
+  "ist_app_open_days": [
+    "2026-09-01",
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-14",
+    "2026-09-15"
+  ],
+  "ist_play_days": [
+    "2026-09-15"
+  ],
+  "opt_outs": [],
+  "active_goal": {
+    "id": "resume_series_3d",
+    "goal_id": "G07",
+    "window_hours": 72,
+    "deadline": "2026-10-04T13:17:38.410Z",
+    "success_event": "play_started",
+    "success_condition": "same content_slug:yaka-naka-d5",
+    "content_slug": "yaka-naka-d5",
+    "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+  },
+  "active_plan": null,
+  "decisions_count": 2,
+  "actions_count": 1,
+  "outcomes_count": 0,
+  "outcomes_history": [
+    {
+      "user_id": "U-00745",
+      "decision_id": "D-U-00745-001",
+      "goal_id": "resume_series_3d",
+      "goal_started_at": "2026-10-01T13:17:38.410Z",
+      "deadline": "2026-10-04T13:17:38.410Z",
+      "status": "SUCCEEDED",
+      "succeeded": true,
+      "attributed_event_id": "oua-004955",
+      "attributed_event": "play_started",
+      "attributed_at": "2026-10-01T13:21:54.265Z"
+    }
+  ],
+  "learnings": [
+    "Evaluated goal resume_series_3d -> SUCCEEDED (attributed to play_started)"
+  ],
+  "sent_messages_by_day": {},
+  "recent_decisions": [
+    {
+      "decision_id": "D-U-00745-001",
+      "viewer_id": "U-00745",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T13:17:38.410Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "resume_series_3d",
+        "deadline": "2026-10-04T13:17:38.410Z"
+      },
+      "action": "HOME_PAGE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1185",
+        "title:T1200",
+        "title:T1212",
+        "title:T1215",
+        "title:T1225",
+        "title:T1232",
+        "title:T1177",
+        "title:T1178",
+        "title:T1179",
+        "title:T1180",
+        "title:T1181",
+        "title:T1183",
+        "title:T1189",
+        "title:T1192",
+        "title:T1202",
+        "title:T1213",
+        "title:T1182",
+        "title:T1184",
+        "title:T1186",
+        "title:T1187",
+        "title:T1188"
+      ],
+      "confidence": 0.88,
+      "confidence_reason": "Curated 5 high-affinity rows in dialect d5 matching user history",
+      "evidence": [
+        "trigger:393812e7-ae84-450b-8b58-d7586f9520da:event_age=0s",
+        "subscription_status:never:profile_snapshot",
+        "dialect:d5:app_setting",
+        "state:watch_progress=yaka-naka-d5",
+        "state:days_since_play=16.2"
+      ],
+      "assumptions": [
+        "Viewer is actively on dialect d5",
+        "Subscription status 'never' is reliable as of 2026-10-01T13:17:38.410000+00:00",
+        "Viewer left series yaka-naka-d5 unfinished and retains story context"
+      ],
+      "checks": {
+        "passed": [
+          "eligibility",
+          "dialect",
+          "availability",
+          "injection_defense",
+          "row_constraints"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "PUBLISHED",
+      "fallback_used": false,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "corrected-2026-10-01T08:30:00+00:00"
+    },
+    {
+      "decision_id": "D-U-00745-002",
+      "viewer_id": "U-00745",
+      "trigger": {
+        "event": "app_open",
+        "received_at": "2026-10-01T13:19:04.265Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "none",
+        "deadline": null
+      },
+      "action": "NO_ACTION",
+      "dialect": {
+        "used": "none",
+        "source": "idempotency_cache",
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 1.0,
+      "confidence_reason": "Trigger event already processed; strictly idempotent",
+      "evidence": [
+        "trigger_seen:393812e7-ae84-450b-8b58-d7586f9520da"
+      ],
+      "assumptions": [
+        "Duplicate delivery over network"
+      ],
+      "checks": {
+        "passed": [
+          "idempotency"
+        ],
+        "failed": []
+      },
+      "decided_in_ms": 1,
+      "status": "ABSTAINED",
+      "no_action_reason": "duplicate_trigger_idempotency",
+      "fallback_used": false,
+      "model_calls": 0,
+      "tool_calls": 0,
+      "rule_version": "2026-09-30"
+    }
+  ]
+}
